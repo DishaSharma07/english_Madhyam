@@ -84,7 +84,7 @@ class _FeedCategoryState extends State<FeedCategory> with TickerProviderStateMix
               context: context,
               initialDate: dateTime,
               firstDate: DateTime(2000),
-              lastDate: DateTime(2900),
+                lastDate: DateTime.now().add(const Duration(seconds: 10),)
               theme: ThemeData(primarySwatch: Colors.pink),
             );
 

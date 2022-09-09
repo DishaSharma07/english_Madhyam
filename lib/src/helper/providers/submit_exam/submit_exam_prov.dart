@@ -18,7 +18,10 @@ class SubmitExamProvider extends GetConnect{
 
 
     };
+    print(requestBody);
     final response = await _apiBaseHelper.post('submit_exam', requestBody);
+    print(response);
+
     try {
 
 

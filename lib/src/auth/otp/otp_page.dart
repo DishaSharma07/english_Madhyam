@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:platform_device_id/platform_device_id.dart';
 import 'package:english_madhyam/main.dart';
@@ -14,8 +15,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-// import 'package:otp_autofill/otp_autofill.dart';
-// import 'package:alt_sms_autofill/alt_sms_autofill.dart';
+
 import 'package:lottie/lottie.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -64,12 +64,18 @@ class _OtpPageState extends State<OtpPage> {
     FirebaseMessaging messaging;
     messaging = FirebaseMessaging.instance;
     messaging.subscribeToTopic("messaging");
-    await messaging.getToken().then((value) {
+
+    await messaging.getToken().
+    then((value)  {
       if (value != null) {
         // setToken(value);
         setState(() {
           deviceTokenn = value;
         });
+      }else{
+        messaging.onTokenRefresh.listen((event) {  setState(() {
+          deviceTokenn = event;
+        });});
       }
     });
     return deviceTokenn;
@@ -81,6 +87,82 @@ class _OtpPageState extends State<OtpPage> {
     }
     return null;
   }
+  Future<void> initPlatformState() async {
+    var deviceData = <String, dynamic>{};
+
+    try {
+      if (kIsWeb) {
+        // deviceData = _readWebBrowserInfo(await deviceInfoPlugin.webBrowserInfo);
+      } else {
+        if (Platform.isAndroid) {
+          deviceData =
+          _readAndroidBuildData(await deviceInfoPlugin.androidInfo)!;
+          debugPrint(_readAndroidBuildData(await deviceInfoPlugin.androidInfo).toString(),wrapWidth: 2200);
+          Fluttertoast.showToast(msg: "device data :"+"$deviceData");
+          cancel();
+        } else if (Platform.isIOS) {
+          // deviceData = _readIosDeviceInfo(await deviceInfoPlugin.iosInfo);
+        } else if (Platform.isLinux) {
+          // deviceData = _readLinuxDeviceInfo(await deviceInfoPlugin.linuxInfo);
+        } else if (Platform.isMacOS) {
+          // deviceData = _readMacOsDeviceInfo(await deviceInfoPlugin.macOsInfo);
+        } else if (Platform.isWindows) {
+          // deviceData =
+          // _readWindowsDeviceInfo(await deviceInfoPlugin.windowsInfo);
+        }
+      }
+    } on PlatformException {
+      Fluttertoast.showToast(msg: "Failed to get Platform version");
+      cancel();
+      deviceData = <String, dynamic>{
+        'Error:': 'Failed to get platform version.'
+      };
+    }
+
+    if (!mounted) return;
+
+    setState(() {
+      _deviceData = deviceData;
+    });
+  }
+  Map<String, dynamic>? _readAndroidBuildData(AndroidDeviceInfo build) {
+    try{
+      return <String, dynamic>{
+        'version.securityPatch': build.version.securityPatch,
+        'version.sdkInt': build.version.sdkInt,
+        'version.release': build.version.release,
+        'version.previewSdkInt': build.version.previewSdkInt,
+        'version.incremental': build.version.incremental,
+        'version.codename': build.version.codename,
+        'version.baseOS': build.version.baseOS,
+        'board': build.board,
+        'bootloader': build.bootloader,
+        'brand': build.brand,
+        'device': build.device,
+        'display': build.display,
+        'fingerprint': build.fingerprint,
+        'hardware': build.hardware,
+        'host': build.host,
+        'id': build.id,
+        'manufacturer': build.manufacturer,
+        'model': build.model,
+        'product': build.product,
+        'supported32BitAbis': build.supported32BitAbis,
+        'supported64BitAbis': build.supported64BitAbis,
+        'supportedAbis': build.supportedAbis,
+        'tags': build.tags,
+        'type': build.type,
+        'isPhysicalDevice': build.isPhysicalDevice,
+        'androidId': build.androidId,
+        'systemFeatures': build.systemFeatures,
+      };
+    }catch(e){
+      Fluttertoast.showToast(msg: "Failed to get Platform version"+e.toString());
+      cancel();
+    }
+
+  }
+
 
   otpVerify({required String Mobile, required String Otp}) async {
     deviceToken();
@@ -92,71 +174,34 @@ class _OtpPageState extends State<OtpPage> {
 
     var res = await _httpService.verify_otp(mobile: Mobile, OTP: Otp);
     if (res?.result == "success") {
+      /*Fluttertoast.showToast(msg: "Data Successfully Fetched ");
+      cancel();*/
       setState(() {
         loading = false;
       });
-      if (res?.status == "old") {
-        loading = true;
-        var response = await _httpService.Login_api(
-            mobile: Mobile,
-            deviceT: Platform.isAndroid ? "Android" : "IOS",
-            deviceID: (await PlatformDeviceId.getDeviceId)!,
-            deviceTOK: deviceTokenn);
+      if (res?.status == "old")
+      {
+        callLoginApi(Mobile);
 
-        setState(() {
-          loading = false;
-        });
-        if (response!.result == 'success') {
-          if (response.user?.loginEnabled == 1) {
-            final prefs = await SharedPreferences.getInstance();
-            prefs.setInt('userID', response.user!.id!.toInt());
-            prefs.setString('name', response.user!.name.toString());
-            prefs.setString('phone', response.user!.phone.toString());
-            prefs.setString('email', response.user!.email.toString());
-            prefs.setString('image', response.user!.image.toString());
-            prefs.setString('dob', response.user?.dateOfBirth ?? "");
-            prefs.setInt('state_id', response.user?.stateId ?? 0);
-            prefs.setInt('city_id', response.user!.cityId ?? 0);
-            prefs.setString('slug', response.user!.slug.toString());
-            prefs.setString(
-                'device_id',
-                (await PlatformDeviceId.getDeviceId) == null
-                    ? ""
-                    : (await PlatformDeviceId.getDeviceId)!);
-            prefs.setString("device_token", deviceTokenn);
-            // prefs.setInt('board_id', response.user?.boardId! ?? 0);
-            prefs.setString('token', response.token.toString());
-            Fluttertoast.showToast(msg: "Login Successfully");
-            cancel();
-            Get.offAll(() => const BottomWidget());
-
-            return;
-          }
-          Fluttertoast.showToast(msg: "Your account has been disabled.");
-          cancel();
-
-          return;
-        }
       }
       else {
-        Fluttertoast.showToast(msg: "${res?.message}");
-        cancel();
-
-        if (res?.result == 'success') {
+        try{
+          Fluttertoast.showToast(msg: "New User  ${res?.message}");
           setState(() {
             loading = false;
           });
-          Get.to(() => RegisterScreen(
-                mobile: widget.mobile,
-              ));
+          Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context)=>RegisterScreen(
+            mobile: widget.mobile,
+          )), (route) => route.isFirst);
+
+        }catch(e){
+          Fluttertoast.showToast(msg: "Some thing went wrong"+e.toString());
         }
       }
-      Fluttertoast.showToast(msg: "${res?.message}");
-      cancel();
-    } else {
-      Fluttertoast.showToast(msg: "${res?.message}");
-      cancel();
-    }
+      } else {
+        Fluttertoast.showToast(msg: "${res?.status}  ${res?.message}");
+
+      }
   }
 
   final scaffoldKey = GlobalKey();
@@ -166,6 +211,7 @@ class _OtpPageState extends State<OtpPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    initPlatformState();
     // initSmsListener();
   }
   @override
@@ -252,24 +298,24 @@ class _OtpPageState extends State<OtpPage> {
                     ),
                     child: loading == true
                         ? Lottie.asset(
-                            "assets/animations/loader.json",
-                            height: MediaQuery.of(context).size.height * 0.04,
-                          )
+                      "assets/animations/loader.json",
+                      height: MediaQuery.of(context).size.height * 0.04,
+                    )
                         : Text(
-                            'Verify',
-                            style: GoogleFonts.roboto(
-                                color: whiteColor,
-                                decoration: TextDecoration.none,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w600,
-                                shadows: [
-                                  Shadow(
-                                    offset: Offset(1.0, 4),
-                                    blurRadius: 3.0,
-                                    color: greyColor.withOpacity(0.5),
-                                  ),
-                                ]),
-                          ),
+                      'Verify',
+                      style: GoogleFonts.roboto(
+                          color: whiteColor,
+                          decoration: TextDecoration.none,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                          shadows: [
+                            Shadow(
+                              offset: Offset(1.0, 4),
+                              blurRadius: 3.0,
+                              color: greyColor.withOpacity(0.5),
+                            ),
+                          ]),
+                    ),
                   ),
                 ),
               ),
@@ -316,6 +362,58 @@ class _OtpPageState extends State<OtpPage> {
         ),
       ),
     );
+  }
+
+  Future<void> callLoginApi(String Mobile) async {
+    try{
+      loading = true;
+
+      var response = await _httpService.Login_api(
+          mobile: Mobile,
+          deviceT: Platform.isAndroid ? "Android" : "IOS",
+          deviceID: _deviceData["id"]!,
+          deviceTOK: deviceTokenn);
+
+      setState(() {
+        loading = false;
+      });
+      if (response!.result == 'success') {
+        /*Fluttertoast.showToast(msg: "Data Successfully Fetched ");
+        cancel();*/
+        if (response.user?.loginEnabled == 1) {
+          Fluttertoast.showToast(msg: "loginEnabled");
+          final prefs = await SharedPreferences.getInstance();
+          try{
+            prefs.setString('token', response.token.toString());
+            prefs.setInt('userID', response.user!.id!.toInt());
+            prefs.setString('name', response.user!.name.toString());
+            prefs.setString('phone', response.user!.phone.toString());
+            prefs.setString('email', response.user!.email.toString());
+            prefs.setString('image', response.user!.image.toString());
+            prefs.setString('dob', response.user?.dateOfBirth ?? "");
+            prefs.setInt('state_id', response.user?.stateId ?? 0);
+            prefs.setInt('city_id', response.user!.cityId ?? 0);
+            Fluttertoast.showToast(msg: "Login Successfully");
+            try{
+              prefs.setString('device_id', _deviceData['id']);
+
+            }catch(e){
+              Fluttertoast.showToast(msg: "In Device Id catch $e");
+            }
+            Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context)=>const BottomWidget()), (route) => route.isFirst);
+          }
+          catch(e){
+            Fluttertoast.showToast(msg: e.toString());
+          }
+        }else{
+          Fluttertoast.showToast(msg: "Your account has been disabled.");
+        }
+      }
+    }catch(e){
+      Fluttertoast.showToast(msg: "Some thing went wrong"+e.toString());
+
+    }
+
   }
 }
 

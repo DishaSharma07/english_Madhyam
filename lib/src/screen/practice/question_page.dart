@@ -567,13 +567,21 @@ setState(() {
                                 decoration: BoxDecoration(
                                     color: purpleColor,
                                     borderRadius: BorderRadius.circular(100)),
-                                child: const Text(
-                                  "SUBMIT",
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 20,
-                                      color: Colors.white),
-                                ),
+                                child: Obx((){
+                                  if(_submitExamController.loading.value){
+                                    return Center(
+                                      child: Lottie.asset("assets/animations/loader.json",height: MediaQuery.of(context).size.height*0.04,),
+                                    );
+                                  }else{
+                                    return Text(
+                                      "SUBMIT",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 20,
+                                          color: Colors.white),
+                                    );
+                                  }
+                                })
                               ),
                             )
                     ]),
@@ -735,7 +743,9 @@ _examQuestion = widget.examdetails.content!.examQuestion!;
         centerTitle: false,
         automaticallyImplyLeading: false,
         elevation: 0.0,
-        leading: const BackButton(),
+        leading: const BackButton(
+          color: Colors.black,
+        ),
       ),
       body: SingleChildScrollView(
         child: _examQuestion.isEmpty?

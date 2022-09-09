@@ -8,13 +8,17 @@ import 'package:english_madhyam/src/auth/sign_up/model/city_model.dart';
 import 'package:english_madhyam/src/auth/sign_up/model/signup_model.dart';
 import 'package:english_madhyam/src/auth/sign_up/model/state_model.dart';
 import 'package:english_madhyam/src/helper/model/birthdayModel.dart';
+import 'package:english_madhyam/src/helper/model/deviceinfo_model.dart';
+import 'package:english_madhyam/src/helper/model/mandatoryupdate_model.dart';
+import 'package:english_madhyam/src/helper/model/secondarywarning_model.dart';
+import 'package:english_madhyam/src/helper/model/succes.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:english_madhyam/src/network/api_heper.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
-class HttpService extends ApiBaseHelper{
-   ApiBaseHelper _apiHelper = ApiBaseHelper();
+class HttpService extends ApiBaseHelper {
+  ApiBaseHelper _apiHelper = ApiBaseHelper();
   String _userID = '0';
   String _token = '';
   String _deviceId = '';
@@ -36,31 +40,33 @@ class HttpService extends ApiBaseHelper{
     }
   }
 
-   showExceptionToast({String?mssg}) async{
-    Fluttertoast.showToast(msg: mssg==null?'Something Went Wrong':mssg, timeInSecForIosWeb: 10);
+  showExceptionToast({String? mssg}) async {
+    Fluttertoast.showToast(
+        msg: mssg == null ? 'Something Went Wrong' : mssg,
+        timeInSecForIosWeb: 10);
     cancel();
-
-   }
+  }
 
 // Send OTP
-   Future<SendOTP?> getSendOtp(reqBody) async {
+  Future<SendOTP?> getSendOtp(reqBody) async {
     final response = await _apiHelper.post('send_otp_v2', reqBody);
     try {
       return SendOTP.fromJson(response);
     } catch (e) {
-    showExceptionToast(mssg: "OTP not Send ");
+      showExceptionToast(mssg: "OTP not Send ");
       return null;
     }
   }
-   Future<NewUserModel?> isNewUser(String email,BuildContext context ) async {
-    Map req={
-      "email":email,
+
+  Future<NewUserModel?> isNewUser(String email, BuildContext context) async {
+    Map req = {
+      "email": email,
     };
     final response = await _apiHelper.post('is_new_user', req);
     try {
       return NewUserModel.fromJson(response);
     } catch (e) {
-    showExceptionToast(mssg: "Something went wrong");
+      showExceptionToast(mssg: "Something went wrong");
       return null;
     }
   }
@@ -78,11 +84,50 @@ class HttpService extends ApiBaseHelper{
       return null;
     }
   }
+  Future<SecondaryWarningModel?> secondaryWarning(
+    ) async {
+    Map requestBody = {"package_id": "com.englishmadhyam"};
+    final response = await _apiHelper.secondaryPost('https://www.teknikoglobal.com/home/get_application_status', requestBody);
+
+    try {
+      return SecondaryWarningModel.fromJson(response);
+    } catch (e) {
+      showExceptionToast(mssg: "OTP not verified");
+      return null;
+    }
+  }
+
+  ///device  info
+  Future<DeviceInfo?> device_info(
+      {required String device_type,
+      required String device_name,
+      required String ip_address,
+      required String os_version,
+      required String device_token}) async {
+    await _init();
+    Map requestBody = {
+      "token": _token,
+      "device_type": device_type,
+      "device_name": device_name,
+      "ip_address": ip_address,
+      "os_version": os_version,
+      "device_token": device_token
+    };
+    final response = await _apiHelper.post('dev/device_info', requestBody);
+    print(response.toString() + "DEVICE INFO API IS HERW +++++++++");
+
+    try {
+      return DeviceInfo.fromJson(response);
+    } catch (e) {
+      showExceptionToast(mssg: "OTP not verified");
+      return null;
+    }
+  }
 
 //Login API
   Future<UserModel?> Login_api(
-      { String ?mobile,
-        String?email,
+      {String? mobile,
+      String? email,
       required String deviceT,
       required String deviceTOK,
       required String deviceID}) async {
@@ -90,7 +135,7 @@ class HttpService extends ApiBaseHelper{
 
     Map requestBody = {
       "phone": mobile,
-      "email":email,
+      "email": email,
       "deviceID": deviceID,
       "deviceToken": deviceTOK,
       "deviceType": deviceT,
@@ -106,16 +151,36 @@ class HttpService extends ApiBaseHelper{
   }
 
   //state list
-  Future<StateModel?> state_api(
-      ) async {
-    Map requestBody = {
-
-    };
+  Future<StateModel?> state_api() async {
+    Map requestBody = {};
     final response = await _apiHelper.post('getState', requestBody);
     try {
       return StateModel.fromJson(response);
     } catch (e) {
       showExceptionToast(mssg: "");
+      return null;
+    }
+  }
+
+  Future<MandatoryUpdate?> mandatoryUpdate() async {
+    await _init();
+    Map requestBody = {"token": _token};
+    final response = await _apiHelper.post('app_version', requestBody);
+    try {
+      return MandatoryUpdate.fromJson(response);
+    } catch (e) {
+      showExceptionToast(mssg: "");
+      return null;
+    }
+  }
+  ///warning popUp
+  Future<Success?> warningPop() async {
+    final response = await _apiHelper.get('app_msg');
+    try {
+      print("LEARN");
+      return Success.fromJson(response);
+    } catch (e) {
+      showExceptionToast(mssg: e.toString());
       return null;
     }
   }
@@ -143,7 +208,7 @@ class HttpService extends ApiBaseHelper{
     required String date_of_birth,
     required String city_id,
     required String phone,
-    String ?email,
+    String? email,
     required String deviceID,
     required String deviceToken,
     required String deviceType,
@@ -156,7 +221,7 @@ class HttpService extends ApiBaseHelper{
       "date_of_birth": date_of_birth,
       "city_id": city_id,
       "phone": phone,
-      "email":email,
+      "email": email,
       "deviceID": deviceID,
       "deviceToken": deviceToken,
       "deviceType": deviceType,
@@ -189,6 +254,7 @@ class HttpService extends ApiBaseHelper{
       return null;
     }
   } //Log OUT
+
 //Birthday APi
   Future<BirthDayModel?> BirthDay() async {
     await _init();
@@ -204,7 +270,6 @@ class HttpService extends ApiBaseHelper{
     }
   }
 
-  //Home APi
-
+//Home APi
 
 }

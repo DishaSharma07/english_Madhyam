@@ -25,6 +25,8 @@ void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   HttpOverrides.global = new MyHttpOverrides();
   await Firebase.initializeApp();
+  await FlutterDownloader.initialize(debug: debug, ignoreSsl: true);
+
   Future<void> backGroundHandler(RemoteMessage message)async{
 
 
@@ -105,7 +107,6 @@ void main() async{
 
     }
   });
-  await FlutterDownloader.initialize(debug: debug, ignoreSsl: true);
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,

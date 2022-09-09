@@ -44,11 +44,28 @@ Get.offUntil(MaterialPageRoute(builder: (ctx)=>LoginPage()), (route) => true) ; 
 
   Future<dynamic> post(String url, Map reqBody) async {
     if (kDebugMode) {
+
     }
     var responseJson;
 
     try {
       final response = await http.post(Uri.parse(aPPmAINuRL + url),
+          body: jsonEncode(reqBody),
+          headers: {HttpHeaders.contentTypeHeader: 'application/json'});
+      responseJson = _returnResponse(response);
+    } on SocketException {
+      throw NetworkException("No Internet Conneted");
+    }
+    return responseJson;
+  }
+  Future<dynamic> secondaryPost(String url, Map reqBody) async {
+    if (kDebugMode) {
+
+    }
+    var responseJson;
+
+    try {
+      final response = await http.post(Uri.parse(url),
           body: jsonEncode(reqBody),
           headers: {HttpHeaders.contentTypeHeader: 'application/json'});
       responseJson = _returnResponse(response);

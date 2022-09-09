@@ -17,7 +17,6 @@ import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:share_plus/share_plus.dart';
 
-
 class HomeDrawer extends StatefulWidget {
   const HomeDrawer({Key? key}) : super(key: key);
 
@@ -27,11 +26,13 @@ class HomeDrawer extends StatefulWidget {
 
 class _HomeDrawerState extends State<HomeDrawer> {
   String message = '';
-  String image='';
+  String image = '';
   final HttpService _httpService = HttpService();
   final ProfileControllers _subcontroller = Get.find();
-  final PaymentController _paymentController=Get.put(PaymentController());
+  final PaymentController _paymentController = Get.put(PaymentController());
+
   Future<void> _handleSignOut() => googleSignIn.signOut();
+
   logout() async {
     final prefs = await SharedPreferences.getInstance();
     _handleSignOut();
@@ -40,25 +41,28 @@ class _HomeDrawerState extends State<HomeDrawer> {
     setState(() {
       message = respo!.message.toString();
     });
-    if(respo!.result=="success"){
-      Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (ctx)=> const LoginPage()), (route) => false);
+    if (respo!.result == "success") {
+      Navigator.of(context).pushAndRemoveUntil(
+          MaterialPageRoute(builder: (ctx) => const LoginPage()),
+          (route) => false);
       prefs.clear();
     }
+  }
 
-  }
-  userDetails()async{
+  userDetails() async {
     final prefs = await SharedPreferences.getInstance();
-setState(() {
-  image=prefs.getString('image')!;
-});
+    setState(() {
+      image = prefs.getString('image')!;
+    });
   }
-@override
+
+  @override
   void initState() {
     // TODO: implement initState
     super.initState();
-  userDetails();
+    userDetails();
+  }
 
-}
   // final AuthController logout = AuthController();
   @override
   Widget build(BuildContext context) {
@@ -77,52 +81,56 @@ setState(() {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-              Obx((){
-                if(_subcontroller.loading.value){
-                  return Center(
-                    child: CircularProgressIndicator(),
-                  );
-
-                }else{
-                  return     InkWell(
-                    onTap: () {
-                      Get.to(() => const ProfilePage());
-                    },
-                    child: Stack(
-                      children: [
-                        Container(
-                          height: MediaQuery.of(context).size.height * 0.12,
-                          width: MediaQuery.of(context).size.width * 0.23,
-                          decoration: BoxDecoration(
-                              color: lightGreyColor,
-                              image:  DecorationImage(
-                                  image:_subcontroller.profileGet.value.user!.image!=null? NetworkImage(
-                                      _subcontroller.profileGet.value.user!.image! ):NetworkImage("https://cdn2.iconfinder.com/data/icons/instagram-ui/48/jee-74-512.png",scale: 0.2),
-                                  fit: BoxFit.cover),
-                              borderRadius: BorderRadius.circular(28)),
-                        ),
-                        Positioned.fill(
-                          child: Align(
-                            alignment: Alignment.bottomRight,
-                            child: CircleAvatar(
-                              radius: 14,
-                              backgroundColor: greyColor.withOpacity(0.6),
-                              child: Padding(
-                                padding: const EdgeInsets.all(0),
-                                child: SvgPicture.asset(
-                                  "assets/icon/Edit.svg",
-                                  color: whiteColor,
+                  Obx(() {
+                    if (_subcontroller.loading.value) {
+                      return const Center(
+                        child: CircularProgressIndicator(),
+                      );
+                    } else {
+                      return InkWell(
+                        onTap: () {
+                          Get.to(() => const ProfilePage());
+                        },
+                        child: Stack(
+                          children: [
+                            Container(
+                              height: MediaQuery.of(context).size.height * 0.12,
+                              width: MediaQuery.of(context).size.width * 0.23,
+                              decoration: BoxDecoration(
+                                  color: lightGreyColor,
+                                  image: DecorationImage(
+                                      image: _subcontroller.profileGet.value
+                                                  .user!.image !=
+                                              null
+                                          ? NetworkImage(_subcontroller
+                                              .profileGet.value.user!.image!)
+                                          : const NetworkImage(
+                                              "https://cdn2.iconfinder.com/data/icons/instagram-ui/48/jee-74-512.png",
+                                              scale: 0.2),
+                                      fit: BoxFit.cover),
+                                  borderRadius: BorderRadius.circular(28)),
+                            ),
+                            Positioned.fill(
+                              child: Align(
+                                alignment: Alignment.bottomRight,
+                                child: CircleAvatar(
+                                  radius: 14,
+                                  backgroundColor: greyColor.withOpacity(0.6),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(0),
+                                    child: SvgPicture.asset(
+                                      "assets/icon/Edit.svg",
+                                      color: whiteColor,
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
+                          ],
                         ),
-                      ],
-                    ),
-                  );
-                }
-
-              }),
+                      );
+                    }
+                  }),
                   const SizedBox(
                     height: 20,
                   ),
@@ -133,14 +141,15 @@ setState(() {
                     color: blackColor,
                   ),
                   InkWell(
-                    onTap: (){
+                    onTap: () {
                       _paymentController.purchaseHistory();
 
-                      Get.to(()=>const PurchaseHistoryScreen());
+                      Get.to(() => const PurchaseHistoryScreen());
                     },
                     child: Row(
                       children: [
-                        SvgPicture.asset("assets/icon/Document_fill.svg",color: blackColor),
+                        SvgPicture.asset("assets/icon/Document_fill.svg",
+                            color: blackColor),
                         const SizedBox(
                           width: 15,
                         ),
@@ -157,7 +166,7 @@ setState(() {
                             onPressed: () {
                               _paymentController.purchaseHistory();
 
-                              Get.to(()=>const PurchaseHistoryScreen());
+                              Get.to(() => const PurchaseHistoryScreen());
                             },
                             icon: Icon(
                               Icons.arrow_forward_ios_rounded,
@@ -197,7 +206,7 @@ setState(() {
                   //   ),
                   // ),
                   InkWell(
-                    onTap: (){
+                    onTap: () {
                       onShare(context);
                     },
                     child: Row(
@@ -218,7 +227,6 @@ setState(() {
                         IconButton(
                             onPressed: () {
                               onShare(context);
-
                             },
                             icon: Icon(
                               Icons.arrow_forward_ios_rounded,
@@ -238,8 +246,8 @@ setState(() {
                     ),
                   ),
                   InkWell(
-                    onTap:(){
-                      Get.to(()=>ContactUs());
+                    onTap: () {
+                      Get.to(() => ContactUs());
                     },
                     child: Row(
                       children: [
@@ -258,8 +266,7 @@ setState(() {
                         ),
                         IconButton(
                             onPressed: () {
-                              Get.to(()=>ContactUs());
-
+                              Get.to(() => ContactUs());
                             },
                             icon: Icon(
                               Icons.arrow_forward_ios_rounded,
@@ -270,13 +277,15 @@ setState(() {
                     ),
                   ),
                   InkWell(
-                    onTap: (){
+                    onTap: () {
                       Get.to(() => AboutUs());
-
                     },
                     child: Row(
                       children: [
-                        SvgPicture.asset("assets/icon/Document_fill.svg",color: blackColor,),
+                        SvgPicture.asset(
+                          "assets/icon/Document_fill.svg",
+                          color: blackColor,
+                        ),
                         const SizedBox(
                           width: 15,
                         ),
@@ -292,7 +301,6 @@ setState(() {
                         IconButton(
                             onPressed: () {
                               Get.to(() => AboutUs());
-
                             },
                             icon: Icon(
                               Icons.arrow_forward_ios_rounded,
@@ -324,7 +332,6 @@ setState(() {
                         IconButton(
                             onPressed: () {
                               Get.to(() => TermsCond());
-
                             },
                             icon: Icon(
                               Icons.arrow_forward_ios_rounded,
@@ -336,7 +343,7 @@ setState(() {
                   ),
                   InkWell(
                     onTap: () {
-                      Get.to(() => PrivacyPo());
+                      Get.to(() => const PrivacyPo());
                     },
                     child: Row(
                       children: [
@@ -355,8 +362,7 @@ setState(() {
                         ),
                         IconButton(
                             onPressed: () {
-                              Get.to(() => PrivacyPo());
-
+                              Get.to(() => const PrivacyPo());
                             },
                             icon: Icon(
                               Icons.arrow_forward_ios_rounded,
@@ -413,10 +419,11 @@ setState(() {
       ),
     );
   }
+
   void onShare(BuildContext context) async {
     final box = context.findRenderObject() as RenderBox?;
     await Share.share(
-        "Share English Madhyam App with your friends ,${"https://play.google.com/store/apps/details?id=com.education.english_madhyam"}",
+        "Share English Madhyam App with your friends ,${"https://play.google.com/store/search?q=english%20madhyam&c=apps"}",
         subject: "Share English Madhyam App",
         sharePositionOrigin: box!.localToGlobal(Offset.zero) & box.size);
   }
@@ -454,9 +461,9 @@ setState(() {
                     Navigator.of(context).pop(context);
                   },
                   child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(
-                          bottomLeft: const Radius.circular(15)),
+                    decoration: const BoxDecoration(
+                      borderRadius:
+                          BorderRadius.only(bottomLeft: Radius.circular(15)),
                     ),
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),

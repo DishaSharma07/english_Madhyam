@@ -4,6 +4,7 @@ import 'package:english_madhyam/src/helper/providers/profile_providers/profile_p
 import 'package:english_madhyam/src/network/NetworkException.dart';
 import 'package:get/get.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class ProfileControllers extends GetxController {
   var loading = true.obs;
@@ -32,7 +33,6 @@ class ProfileControllers extends GetxController {
       Fluttertoast.showToast(
           msg: "Please check your internet connection and retry");
       cancel();
-
     } finally {
       loading(false);
     }
@@ -51,15 +51,13 @@ class ProfileControllers extends GetxController {
   }
 
   void updateprofile(
-      {
-      String? name,
+      {String? name,
       String? dateob,
       String? image,
-       String? State,
-       String ?City,
+      String? State,
+      String? City,
       String? Email,
-      String? userName
-      }) async {
+      String? userName}) async {
     try {
       updateloading(true);
       var updateprofile = await ProfileProvider().updateprofile(
@@ -70,20 +68,23 @@ class ProfileControllers extends GetxController {
           Email: Email,
           City: City,
           username: userName);
-      if (updateprofile!=null) {
+      if (updateprofile != null) {
+        print(userName);
+        print(name);
         Fluttertoast.showToast(msg: updateprofile.message.toString());
-          cancel();
+        final prefs = await SharedPreferences.getInstance();
+        name != null ? prefs.setString("name", name) : null;
+        image != null ? prefs.setString("image", image) : null;
+        cancel();
 
-          refreshList();
+        refreshList();
       } else {
         Fluttertoast.showToast(msg: updateprofile!.message.toString());
         cancel();
-
       }
     } catch (e) {
       Fluttertoast.showToast(msg: e.toString());
-    cancel();
-
+      cancel();
     } finally {
       updateloading(false);
     }

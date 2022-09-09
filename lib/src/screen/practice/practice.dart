@@ -33,7 +33,7 @@ class _PracticeState extends State<Practice> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    controller.quizzesList(cat: widget.id);
+    // controller.quizzesList(cat: widget.id);
   }
 
   @override
@@ -54,134 +54,153 @@ class _PracticeState extends State<Practice> {
           ),
         ),
       ),
-      body: GetX<QuizListController>(
-          init: QuizListController(),
-        builder: (_) {
-          if(_.loading.value==false){
-           if(_.quizList.value.content!.isEmpty){
-             return Container(
-               height: MediaQuery.of(context).size.height*0.8,
-                 child: Center(
+      body: Obx((){
+        if(controller.isDataProcessing.value==false){
+          if(controller.quizListingQuiz.isEmpty){
+
+            Future.delayed(const Duration(seconds: 3)).then((value) {
+              return SizedBox(
+                height: MediaQuery.of(context).size.height*0.8,
+                child: Center(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                       children: [
-                          Lottie.asset('assets/animations/49993-search.json',
-                            height: MediaQuery.of(context).size.height * 0.2),
-                             CustomDmSans(text: "No Editorials ",color: blackColor,)
-                   ],
-                 ),
-               ),
-             );
-           }else{
-             return   ListView.builder(
-                 itemCount: _.quizList.value.content!.length,
-                 itemBuilder: (BuildContext ctx, int index) {
-                   return GestureDetector(
-                     onTap: () {
-                       if(_.quizList.value.content![index].completed==true){
-                         Get.to(()=>PerformanceReport(
-                             id: _.quizList.value.content![index].id!.toString(),
-                             catid: widget.id.toString(),
-                             eid: "",
-                             title: widget.title.toString(),
-                           Route: 1,
-                          )
-                         );
-                       }else{
-                         Quizcontroller.examids( _.quizList.value.content![index].id!);
-
-                         Get.to(() =>  TestInstructions(catTitle:widget.title ,examid: _.quizList.value.content![index].id!,title: _.quizList.value.content![index].title.toString(),type: 1,));
-                       }
-
-                     },
-                     child: Container(
-                       margin: const EdgeInsets.only(
-                           left: 15, right: 15, top: 15, bottom: 0),
-                       padding: const EdgeInsets.all(10),
-                       decoration: BoxDecoration(
-                         color: Color(hexStringToHexInt(color[index % 3])),
-                         boxShadow: [
-                           BoxShadow(
-                               blurRadius: 2,
-                               color: Colors.grey.shade400,
-                               offset: const Offset(0, 5))
-                         ],
-                         borderRadius: BorderRadius.circular(15),
-                       ),
-                       child: Row(
-                         children: [
-                           Container(
-                             padding: const EdgeInsets.all(15),
-                             decoration: BoxDecoration(
-                               color: purpleColor,
-                               borderRadius: BorderRadius.circular(10),
-                             ),
-                             child: Center(
-                               child: SvgPicture.asset("assets/icon/clock_timer.svg"),
-                             ),
-                           ),
-                           Expanded(
-                             child: Padding(
-                               padding: const EdgeInsets.only(left: 8.0, right: 0),
-                               child: Column(
-                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                 children: [
-                                   CustomDmSans(
-                                     text: _.quizList.value.content![index].title.toString(),
-                                     color: blackColor,
-                                     fontWeight: FontWeight.w600,
-                                   ),
-                                   Padding(
-                                     padding:
-                                     const EdgeInsets.only(right: 20.0, top: 8),
-                                     child: Row(
-                                       mainAxisAlignment:
-                                       MainAxisAlignment.spaceBetween,
-                                       children: [
-                                         Text(
-                                           _.quizList.value.content![index].totalQuestions.toString() + " Ques",
-                                           style: GoogleFonts.dmSans(
-                                               color: darkGreyColor),
-                                         ),
-                                         CircleAvatar(
-                                           backgroundColor: greyColor,
-                                           maxRadius: 2,
-                                         ),
-                                         Text(
-                                           _.quizList.value.content![index].duration.toString() + " Mins",
-                                           style: GoogleFonts.dmSans(
-                                               color: darkGreyColor),
-                                         ),
-                                         CircleAvatar(
-                                           backgroundColor: greyColor,
-                                           maxRadius: 2,
-                                         ),
-                                         Text(
-
-                                           _.quizList.value.content![index].mark.toString()+ " Marks",
-                                           style: GoogleFonts.dmSans(
-                                               color: darkGreyColor),
-                                         ),
-                                       ],
-                                     ),
-                                   ),
-                                 ],
-                               ),
-                             ),
-                           ),
-                         ],
-                       ),
-                     ),
-                   );
-                 });
-           }
-          }else{
+                    children: [
+                      Lottie.asset('assets/animations/49993-search.json',
+                          height: MediaQuery.of(context).size.height * 0.2),
+                      CustomDmSans(text: "No Editorials ",color: blackColor,)
+                    ],
+                  ),
+                ),
+              );
+            });
             return Center(
               child: Lottie.asset("assets/animations/loader.json",height: MediaQuery.of(context).size.height*0.2,),
             );
+
+          }else{
+            return   ListView.builder(
+                controller: controller.quizListScroll,
+                itemCount: controller.quizListingQuiz.length,
+                itemBuilder: (BuildContext ctx, int index) {
+                  return Column(
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          if(controller.quizListingQuiz[index].completed==true){
+                            Get.to(()=>PerformanceReport(
+                              id: controller.quizListingQuiz[index].id!.toString(),
+                              catid: widget.id.toString(),
+                              eid: "",
+                              title: widget.title.toString(),
+                              Route: 1,
+                            )
+                            );
+                          }else{
+                            Quizcontroller.examids( controller.quizListingQuiz[index].id!);
+
+                            Get.to(() =>  TestInstructions(catTitle:widget.title ,examid: controller.quizListingQuiz[index].id!,title: controller.quizListingQuiz[index].title.toString(),type: 1,));
+                          }
+
+                        },
+                        child: Container(
+                          margin: const EdgeInsets.only(
+                              left: 15, right: 15, top: 15, bottom: 0),
+                          padding: const EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                            color: Color(hexStringToHexInt(color[index % 3])),
+                            boxShadow: [
+                              BoxShadow(
+                                  blurRadius: 2,
+                                  color: Colors.grey.shade400,
+                                  offset: const Offset(0, 5))
+                            ],
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          child: Row(
+                            children: [
+                              Container(
+                                padding: const EdgeInsets.all(15),
+                                decoration: BoxDecoration(
+                                  color: purpleColor,
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: Center(
+                                  child: SvgPicture.asset("assets/icon/clock_timer.svg"),
+                                ),
+                              ),
+                              Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsets.only(left: 8.0, right: 0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      CustomDmSans(
+                                        text: controller.quizListingQuiz[index].title.toString(),
+                                        color: blackColor,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                      Padding(
+                                        padding:
+                                        const EdgeInsets.only(right: 20.0, top: 8),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Text(
+                                              controller.quizListingQuiz[index].totalQuestions.toString() + " Ques",
+                                              style: GoogleFonts.dmSans(
+                                                  color: darkGreyColor),
+                                            ),
+                                            CircleAvatar(
+                                              backgroundColor: greyColor,
+                                              maxRadius: 2,
+                                            ),
+                                            Text(
+                                              controller.quizListingQuiz[index].duration.toString() + " Mins",
+                                              style: GoogleFonts.dmSans(
+                                                  color: darkGreyColor),
+                                            ),
+                                            CircleAvatar(
+                                              backgroundColor: greyColor,
+                                              maxRadius: 2,
+                                            ),
+                                            Text(
+
+                                              controller.quizListingQuiz[index].mark.toString()+ " Marks",
+                                              style: GoogleFonts.dmSans(
+                                                  color: darkGreyColor),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      controller.isMoreDataAvailable.value==true? Center(
+                        child:
+                        Lottie.asset("assets/animations/loader.json"),
+                      ):const SizedBox(),
+                    ],
+                  );
+                });
           }
+        }else{
+          return Center(
+            child: Lottie.asset("assets/animations/loader.json",height: MediaQuery.of(context).size.height*0.2,),
+          );
         }
-      ),
+      }),
+      // body: GetX<QuizListController>(
+      //     init: QuizListController(),
+      //   builder: (_) {
+      //
+      //   }
+      // ),
     );
   }
 }

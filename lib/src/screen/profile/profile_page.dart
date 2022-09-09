@@ -77,7 +77,7 @@ class _ProfilePageState extends State<ProfilePage> {
   FetchUserData() {
     setState(() {
       userName.text =
-          _profileControllers.profileGet.value.user!.username.toString();
+          _profileControllers.profileGet.value.user!.name.toString();
       phone.text = _profileControllers.profileGet.value.user!.phone.toString();
       email.text = _profileControllers.profileGet.value.user!.email.toString();
       dob.text =
@@ -218,7 +218,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             children: [
                               CustomDmSans(
                                 text: _profileControllers
-                                    .profileGet.value.user!.username
+                                    .profileGet.value.user!.name
                                     .toString(),
                                 fontSize: 20,
                                 fontWeight: FontWeight.w500,
@@ -446,8 +446,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             "-${dateNew.day}";
 
                           _profileControllers.updateprofile(
-                              name: _profileControllers
-                                  .profileGet.value.user!.name,
+                              name: userName.text.trim(),
                               City:  dropdownvalueCity.toString()!="null"?dropdownvalueCity:_profileControllers.profileGet.value.user!.cityId.toString(),
                             State: dropdownvalueState.toString()!="null"?dropdownvalueState:_profileControllers.profileGet.value.user!.stateId.toString(),
                               image:

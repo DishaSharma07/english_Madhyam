@@ -48,7 +48,7 @@ class _EditorialsDetailsState extends State<EditorialsDetails>
       Get.put(EditorialDetailController());
   late bool _permissionReady;
   String TaskID = "";
-  bool darkmode = false;
+
   final ReceivePort _port = ReceivePort();
   List<TaskInfo>? _tasks;
 
@@ -62,6 +62,7 @@ class _EditorialsDetailsState extends State<EditorialsDetails>
     learning5,
     learning6
   ];
+  bool darkmode = false;
   FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
       FlutterLocalNotificationsPlugin();
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
@@ -85,17 +86,22 @@ class _EditorialsDetailsState extends State<EditorialsDetails>
       return;
     }
     _port.listen((dynamic data) {
-      final taskId = (data as List<dynamic>)[0] as String;
+      // final taskId = (data as List<dynamic>)[0] as String;
       final status = data[1] as DownloadTaskStatus;
       final progress = data[2] as int;
 
-      print(
-        'Callback on UI isolate: '
-            'task ($taskId) is in status ($status) and process ($progress)',
-      );
-
+      // print(
+      //   'Callback on UI isolate: '
+      //       'task ($TaskID) is in status ($status) and process ($progress)',
+      // );
+      if (status.toString() == "DownloadTaskStatus(3)" && progress == 100 && TaskID != null) {
+        String query = "SELECT * FROM task WHERE task_id='" + TaskID + "'";
+        var tasks = FlutterDownloader.loadTasksWithRawQuery(query: query);
+        //if the task exists, open it
+        if (tasks != null) FlutterDownloader.open(taskId: TaskID);
+      }
       if (_tasks != null && _tasks!.isNotEmpty) {
-        final task = _tasks!.firstWhere((task) => task.taskId == taskId);
+        final task = _tasks!.firstWhere((task) => task.taskId == TaskID);
         setState(() {
           task
             ..status = status
@@ -115,10 +121,10 @@ class _EditorialsDetailsState extends State<EditorialsDetails>
       DownloadTaskStatus status,
       int progress,
       ) {
-    print(
-      'Callback on background isolate: '
-          'task ($id) is in status ($status) and process ($progress)',
-    );
+    // print(
+    //   'Callback on background isolate: '
+    //       'task ($id) is in status ($status) and process ($progress)',
+    // );
 
     IsolateNameServer.lookupPortByName('downloader_send_port')
         ?.send([id, status, progress]);
@@ -156,12 +162,12 @@ class _EditorialsDetailsState extends State<EditorialsDetails>
     String? externalStorageDirPath;
     if (Platform.isAndroid) {
       try {
-        print("NOt UUUUU exception");
+        // print("NOt UUUUU exception");
 
         externalStorageDirPath =
             (await getExternalStorageDirectory())!.path;
       } catch (e) {
-        print(e.toString() + "exception");
+        // print(e.toString() + "exception");
         final directory = (await getExternalStorageDirectory())!.absolute.path;
         externalStorageDirPath = directory;
       }
@@ -169,19 +175,19 @@ class _EditorialsDetailsState extends State<EditorialsDetails>
       externalStorageDirPath =
           (await getApplicationDocumentsDirectory()).absolute.path;
     }
-    print(externalStorageDirPath.toString());
+    // print(externalStorageDirPath.toString());
     return externalStorageDirPath;
   }
 
   Future<void> _prepareSaveDir() async {
     _localPath = (await _findLocalPath())!;
-    print(_localPath.toString() + "oooooooo");
+    // print(_localPath.toString() + "oooooooo");
     final savedDir = Directory(_localPath);
     final hasExisted = await savedDir.exists();
-    print(hasExisted);
+    // print(hasExisted);
 
     if (!hasExisted) {
-      print(hasExisted);
+      // print(hasExisted);
       await savedDir.create();
     }
   }
@@ -196,6 +202,7 @@ class _EditorialsDetailsState extends State<EditorialsDetails>
     super.initState();
 
     _permissionReady = false;
+    _bindBackgroundIsolate();
     FlutterDownloader.registerCallback(downloadCallback);
     if (_permissionReady) {
       _prepareSaveDir();
@@ -237,7 +244,7 @@ class _EditorialsDetailsState extends State<EditorialsDetails>
   }
 
   void _requestDownload(TaskInfo task) async {
-    print("kkkkk");
+    // print("kkkkk");
     task.taskId = await FlutterDownloader.enqueue(
       url: task.link!,
       saveInPublicStorage: true,
@@ -248,7 +255,7 @@ class _EditorialsDetailsState extends State<EditorialsDetails>
       openFileFromNotification: true,
     );
     setState(() {
-      print(task.status);
+      // print(task.status);
       TaskID = task.taskId!;
     });
   }

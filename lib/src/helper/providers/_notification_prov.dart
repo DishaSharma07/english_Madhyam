@@ -20,9 +20,12 @@ class NotificationProvider extends GetConnect {
     Map requestBody = {
       "token": prefs.getString("token"),
     };
+    print(requestBody);
 
     final response =
         await _apiBaseHelper.post('notification_list', requestBody);
+    print(response);
+
     try {
       return NotificationModel.fromJson(response);
     } on NetworkException{

@@ -104,7 +104,7 @@ class _EditorialsPageState extends State<EditorialsPage> {
                 context: context,
                 initialDate: dateTime,
                 firstDate: DateTime(2000),
-                lastDate: DateTime.now().add(Duration(days: 1),)
+                lastDate: DateTime.now().add(const Duration(seconds: 10),)
 
                 theme: ThemeData(primarySwatch: Colors.pink),
               );

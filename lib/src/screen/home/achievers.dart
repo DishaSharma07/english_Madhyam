@@ -132,7 +132,6 @@ class _AchieverstakeState extends State<Achieverstake> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: widget.achievers.asMap().entries.map((entry) {
-
           return GestureDetector(
             onTap: () {
               _sliderController.animateToPage(

@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class SubmitExamController extends GetxController{
-  RxBool loading =true.obs;
+  RxBool loading =false.obs;
   Rx<SubmitExam>submit=SubmitExam().obs;
 
 

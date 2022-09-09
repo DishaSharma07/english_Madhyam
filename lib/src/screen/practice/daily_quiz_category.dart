@@ -73,10 +73,10 @@ backgroundColor: purpleColor,
                             title: _controller.quizListing[index].name! ,
                             id: _controller.quizListing[index].id!.toString(),),
                             );
-                            _controller.quizzesList(
-                              cat:_controller.quizListing[index].id!.toString()
-                            );
-                          },
+                          _controller.quizListingQuiz.clear();
+                          _controller.page=1;
+                          _controller.getTaskQuiz(cat: _controller.quizListing[index].id!.toString(),);
+                        },
                         child: Container(
                           margin: const EdgeInsets.all(4),
                           padding: const EdgeInsets.all(8),

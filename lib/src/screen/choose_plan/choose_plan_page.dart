@@ -79,7 +79,7 @@ class _ChoosePlanState extends State<ChoosePlan> with TickerProviderStateMixin {
             Obx(() {
               if (_planDetailsController.isDataProcessing.value) {
                 return Container(
-                  height: MediaQuery.of(context).size.height * 0.5,
+                  height: MediaQuery.of(context).size.height * 0.4,
                   alignment: Alignment.center,
                   child: Lottie.asset("assets/animations/loader.json",
                       height: MediaQuery.of(context).size.height * 0.2),
@@ -93,7 +93,7 @@ class _ChoosePlanState extends State<ChoosePlan> with TickerProviderStateMixin {
                       _planDetailsController.lstTask.isEmpty
                           ? Container(
                               alignment: Alignment.center,
-                              height: MediaQuery.of(context).size.height * 0.7,
+                              height: MediaQuery.of(context).size.height * 0.6,
                               child: Lottie.asset(
                                   "assets/animations/49993-search.json",
                                   height:
@@ -206,7 +206,7 @@ class _ChoosePlanState extends State<ChoosePlan> with TickerProviderStateMixin {
                       _planDetailsController.lstTask2.isEmpty
                           ? Container(
                               alignment: Alignment.center,
-                              height: MediaQuery.of(context).size.height * 0.7,
+                              height: MediaQuery.of(context).size.height * 0.6,
                               child: Lottie.asset(
                                   "assets/animations/49993-search.json",
                                   height:
