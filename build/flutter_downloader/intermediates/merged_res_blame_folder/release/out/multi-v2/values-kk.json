@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_downloader/intermediates/merged_res/release/values-kk/values-kk.xml",
+            "map": [
+                {
+                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/f029137b02f3b27bf05ac27073628e69/transformed/core-1.9.0/res/values-kk/values-kk.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_downloader/intermediates/incremental/mergeReleaseResources/merged.dir/values-kk/values-kk.xml",
+            "map": [
+                {
+                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/f029137b02f3b27bf05ac27073628e69/transformed/core-1.9.0/res/values-kk/values-kk.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

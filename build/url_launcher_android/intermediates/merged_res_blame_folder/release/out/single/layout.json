@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/url_launcher_android/intermediates/merged_res/release/layout/notification_template_icon_group.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/d88caaa22406966a164be15a8d5c0322/transformed/core-1.10.1/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/url_launcher_android/intermediates/merged_res/release/layout/notification_template_part_time.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/d88caaa22406966a164be15a8d5c0322/transformed/core-1.10.1/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/url_launcher_android/intermediates/merged_res/release/layout/browser_actions_context_menu_page.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/6fb0e4535e56cdd4431f4fffedc35ebe/transformed/browser-1.5.0/res/layout/browser_actions_context_menu_page.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/url_launcher_android/intermediates/merged_res/release/layout/notification_action.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/d88caaa22406966a164be15a8d5c0322/transformed/core-1.10.1/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/url_launcher_android/intermediates/merged_res/release/layout/notification_action_tombstone.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/d88caaa22406966a164be15a8d5c0322/transformed/core-1.10.1/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/url_launcher_android/intermediates/merged_res/release/layout/browser_actions_context_menu_row.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/6fb0e4535e56cdd4431f4fffedc35ebe/transformed/browser-1.5.0/res/layout/browser_actions_context_menu_row.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/url_launcher_android/intermediates/merged_res/release/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/d88caaa22406966a164be15a8d5c0322/transformed/core-1.10.1/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/url_launcher_android/intermediates/merged_res/release/layout/custom_dialog.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/d88caaa22406966a164be15a8d5c0322/transformed/core-1.10.1/res/layout/custom_dialog.xml"
+    }
+]

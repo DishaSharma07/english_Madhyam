@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/interpolator-v21/m3_sys_motion_easing_standard.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/285e4ce1bc4a7cc1fbad1426472e6da0/transformed/material-1.11.0/res/interpolator-v21/m3_sys_motion_easing_standard.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/interpolator-v21/m3_sys_motion_easing_standard_decelerate.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/285e4ce1bc4a7cc1fbad1426472e6da0/transformed/material-1.11.0/res/interpolator-v21/m3_sys_motion_easing_standard_decelerate.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/interpolator-v21/m3_sys_motion_easing_standard_accelerate.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/285e4ce1bc4a7cc1fbad1426472e6da0/transformed/material-1.11.0/res/interpolator-v21/m3_sys_motion_easing_standard_accelerate.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/interpolator-v21/m3_sys_motion_easing_emphasized_decelerate.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/285e4ce1bc4a7cc1fbad1426472e6da0/transformed/material-1.11.0/res/interpolator-v21/m3_sys_motion_easing_emphasized_decelerate.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/interpolator-v21/mtrl_fast_out_slow_in.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/285e4ce1bc4a7cc1fbad1426472e6da0/transformed/material-1.11.0/res/interpolator-v21/mtrl_fast_out_slow_in.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/interpolator-v21/mtrl_linear_out_slow_in.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/285e4ce1bc4a7cc1fbad1426472e6da0/transformed/material-1.11.0/res/interpolator-v21/mtrl_linear_out_slow_in.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/interpolator-v21/mtrl_fast_out_linear_in.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/285e4ce1bc4a7cc1fbad1426472e6da0/transformed/material-1.11.0/res/interpolator-v21/mtrl_fast_out_linear_in.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/interpolator-v21/m3_sys_motion_easing_emphasized.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/285e4ce1bc4a7cc1fbad1426472e6da0/transformed/material-1.11.0/res/interpolator-v21/m3_sys_motion_easing_emphasized.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/interpolator-v21/m3_sys_motion_easing_emphasized_accelerate.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/285e4ce1bc4a7cc1fbad1426472e6da0/transformed/material-1.11.0/res/interpolator-v21/m3_sys_motion_easing_emphasized_accelerate.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/interpolator-v21/m3_sys_motion_easing_linear.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/285e4ce1bc4a7cc1fbad1426472e6da0/transformed/material-1.11.0/res/interpolator-v21/m3_sys_motion_easing_linear.xml"
+    }
+]

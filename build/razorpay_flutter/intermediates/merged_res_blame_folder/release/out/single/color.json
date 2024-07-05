@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/razorpay_flutter/intermediates/merged_res/release/color/wallet_secondary_text_holo_dark.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/336587ed82505ea4175b234a4972c16c/transformed/jetified-play-services-wallet-18.1.3/res/color/wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/razorpay_flutter/intermediates/merged_res/release/color/common_google_signin_btn_tint.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/f503e8844c59c42dfc11139664546715/transformed/jetified-play-services-base-18.3.0/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/razorpay_flutter/intermediates/merged_res/release/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/f503e8844c59c42dfc11139664546715/transformed/jetified-play-services-base-18.3.0/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/razorpay_flutter/intermediates/merged_res/release/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/f503e8844c59c42dfc11139664546715/transformed/jetified-play-services-base-18.3.0/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/razorpay_flutter/intermediates/merged_res/release/color/wallet_primary_text_holo_light.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/336587ed82505ea4175b234a4972c16c/transformed/jetified-play-services-wallet-18.1.3/res/color/wallet_primary_text_holo_light.xml"
+    }
+]

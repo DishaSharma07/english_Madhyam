@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/color-night-v8/material_timepicker_clockface.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/285e4ce1bc4a7cc1fbad1426472e6da0/transformed/material-1.11.0/res/color-night-v8/material_timepicker_clockface.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/color-night-v8/material_timepicker_modebutton_tint.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/285e4ce1bc4a7cc1fbad1426472e6da0/transformed/material-1.11.0/res/color-night-v8/material_timepicker_modebutton_tint.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/color-night-v8/material_timepicker_button_stroke.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/285e4ce1bc4a7cc1fbad1426472e6da0/transformed/material-1.11.0/res/color-night-v8/material_timepicker_button_stroke.xml"
+    }
+]

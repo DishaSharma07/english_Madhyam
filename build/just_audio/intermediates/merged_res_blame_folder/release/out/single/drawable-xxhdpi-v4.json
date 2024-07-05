@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/just_audio/intermediates/merged_res/release/drawable-xxhdpi-v4/media_session_service_notification_ic_music_note.png",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/b76c5f93743c35eddce2e5174a8bf42b/transformed/jetified-media2-session-1.2.1/res/drawable-xxhdpi-v4/media_session_service_notification_ic_music_note.png"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/just_audio/intermediates/merged_res/release/drawable-xxhdpi-v4/media_session_service_notification_ic_skip_to_next.png",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/b76c5f93743c35eddce2e5174a8bf42b/transformed/jetified-media2-session-1.2.1/res/drawable-xxhdpi-v4/media_session_service_notification_ic_skip_to_next.png"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/just_audio/intermediates/merged_res/release/drawable-xxhdpi-v4/media_session_service_notification_ic_skip_to_previous.png",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/b76c5f93743c35eddce2e5174a8bf42b/transformed/jetified-media2-session-1.2.1/res/drawable-xxhdpi-v4/media_session_service_notification_ic_skip_to_previous.png"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/just_audio/intermediates/merged_res/release/drawable-xxhdpi-v4/media_session_service_notification_ic_play.png",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/b76c5f93743c35eddce2e5174a8bf42b/transformed/jetified-media2-session-1.2.1/res/drawable-xxhdpi-v4/media_session_service_notification_ic_play.png"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/just_audio/intermediates/merged_res/release/drawable-xxhdpi-v4/media_session_service_notification_ic_pause.png",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/b76c5f93743c35eddce2e5174a8bf42b/transformed/jetified-media2-session-1.2.1/res/drawable-xxhdpi-v4/media_session_service_notification_ic_pause.png"
+    }
+]

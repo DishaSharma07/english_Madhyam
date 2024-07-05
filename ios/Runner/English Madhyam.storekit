@@ -1,0 +1,65 @@
+{
+  "identifier" : "91FA95A8",
+  "nonRenewingSubscriptions" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "6447180567",
+      "localizations" : [
+        {
+          "description" : "A lower level subscription",
+          "displayName" : "One Month Plan",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.EngMadhyam.englishMadhyam.onemonthplan",
+      "referenceName" : "One Month Plan ",
+      "type" : "NonRenewingSubscription"
+    },
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "6447180689",
+      "localizations" : [
+        {
+          "description" : "A medium level subscription.",
+          "displayName" : "Three Months Plan",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.EngMadhyam.englishMadhyam.threemonthplan",
+      "referenceName" : "Three Months Plan",
+      "type" : "NonRenewingSubscription"
+    },
+    {
+      "displayPrice" : "5.99",
+      "familyShareable" : false,
+      "internalID" : "6447180825",
+      "localizations" : [
+        {
+          "description" : " A high level subscription",
+          "displayName" : "Twelve Months Plan",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.EngMadhyam.englishMadhyam.twelvemonthplan",
+      "referenceName" : "Twelve Months Plan",
+      "type" : "NonRenewingSubscription"
+    }
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6443469637",
+    "_developerTeamID" : "4574249ZQZ",
+    "_lastSynchronizedDate" : 702557725.16562605
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "761439720578",
+    "project_id": "english-madhyam-4ceec",
+    "storage_bucket": "english-madhyam-4ceec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761439720578:android:d65591580e690e0f06509b",
+        "android_client_info": {
+          "package_name": "com.education.english_madhyam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761439720578-ied25rqfr9kengevdq8kfuvoqemus2sq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMww_v8EFxPdB7eqPH1yUmz-_H0HbxQvk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761439720578-ied25rqfr9kengevdq8kfuvoqemus2sq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761439720578:android:8a4afd0d8adf4dd006509b",
+        "android_client_info": {
+          "package_name": "com.englishmadhyam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761439720578-ied25rqfr9kengevdq8kfuvoqemus2sq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMww_v8EFxPdB7eqPH1yUmz-_H0HbxQvk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761439720578-ied25rqfr9kengevdq8kfuvoqemus2sq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/layout-land/material_timepicker.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/285e4ce1bc4a7cc1fbad1426472e6da0/transformed/material-1.11.0/res/layout-land/material_timepicker.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/layout-land/mtrl_picker_header_dialog.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/285e4ce1bc4a7cc1fbad1426472e6da0/transformed/material-1.11.0/res/layout-land/mtrl_picker_header_dialog.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/layout-land/material_clock_period_toggle_land.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/285e4ce1bc4a7cc1fbad1426472e6da0/transformed/material-1.11.0/res/layout-land/material_clock_period_toggle_land.xml"
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_res/release/xml/image_share_filepaths.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/a9c368e82978c608025ef203191d3685/transformed/browser-1.6.0/res/xml/image_share_filepaths.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_res/release/xml/provider_paths.xml",
+        "source": "/Users/dishasharma/.pub-cache/hosted/pub.dev/flutter_inappwebview_android-1.0.13/android/src/main/res/xml/provider_paths.xml"
+    }
+]

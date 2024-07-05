@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/razorpay_flutter/intermediates/merged_res/release/drawable-ldpi-v4/ic_alert.png",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/res/drawable-ldpi-v4/ic_alert.png"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/razorpay_flutter/intermediates/merged_res/release/drawable-ldpi-v4/rzp_logo.png",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/res/drawable-ldpi-v4/rzp_logo.png"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/razorpay_flutter/intermediates/merged_res/release/drawable-ldpi-v4/ic_tick_mark.png",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/res/drawable-ldpi-v4/ic_tick_mark.png"
+    }
+]

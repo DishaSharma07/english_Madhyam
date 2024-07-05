@@ -1,0 +1,1253 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.education.english_madhyam"
+4    android:versionCode="34"
+5    android:versionName="1.29" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml
+10    <!-- <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" /> -->
+11
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:7:5-80
+12-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:7:22-78
+13    <uses-permission
+13-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:8:5-79
+14        android:name="android.permission.READ_EXTERNAL_STORAGE"
+14-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:8:22-77
+15        android:maxSdkVersion="32" />
+15-->[:file_picker] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:11:9-35
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:9:5-66
+16-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:9:22-64
+17    <uses-permission android:name="android.permission.VIBRATE" />
+17-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:10:5-66
+17-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:10:22-63
+18    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+18-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:11:5-80
+18-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:11:22-78
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-68
+19-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-65
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
+20-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-79
+20-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:11:22-76
+21    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+21-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:13:5-77
+21-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:13:22-74
+22    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+22-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-81
+22-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:11:22-78
+23    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+23-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:12:5-79
+23-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:12:22-76
+24
+25    <queries>
+25-->[:file_picker] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:13:5-19:15
+26        <intent>
+26-->[:file_picker] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:14:9-18:18
+27            <action android:name="android.intent.action.GET_CONTENT" />
+27-->[:file_picker] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-72
+27-->[:file_picker] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:15:21-69
+28
+29            <data android:mimeType="*/*" />
+29-->[:file_picker] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-44
+29-->[:file_picker] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:17:19-41
+30        </intent>
+31        <intent>
+31-->[:flutter_downloader] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_downloader/intermediates/merged_manifest/release/AndroidManifest.xml:11:9-13:18
+32            <action android:name="android.intent.action.VIEW" />
+32-->[:flutter_downloader] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_downloader/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-65
+32-->[:flutter_downloader] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_downloader/intermediates/merged_manifest/release/AndroidManifest.xml:12:21-62
+33        </intent>
+34        <intent>
+34-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-12:18
+35            <action android:name="android.support.customtabs.action.CustomTabsService" />
+35-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-90
+35-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:21-87
+36        </intent>
+37        <intent>
+37-->[com.android.billingclient:billing:6.1.0] /Users/dishasharma/.gradle/caches/transforms-3/7bf508bca392226871f8c0f399e8326b/transformed/jetified-billing-6.1.0/AndroidManifest.xml:13:9-15:18
+38            <action android:name="com.android.vending.billing.InAppBillingService.BIND" />
+38-->[com.android.billingclient:billing:6.1.0] /Users/dishasharma/.gradle/caches/transforms-3/7bf508bca392226871f8c0f399e8326b/transformed/jetified-billing-6.1.0/AndroidManifest.xml:14:13-91
+38-->[com.android.billingclient:billing:6.1.0] /Users/dishasharma/.gradle/caches/transforms-3/7bf508bca392226871f8c0f399e8326b/transformed/jetified-billing-6.1.0/AndroidManifest.xml:14:21-88
+39        </intent>
+40        <intent>
+40-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:11:9-17:18
+41            <action android:name="android.intent.action.VIEW" />
+41-->[:flutter_downloader] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_downloader/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-65
+41-->[:flutter_downloader] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_downloader/intermediates/merged_manifest/release/AndroidManifest.xml:12:21-62
+42
+43            <data
+43-->[:file_picker] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-44
+44                android:mimeType="*/*"
+44-->[:file_picker] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:17:19-41
+45                android:scheme="*" />
+46        </intent>
+47        <intent>
+47-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:18:9-27:18
+48            <action android:name="android.intent.action.VIEW" />
+48-->[:flutter_downloader] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_downloader/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-65
+48-->[:flutter_downloader] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_downloader/intermediates/merged_manifest/release/AndroidManifest.xml:12:21-62
+49
+50            <category android:name="android.intent.category.BROWSABLE" />
+50-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:21:13-74
+50-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:21:23-71
+51
+52            <data
+52-->[:file_picker] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-44
+53                android:host="pay"
+54                android:mimeType="*/*"
+54-->[:file_picker] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:17:19-41
+55                android:scheme="upi" />
+56        </intent>
+57        <intent>
+57-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:28:9-30:18
+58            <action android:name="android.intent.action.MAIN" />
+58-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:41:17-68
+58-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:41:25-66
+59        </intent>
+60        <intent>
+60-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:31:9-35:18
+61            <action android:name="android.intent.action.SEND" />
+61-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:32:13-65
+61-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:32:21-62
+62
+63            <data android:mimeType="*/*" />
+63-->[:file_picker] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-44
+63-->[:file_picker] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:17:19-41
+64        </intent>
+65        <intent>
+65-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:36:9-38:18
+66            <action android:name="rzp.device_token.share" />
+66-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:37:13-61
+66-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:37:21-58
+67        </intent>
+68        <intent>
+68-->[androidx.media2:media2-session:1.2.1] /Users/dishasharma/.gradle/caches/transforms-3/b76c5f93743c35eddce2e5174a8bf42b/transformed/jetified-media2-session-1.2.1/AndroidManifest.xml:25:9-27:18
+69            <action android:name="android.media.browse.MediaBrowserService" />
+69-->[androidx.media2:media2-session:1.2.1] /Users/dishasharma/.gradle/caches/transforms-3/b76c5f93743c35eddce2e5174a8bf42b/transformed/jetified-media2-session-1.2.1/AndroidManifest.xml:26:13-79
+69-->[androidx.media2:media2-session:1.2.1] /Users/dishasharma/.gradle/caches/transforms-3/b76c5f93743c35eddce2e5174a8bf42b/transformed/jetified-media2-session-1.2.1/AndroidManifest.xml:26:21-76
+70        </intent>
+71        <intent>
+71-->[androidx.media2:media2-session:1.2.1] /Users/dishasharma/.gradle/caches/transforms-3/b76c5f93743c35eddce2e5174a8bf42b/transformed/jetified-media2-session-1.2.1/AndroidManifest.xml:28:9-30:18
+72            <action android:name="androidx.media2.session.MediaSessionService" />
+72-->[androidx.media2:media2-session:1.2.1] /Users/dishasharma/.gradle/caches/transforms-3/b76c5f93743c35eddce2e5174a8bf42b/transformed/jetified-media2-session-1.2.1/AndroidManifest.xml:29:13-82
+72-->[androidx.media2:media2-session:1.2.1] /Users/dishasharma/.gradle/caches/transforms-3/b76c5f93743c35eddce2e5174a8bf42b/transformed/jetified-media2-session-1.2.1/AndroidManifest.xml:29:21-79
+73        </intent>
+74        <intent>
+74-->[androidx.media2:media2-session:1.2.1] /Users/dishasharma/.gradle/caches/transforms-3/b76c5f93743c35eddce2e5174a8bf42b/transformed/jetified-media2-session-1.2.1/AndroidManifest.xml:31:9-33:18
+75            <action android:name="androidx.media2.session.MediaLibraryService" />
+75-->[androidx.media2:media2-session:1.2.1] /Users/dishasharma/.gradle/caches/transforms-3/b76c5f93743c35eddce2e5174a8bf42b/transformed/jetified-media2-session-1.2.1/AndroidManifest.xml:32:13-82
+75-->[androidx.media2:media2-session:1.2.1] /Users/dishasharma/.gradle/caches/transforms-3/b76c5f93743c35eddce2e5174a8bf42b/transformed/jetified-media2-session-1.2.1/AndroidManifest.xml:32:21-79
+76        </intent>
+77    </queries>
+78
+79    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
+79-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-89
+79-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-86
+80    <uses-permission
+80-->[me.carda:AndroidAwnCore:0.9.3] /Users/dishasharma/.gradle/caches/transforms-3/10f086f0547b0326f2600f4d2bd957cb/transformed/jetified-AndroidAwnCore-0.9.3/AndroidManifest.xml:10:5-12:38
+81        android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+81-->[me.carda:AndroidAwnCore:0.9.3] /Users/dishasharma/.gradle/caches/transforms-3/10f086f0547b0326f2600f4d2bd957cb/transformed/jetified-AndroidAwnCore-0.9.3/AndroidManifest.xml:11:9-77
+82        android:maxSdkVersion="22" />
+82-->[me.carda:AndroidAwnCore:0.9.3] /Users/dishasharma/.gradle/caches/transforms-3/10f086f0547b0326f2600f4d2bd957cb/transformed/jetified-AndroidAwnCore-0.9.3/AndroidManifest.xml:12:9-35
+83    <uses-permission android:name="com.android.vending.BILLING" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+83-->[com.android.billingclient:billing:6.1.0] /Users/dishasharma/.gradle/caches/transforms-3/7bf508bca392226871f8c0f399e8326b/transformed/jetified-billing-6.1.0/AndroidManifest.xml:10:5-67
+83-->[com.android.billingclient:billing:6.1.0] /Users/dishasharma/.gradle/caches/transforms-3/7bf508bca392226871f8c0f399e8326b/transformed/jetified-billing-6.1.0/AndroidManifest.xml:10:22-64
+84    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+84-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:26:5-82
+84-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:26:22-79
+85    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+85-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/41e39fe53eec339ce8930971fb666fcd/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:25:5-79
+85-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/41e39fe53eec339ce8930971fb666fcd/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:25:22-76
+86    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+86-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/41e39fe53eec339ce8930971fb666fcd/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:26:5-88
+86-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/41e39fe53eec339ce8930971fb666fcd/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:26:22-85
+87    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+87-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/41e39fe53eec339ce8930971fb666fcd/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:27:5-82
+87-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/41e39fe53eec339ce8930971fb666fcd/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:27:22-79
+88    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+88-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:5-77
+88-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:22-74
+89    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+89-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/83af8bdf9360c7cc02408fa8ebbd3fc1/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:26:5-110
+89-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/83af8bdf9360c7cc02408fa8ebbd3fc1/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:26:22-107
+90
+91    <uses-feature
+91-->[com.google.android.gms:play-services-maps:17.0.0] /Users/dishasharma/.gradle/caches/transforms-3/acff4fdc9fafcd24dba5049e34318a6a/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+92        android:glEsVersion="0x00020000"
+92-->[com.google.android.gms:play-services-maps:17.0.0] /Users/dishasharma/.gradle/caches/transforms-3/acff4fdc9fafcd24dba5049e34318a6a/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+93        android:required="true" />
+93-->[com.google.android.gms:play-services-maps:17.0.0] /Users/dishasharma/.gradle/caches/transforms-3/acff4fdc9fafcd24dba5049e34318a6a/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+94
+95    <permission
+95-->[androidx.core:core:1.10.1] /Users/dishasharma/.gradle/caches/transforms-3/d88caaa22406966a164be15a8d5c0322/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+96        android:name="com.education.english_madhyam.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+96-->[androidx.core:core:1.10.1] /Users/dishasharma/.gradle/caches/transforms-3/d88caaa22406966a164be15a8d5c0322/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+97        android:protectionLevel="signature" />
+97-->[androidx.core:core:1.10.1] /Users/dishasharma/.gradle/caches/transforms-3/d88caaa22406966a164be15a8d5c0322/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
+98
+99    <uses-permission android:name="com.education.english_madhyam.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- for android -->
+99-->[androidx.core:core:1.10.1] /Users/dishasharma/.gradle/caches/transforms-3/d88caaa22406966a164be15a8d5c0322/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+99-->[androidx.core:core:1.10.1] /Users/dishasharma/.gradle/caches/transforms-3/d88caaa22406966a164be15a8d5c0322/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+100    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+101    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+102    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+103    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+104    <!-- for Samsung -->
+105    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+105-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+105-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+106    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+106-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+106-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+107    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+107-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+107-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+108    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+108-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+108-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+109    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+109-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+109-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+110    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+110-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+110-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+111    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+111-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+111-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+112    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+112-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+112-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+113    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+113-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+113-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+114    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+114-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+114-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+115    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+115-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+115-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+116    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+116-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+116-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+117    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+117-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+117-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+118    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+118-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+118-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+119    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+119-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+119-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+120    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" /> <!-- <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> -->
+120-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+120-->[me.leolin:ShortcutBadger:1.1.22] /Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+121    <application
+122        android:name="android.app.Application"
+122-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:17:9-42
+123        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+123-->[androidx.core:core:1.10.1] /Users/dishasharma/.gradle/caches/transforms-3/d88caaa22406966a164be15a8d5c0322/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
+124        android:icon="@mipmap/logo_round"
+124-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:18:9-42
+125        android:label="English Madhyam"
+125-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:16:9-40
+126        android:usesCleartextTraffic="true" >
+126-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:19:9-44
+127        <activity
+127-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:21:9-44:20
+128            android:name="com.englishmadhyam.MainActivity"
+128-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:22:13-41
+129            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+129-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:29:13-163
+130            android:exported="true"
+130-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:23:13-36
+131            android:hardwareAccelerated="true"
+131-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:30:13-47
+132            android:launchMode="singleTop"
+132-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:26:13-43
+133            android:requestLegacyExternalStorage="true"
+133-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:27:13-56
+134            android:showWhenLocked="true"
+134-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:24:13-42
+135            android:theme="@style/LaunchTheme"
+135-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:28:13-47
+136            android:turnScreenOn="true"
+136-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:25:13-40
+137            android:windowSoftInputMode="adjustResize" >
+137-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:31:13-55
+138
+139            <!--
+140                 Specifies an Android theme to apply to this Activity as soon as
+141                 the Android process has started. This theme is visible to the user
+142                 while the Flutter UI initializes. After that, this theme continues
+143                 to determine the Window background behind the Flutter UI.
+144            -->
+145            <meta-data
+145-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:36:13-39:17
+146                android:name="io.flutter.embedding.android.NormalTheme"
+146-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:37:15-70
+147                android:resource="@style/NormalTheme" />
+147-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:38:15-52
+148
+149            <intent-filter>
+149-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:40:13-43:29
+150                <action android:name="android.intent.action.MAIN" />
+150-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:41:17-68
+150-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:41:25-66
+151
+152                <category android:name="android.intent.category.LAUNCHER" />
+152-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:42:17-76
+152-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:42:27-74
+153            </intent-filter>
+154        </activity>
+155
+156        <!--
+157             Don't delete the meta-data below.
+158             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+159        -->
+160        <meta-data
+160-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:48:9-50:33
+161            android:name="flutterEmbedding"
+161-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:49:13-44
+162            android:value="2" />
+162-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:50:13-30
+163        <!-- Begin FlutterDownloader customization -->
+164        <!-- disable default Initializer -->
+165        <provider
+166            android:name="androidx.startup.InitializationProvider"
+166-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:54:12-66
+167            android:authorities="com.education.english_madhyam.androidx-startup"
+167-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:55:12-67
+168            android:exported="false" >
+168-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:56:12-36
+169            <meta-data
+169-->[androidx.emoji2:emoji2:1.2.0] /Users/dishasharma/.gradle/caches/transforms-3/169849217f20bebbb380d4dd3a788a65/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+170                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+170-->[androidx.emoji2:emoji2:1.2.0] /Users/dishasharma/.gradle/caches/transforms-3/169849217f20bebbb380d4dd3a788a65/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+171                android:value="androidx.startup" />
+171-->[androidx.emoji2:emoji2:1.2.0] /Users/dishasharma/.gradle/caches/transforms-3/169849217f20bebbb380d4dd3a788a65/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+172            <meta-data
+172-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/dishasharma/.gradle/caches/transforms-3/f9ef196bc34d4620085145b349b9e386/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+173                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+173-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/dishasharma/.gradle/caches/transforms-3/f9ef196bc34d4620085145b349b9e386/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+174                android:value="androidx.startup" />
+174-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/dishasharma/.gradle/caches/transforms-3/f9ef196bc34d4620085145b349b9e386/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+175            <meta-data
+175-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+176                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+176-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+177                android:value="androidx.startup" />
+177-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+178        </provider>
+179        <provider
+180            android:name="vn.hunghd.flutterdownloader.DownloadedFileProvider"
+180-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:66:12-77
+181            android:authorities="com.education.english_madhyam.flutter_downloader.provider"
+181-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:67:12-78
+182            android:exported="false"
+182-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:68:12-36
+183            android:grantUriPermissions="true"
+183-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:69:12-46
+184            android:requestLegacyExternalStorage="true" >
+184-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:70:12-55
+185            <meta-data
+185-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:71:12-73:56
+186                android:name="android.support.FILE_PROVIDER_PATHS"
+186-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:72:16-66
+187                android:resource="@xml/provider_paths" />
+187-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:73:16-54
+188        </provider>
+189        <!-- &lt;!&ndash; declare customized Initializer &ndash;&gt; -->
+190        <provider
+191            android:name="vn.hunghd.flutterdownloader.FlutterDownloaderInitializer"
+191-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:77:12-83
+192            android:authorities="com.education.english_madhyam.flutter-downloader-init"
+192-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:78:12-74
+193            android:exported="true" >
+193-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:79:12-35
+194
+195            <!-- changes this number to configure the maximum number of concurrent tasks -->
+196            <meta-data
+196-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:81:12-83:36
+197                android:name="vn.hunghd.flutterdownloader.MAX_CONCURRENT_TASKS"
+197-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:82:16-79
+198                android:value="5" />
+198-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:83:16-33
+199        </provider>
+200
+201        <!-- Begin FlutterDownloader customization -->
+202        <!-- disable default Initializer -->
+203
+204        <service
+204-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-19:72
+205            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+205-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-107
+206            android:exported="false"
+206-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-37
+207            android:permission="android.permission.BIND_JOB_SERVICE" />
+207-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-69
+208        <service
+208-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:20:9-26:19
+209            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+209-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-97
+210            android:exported="false" >
+210-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-37
+211            <intent-filter>
+211-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-25:29
+212                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+212-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:24:17-78
+212-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:24:25-75
+213            </intent-filter>
+214        </service>
+215
+216        <receiver
+216-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:28:9-35:20
+217            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+217-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:29:13-98
+218            android:exported="true"
+218-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-36
+219            android:permission="com.google.android.c2dm.permission.SEND" >
+219-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:31:13-73
+220            <intent-filter>
+220-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:32:13-34:29
+221                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+221-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:17-81
+221-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:25-78
+222            </intent-filter>
+223        </receiver>
+224
+225        <service
+225-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:37:9-41:19
+226            android:name="com.google.firebase.components.ComponentDiscoveryService"
+226-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:37:18-89
+227            android:directBootAware="true"
+227-->[com.google.firebase:firebase-common:20.4.2] /Users/dishasharma/.gradle/caches/transforms-3/8f4e5197a5fdff30ea4b8aa17d9962d6/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:32:13-43
+228            android:exported="false" >
+228-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:56:13-37
+229            <meta-data
+229-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:38:13-40:85
+230                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+230-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:39:17-128
+231                android:value="com.google.firebase.components.ComponentRegistrar" />
+231-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:40:17-82
+232            <meta-data
+232-->[:firebase_core] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+233                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+233-->[:firebase_core] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-124
+234                android:value="com.google.firebase.components.ComponentRegistrar" />
+234-->[:firebase_core] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+235            <meta-data
+235-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:57:13-59:85
+236                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+236-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:58:17-122
+237                android:value="com.google.firebase.components.ComponentRegistrar" />
+237-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:59:17-82
+238            <meta-data
+238-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:60:13-62:85
+239                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+239-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:61:17-119
+240                android:value="com.google.firebase.components.ComponentRegistrar" />
+240-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:62:17-82
+241            <meta-data
+241-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/41e39fe53eec339ce8930971fb666fcd/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:37:13-39:85
+242                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+242-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/41e39fe53eec339ce8930971fb666fcd/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:38:17-139
+243                android:value="com.google.firebase.components.ComponentRegistrar" />
+243-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/41e39fe53eec339ce8930971fb666fcd/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:39:17-82
+244            <meta-data
+244-->[com.google.firebase:firebase-iid:21.1.0] /Users/dishasharma/.gradle/caches/transforms-3/489619a8500d595b1fea3e41eff127ab/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:32:13-34:85
+245                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+245-->[com.google.firebase:firebase-iid:21.1.0] /Users/dishasharma/.gradle/caches/transforms-3/489619a8500d595b1fea3e41eff127ab/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:33:17-96
+246                android:value="com.google.firebase.components.ComponentRegistrar" />
+246-->[com.google.firebase:firebase-iid:21.1.0] /Users/dishasharma/.gradle/caches/transforms-3/489619a8500d595b1fea3e41eff127ab/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:34:17-82
+247            <meta-data
+247-->[com.google.firebase:firebase-installations:17.2.0] /Users/dishasharma/.gradle/caches/transforms-3/e06888086e41c8d755823531712eb677/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:15:13-17:85
+248                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+248-->[com.google.firebase:firebase-installations:17.2.0] /Users/dishasharma/.gradle/caches/transforms-3/e06888086e41c8d755823531712eb677/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:16:17-130
+249                android:value="com.google.firebase.components.ComponentRegistrar" />
+249-->[com.google.firebase:firebase-installations:17.2.0] /Users/dishasharma/.gradle/caches/transforms-3/e06888086e41c8d755823531712eb677/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:17:17-82
+250            <meta-data
+250-->[com.google.firebase:firebase-installations:17.2.0] /Users/dishasharma/.gradle/caches/transforms-3/e06888086e41c8d755823531712eb677/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:18:13-20:85
+251                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+251-->[com.google.firebase:firebase-installations:17.2.0] /Users/dishasharma/.gradle/caches/transforms-3/e06888086e41c8d755823531712eb677/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:19:17-127
+252                android:value="com.google.firebase.components.ComponentRegistrar" />
+252-->[com.google.firebase:firebase-installations:17.2.0] /Users/dishasharma/.gradle/caches/transforms-3/e06888086e41c8d755823531712eb677/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:20:17-82
+253            <meta-data
+253-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/dishasharma/.gradle/caches/transforms-3/c27116673e1b8dd037ed1253ad380799/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:12:13-14:85
+254                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+254-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/dishasharma/.gradle/caches/transforms-3/c27116673e1b8dd037ed1253ad380799/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:13:17-116
+255                android:value="com.google.firebase.components.ComponentRegistrar" />
+255-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/dishasharma/.gradle/caches/transforms-3/c27116673e1b8dd037ed1253ad380799/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:14:17-82
+256            <meta-data
+256-->[com.google.firebase:firebase-common:20.4.2] /Users/dishasharma/.gradle/caches/transforms-3/8f4e5197a5fdff30ea4b8aa17d9962d6/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:35:13-37:85
+257                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+257-->[com.google.firebase:firebase-common:20.4.2] /Users/dishasharma/.gradle/caches/transforms-3/8f4e5197a5fdff30ea4b8aa17d9962d6/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:36:17-109
+258                android:value="com.google.firebase.components.ComponentRegistrar" />
+258-->[com.google.firebase:firebase-common:20.4.2] /Users/dishasharma/.gradle/caches/transforms-3/8f4e5197a5fdff30ea4b8aa17d9962d6/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:37:17-82
+259            <meta-data
+259-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/dishasharma/.gradle/caches/transforms-3/706fcf0905f265e7ba0baa43bb09fc0a/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:27:13-29:85
+260                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+260-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/dishasharma/.gradle/caches/transforms-3/706fcf0905f265e7ba0baa43bb09fc0a/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:28:17-115
+261                android:value="com.google.firebase.components.ComponentRegistrar" />
+261-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/dishasharma/.gradle/caches/transforms-3/706fcf0905f265e7ba0baa43bb09fc0a/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:29:17-82
+262        </service>
+263
+264        <provider
+264-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:43:9-47:38
+265            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+265-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:44:13-102
+266            android:authorities="com.education.english_madhyam.flutterfirebasemessaginginitprovider"
+266-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:45:13-88
+267            android:exported="false"
+267-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:46:13-37
+268            android:initOrder="99" />
+268-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:47:13-35
+269
+270        <receiver
+270-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-18:40
+271            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
+271-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-91
+272            android:exported="false" />
+272-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-37
+273        <receiver
+273-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:19:9-21:40
+274            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+274-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-97
+275            android:exported="false" />
+275-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-37
+276        <receiver
+276-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:22:9-31:20
+277            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+277-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-101
+278            android:exported="false" >
+278-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-37
+279            <intent-filter>
+279-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:25:13-30:29
+280                <action android:name="android.intent.action.BOOT_COMPLETED" />
+280-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:26:17-79
+280-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:26:25-76
+281                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+281-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:27:17-84
+281-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:27:25-81
+282                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+282-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:28:17-82
+282-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:28:25-79
+283                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+283-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:29:17-82
+283-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:29:25-79
+284            </intent-filter>
+285        </receiver>
+286        <!--
+287           Declares a provider which allows us to store files to share in
+288           '.../caches/share_plus' and grant the receiving action access
+289        -->
+290        <provider
+290-->[:share_plus] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:15:9-23:20
+291            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+291-->[:share_plus] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-77
+292            android:authorities="com.education.english_madhyam.flutter.share_provider"
+292-->[:share_plus] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-74
+293            android:exported="false"
+293-->[:share_plus] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-37
+294            android:grantUriPermissions="true" >
+294-->[:share_plus] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-47
+295            <meta-data
+295-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:71:12-73:56
+296                android:name="android.support.FILE_PROVIDER_PATHS"
+296-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:72:16-66
+297                android:resource="@xml/flutter_share_file_paths" />
+297-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:73:16-54
+298        </provider>
+299        <!--
+300           This manifest declared broadcast receiver allows us to use an explicit
+301           Intent when creating a PendingItent to be informed of the user's choice
+302        -->
+303        <receiver
+303-->[:share_plus] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:28:9-34:20
+304            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
+304-->[:share_plus] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:29:13-82
+305            android:exported="false" >
+305-->[:share_plus] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-37
+306            <intent-filter>
+306-->[:share_plus] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:31:13-33:29
+307                <action android:name="EXTRA_CHOSEN_COMPONENT" />
+307-->[:share_plus] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:32:17-65
+307-->[:share_plus] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:32:25-62
+308            </intent-filter>
+309        </receiver>
+310
+311        <provider
+311-->[:image_picker_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
+312            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+312-->[:image_picker_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-82
+313            android:authorities="com.education.english_madhyam.flutter.image_provider"
+313-->[:image_picker_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-74
+314            android:exported="false"
+314-->[:image_picker_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+315            android:grantUriPermissions="true" >
+315-->[:image_picker_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
+316            <meta-data
+316-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:71:12-73:56
+317                android:name="android.support.FILE_PROVIDER_PATHS"
+317-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:72:16-66
+318                android:resource="@xml/flutter_image_picker_file_paths" />
+318-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:73:16-54
+319        </provider>
+320
+321        <receiver
+321-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:15:9-17:39
+322            android:name="me.carda.awesome_notifications.DartNotificationActionReceiver"
+322-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-89
+323            android:exported="true" />
+323-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-36
+324        <receiver
+324-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:18:9-20:39
+325            android:name="me.carda.awesome_notifications.DartDismissedNotificationReceiver"
+325-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-92
+326            android:exported="true" />
+326-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-36
+327        <receiver
+327-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:21:9-23:39
+328            android:name="me.carda.awesome_notifications.DartScheduledNotificationReceiver"
+328-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-92
+329            android:exported="true" />
+329-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-36
+330        <receiver
+330-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:24:9-38:20
+331            android:name="me.carda.awesome_notifications.DartRefreshSchedulesReceiver"
+331-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:25:13-87
+332            android:enabled="true"
+332-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-35
+333            android:exported="true" >
+333-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-36
+334            <intent-filter>
+334-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:28:13-37:29
+335                <category android:name="android.intent.category.DEFAULT" />
+335-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:29:17-76
+335-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:29:27-73
+336
+337                <action android:name="android.intent.action.BOOT_COMPLETED" />
+337-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:26:17-79
+337-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:26:25-76
+338                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+338-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:32:17-86
+338-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:32:25-83
+339                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+339-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:27:17-84
+339-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:27:25-81
+340                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+340-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:28:17-82
+340-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:28:25-79
+341                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+341-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:29:17-82
+341-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:29:25-79
+342                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+342-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:36:17-107
+342-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:36:25-104
+343            </intent-filter>
+344        </receiver>
+345
+346        <service
+346-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:40:9-43:72
+347            android:name="me.carda.awesome_notifications.DartBackgroundService"
+347-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:41:13-80
+348            android:exported="false"
+348-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:42:13-37
+349            android:permission="android.permission.BIND_JOB_SERVICE" />
+349-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:43:13-69
+350        <service
+350-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:44:9-49:43
+351            android:name="me.carda.awesome_notifications.core.services.ForegroundService"
+351-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:45:13-90
+352            android:enabled="true"
+352-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:46:13-35
+353            android:exported="false"
+353-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:47:13-37
+354            android:foregroundServiceType="phoneCall"
+354-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:48:13-54
+355            android:stopWithTask="true" />
+355-->[:awesome_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:49:13-40
+356
+357        <activity
+357-->[:url_launcher_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-13:74
+358            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+358-->[:url_launcher_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-74
+359            android:exported="false"
+359-->[:url_launcher_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-37
+360            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+360-->[:url_launcher_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-71
+361        <activity
+361-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-20:47
+362            android:name="com.pichillilorenzo.flutter_inappwebview_android.in_app_browser.InAppBrowserActivity"
+362-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-112
+363            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
+363-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-137
+364            android:exported="false"
+364-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-37
+365            android:theme="@style/AppTheme" />
+365-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-44
+366        <activity
+366-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:21:9-24:55
+367            android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ChromeCustomTabsActivity"
+367-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-120
+368            android:exported="false"
+368-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-37
+369            android:theme="@style/ThemeTransparent" />
+369-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-52
+370        <activity
+370-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:25:9-28:55
+371            android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.TrustedWebActivity"
+371-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-114
+372            android:exported="false"
+372-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-37
+373            android:theme="@style/ThemeTransparent" />
+373-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:28:13-52
+374        <activity
+374-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:29:9-33:55
+375            android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
+375-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-134
+376            android:exported="false"
+376-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:31:13-37
+377            android:launchMode="singleInstance"
+377-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:32:13-48
+378            android:theme="@style/ThemeTransparent" />
+378-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:33:13-52
+379        <activity
+379-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:34:9-38:55
+380            android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.TrustedWebActivitySingleInstance"
+380-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:35:13-128
+381            android:exported="false"
+381-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-37
+382            android:launchMode="singleInstance"
+382-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:37:13-48
+383            android:theme="@style/ThemeTransparent" />
+383-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:38:13-52
+384
+385        <receiver
+385-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:40:9-43:40
+386            android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ActionBroadcastReceiver"
+386-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:41:13-119
+387            android:enabled="true"
+387-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:42:13-35
+388            android:exported="false" />
+388-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:43:13-37
+389
+390        <meta-data
+390-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:45:9-47:36
+391            android:name="io.flutter.embedded_views_preview"
+391-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:46:13-61
+392            android:value="true" />
+392-->[:flutter_inappwebview_android] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/intermediates/merged_manifest/release/AndroidManifest.xml:47:13-33
+393
+394        <provider
+394-->[:open_file] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:11:9-20:20
+395            android:name="com.crazecoder.openfile.FileProvider"
+395-->[:open_file] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-64
+396            android:authorities="com.education.english_madhyam.fileProvider.com.crazecoder.openfile"
+396-->[:open_file] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-88
+397            android:exported="false"
+397-->[:open_file] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-37
+398            android:grantUriPermissions="true" >
+398-->[:open_file] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-47
+399            <meta-data
+399-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:71:12-73:56
+400                android:name="android.support.FILE_PROVIDER_PATHS"
+400-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:72:16-66
+401                android:resource="@xml/filepaths" />
+401-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:73:16-54
+402        </provider>
+403
+404        <service
+404-->[me.carda:AndroidAwnCore:0.9.3] /Users/dishasharma/.gradle/caches/transforms-3/10f086f0547b0326f2600f4d2bd957cb/transformed/jetified-AndroidAwnCore-0.9.3/AndroidManifest.xml:21:9-28:19
+405            android:name="me.carda.awesome_notifications.core.managers.StatusBarManager"
+405-->[me.carda:AndroidAwnCore:0.9.3] /Users/dishasharma/.gradle/caches/transforms-3/10f086f0547b0326f2600f4d2bd957cb/transformed/jetified-AndroidAwnCore-0.9.3/AndroidManifest.xml:22:13-89
+406            android:exported="true"
+406-->[me.carda:AndroidAwnCore:0.9.3] /Users/dishasharma/.gradle/caches/transforms-3/10f086f0547b0326f2600f4d2bd957cb/transformed/jetified-AndroidAwnCore-0.9.3/AndroidManifest.xml:23:13-36
+407            android:label="My Notification Listener Service" >
+407-->[me.carda:AndroidAwnCore:0.9.3] /Users/dishasharma/.gradle/caches/transforms-3/10f086f0547b0326f2600f4d2bd957cb/transformed/jetified-AndroidAwnCore-0.9.3/AndroidManifest.xml:24:13-61
+408            <intent-filter>
+408-->[me.carda:AndroidAwnCore:0.9.3] /Users/dishasharma/.gradle/caches/transforms-3/10f086f0547b0326f2600f4d2bd957cb/transformed/jetified-AndroidAwnCore-0.9.3/AndroidManifest.xml:25:13-27:29
+409                <action android:name="android.service.notification.NotificationListenerService" />
+409-->[me.carda:AndroidAwnCore:0.9.3] /Users/dishasharma/.gradle/caches/transforms-3/10f086f0547b0326f2600f4d2bd957cb/transformed/jetified-AndroidAwnCore-0.9.3/AndroidManifest.xml:26:17-99
+409-->[me.carda:AndroidAwnCore:0.9.3] /Users/dishasharma/.gradle/caches/transforms-3/10f086f0547b0326f2600f4d2bd957cb/transformed/jetified-AndroidAwnCore-0.9.3/AndroidManifest.xml:26:25-96
+410            </intent-filter>
+411        </service>
+412
+413        <meta-data
+413-->[com.android.billingclient:billing:6.1.0] /Users/dishasharma/.gradle/caches/transforms-3/7bf508bca392226871f8c0f399e8326b/transformed/jetified-billing-6.1.0/AndroidManifest.xml:19:9-21:37
+414            android:name="com.google.android.play.billingclient.version"
+414-->[com.android.billingclient:billing:6.1.0] /Users/dishasharma/.gradle/caches/transforms-3/7bf508bca392226871f8c0f399e8326b/transformed/jetified-billing-6.1.0/AndroidManifest.xml:20:13-73
+415            android:value="6.1.0" />
+415-->[com.android.billingclient:billing:6.1.0] /Users/dishasharma/.gradle/caches/transforms-3/7bf508bca392226871f8c0f399e8326b/transformed/jetified-billing-6.1.0/AndroidManifest.xml:21:13-34
+416
+417        <activity
+417-->[com.android.billingclient:billing:6.1.0] /Users/dishasharma/.gradle/caches/transforms-3/7bf508bca392226871f8c0f399e8326b/transformed/jetified-billing-6.1.0/AndroidManifest.xml:23:9-27:75
+418            android:name="com.android.billingclient.api.ProxyBillingActivity"
+418-->[com.android.billingclient:billing:6.1.0] /Users/dishasharma/.gradle/caches/transforms-3/7bf508bca392226871f8c0f399e8326b/transformed/jetified-billing-6.1.0/AndroidManifest.xml:24:13-78
+419            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+419-->[com.android.billingclient:billing:6.1.0] /Users/dishasharma/.gradle/caches/transforms-3/7bf508bca392226871f8c0f399e8326b/transformed/jetified-billing-6.1.0/AndroidManifest.xml:25:13-96
+420            android:exported="false"
+420-->[com.android.billingclient:billing:6.1.0] /Users/dishasharma/.gradle/caches/transforms-3/7bf508bca392226871f8c0f399e8326b/transformed/jetified-billing-6.1.0/AndroidManifest.xml:26:13-37
+421            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+421-->[com.android.billingclient:billing:6.1.0] /Users/dishasharma/.gradle/caches/transforms-3/7bf508bca392226871f8c0f399e8326b/transformed/jetified-billing-6.1.0/AndroidManifest.xml:27:13-72
+422
+423        <receiver
+423-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:29:9-40:20
+424            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+424-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:30:13-78
+425            android:exported="true"
+425-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:31:13-36
+426            android:permission="com.google.android.c2dm.permission.SEND" >
+426-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:32:13-73
+427            <intent-filter>
+427-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:32:13-34:29
+428                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+428-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:17-81
+428-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:25-78
+429            </intent-filter>
+430
+431            <meta-data
+431-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:37:13-39:40
+432                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+432-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:38:17-92
+433                android:value="true" />
+433-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:39:17-37
+434        </receiver>
+435        <!--
+436             FirebaseMessagingService performs security checks at runtime,
+437             but set to not exported to explicitly avoid allowing another app to call it.
+438        -->
+439        <service
+439-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:46:9-53:19
+440            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+440-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:47:13-82
+441            android:directBootAware="true"
+441-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:48:13-43
+442            android:exported="false" >
+442-->[com.google.firebase:firebase-messaging:23.4.0] /Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:49:13-37
+443            <intent-filter android:priority="-500" >
+443-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-25:29
+444                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+444-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:24:17-78
+444-->[:firebase_messaging] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:24:25-75
+445            </intent-filter>
+446        </service>
+447
+448        <property
+448-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/41e39fe53eec339ce8930971fb666fcd/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:30:9-32:61
+449            android:name="android.adservices.AD_SERVICES_CONFIG"
+449-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/41e39fe53eec339ce8930971fb666fcd/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:31:13-65
+450            android:resource="@xml/ga_ad_services_config" />
+450-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/41e39fe53eec339ce8930971fb666fcd/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:32:13-58
+451
+452        <service
+452-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
+453            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+453-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
+454            android:directBootAware="false"
+454-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
+455            android:enabled="@bool/enable_system_alarm_service_default"
+455-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
+456            android:exported="false" />
+456-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
+457        <service
+457-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
+458            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+458-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
+459            android:directBootAware="false"
+459-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
+460            android:enabled="@bool/enable_system_job_service_default"
+460-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
+461            android:exported="true"
+461-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
+462            android:permission="android.permission.BIND_JOB_SERVICE" />
+462-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
+463        <service
+463-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
+464            android:name="androidx.work.impl.foreground.SystemForegroundService"
+464-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
+465            android:directBootAware="false"
+465-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
+466            android:enabled="@bool/enable_system_foreground_service_default"
+466-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
+467            android:exported="false" />
+467-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
+468
+469        <receiver
+469-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
+470            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+470-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
+471            android:directBootAware="false"
+471-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
+472            android:enabled="true"
+472-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
+473            android:exported="false" />
+473-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
+474        <receiver
+474-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
+475            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+475-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
+476            android:directBootAware="false"
+476-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
+477            android:enabled="false"
+477-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
+478            android:exported="false" >
+478-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
+479            <intent-filter>
+479-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
+480                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+480-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
+480-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
+481                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+481-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
+481-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
+482            </intent-filter>
+483        </receiver>
+484        <receiver
+484-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
+485            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+485-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
+486            android:directBootAware="false"
+486-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
+487            android:enabled="false"
+487-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
+488            android:exported="false" >
+488-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
+489            <intent-filter>
+489-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
+490                <action android:name="android.intent.action.BATTERY_OKAY" />
+490-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
+490-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
+491                <action android:name="android.intent.action.BATTERY_LOW" />
+491-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
+491-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
+492            </intent-filter>
+493        </receiver>
+494        <receiver
+494-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
+495            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+495-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
+496            android:directBootAware="false"
+496-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
+497            android:enabled="false"
+497-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
+498            android:exported="false" >
+498-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
+499            <intent-filter>
+499-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
+500                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+500-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
+500-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
+501                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+501-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
+501-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
+502            </intent-filter>
+503        </receiver>
+504        <receiver
+504-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
+505            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+505-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
+506            android:directBootAware="false"
+506-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
+507            android:enabled="false"
+507-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
+508            android:exported="false" >
+508-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
+509            <intent-filter>
+509-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
+510                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+510-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
+510-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
+511            </intent-filter>
+512        </receiver>
+513        <receiver
+513-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
+514            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+514-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
+515            android:directBootAware="false"
+515-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
+516            android:enabled="false"
+516-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
+517            android:exported="false" >
+517-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
+518            <intent-filter>
+518-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
+519                <action android:name="android.intent.action.BOOT_COMPLETED" />
+519-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:26:17-79
+519-->[:flutter_local_notifications] /Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:26:25-76
+520                <action android:name="android.intent.action.TIME_SET" />
+520-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
+520-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
+521                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+521-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
+521-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
+522            </intent-filter>
+523        </receiver>
+524        <receiver
+524-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
+525            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+525-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
+526            android:directBootAware="false"
+526-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
+527            android:enabled="@bool/enable_system_alarm_service_default"
+527-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
+528            android:exported="false" >
+528-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
+529            <intent-filter>
+529-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
+530                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+530-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
+530-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
+531            </intent-filter>
+532        </receiver>
+533        <receiver
+533-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
+534            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+534-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
+535            android:directBootAware="false"
+535-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
+536            android:enabled="true"
+536-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
+537            android:exported="true"
+537-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
+538            android:permission="android.permission.DUMP" >
+538-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
+539            <intent-filter>
+539-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
+540                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+540-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
+540-->[androidx.work:work-runtime:2.7.1] /Users/dishasharma/.gradle/caches/transforms-3/da39e15ab6cfd8dfb498e07625f2e2f6/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
+541            </intent-filter>
+542        </receiver>
+543
+544        <service
+544-->[androidx.room:room-runtime:2.5.0] /Users/dishasharma/.gradle/caches/transforms-3/dd1c340335a153093b4cbc7b440b237d/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
+545            android:name="androidx.room.MultiInstanceInvalidationService"
+545-->[androidx.room:room-runtime:2.5.0] /Users/dishasharma/.gradle/caches/transforms-3/dd1c340335a153093b4cbc7b440b237d/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
+546            android:directBootAware="true"
+546-->[androidx.room:room-runtime:2.5.0] /Users/dishasharma/.gradle/caches/transforms-3/dd1c340335a153093b4cbc7b440b237d/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
+547            android:exported="false" />
+547-->[androidx.room:room-runtime:2.5.0] /Users/dishasharma/.gradle/caches/transforms-3/dd1c340335a153093b4cbc7b440b237d/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+548
+549        <receiver
+549-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/83af8bdf9360c7cc02408fa8ebbd3fc1/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:29:9-33:20
+550            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+550-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/83af8bdf9360c7cc02408fa8ebbd3fc1/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:30:13-85
+551            android:enabled="true"
+551-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/83af8bdf9360c7cc02408fa8ebbd3fc1/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:31:13-35
+552            android:exported="false" >
+552-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/83af8bdf9360c7cc02408fa8ebbd3fc1/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:32:13-37
+553        </receiver>
+554
+555        <service
+555-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/83af8bdf9360c7cc02408fa8ebbd3fc1/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:35:9-38:40
+556            android:name="com.google.android.gms.measurement.AppMeasurementService"
+556-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/83af8bdf9360c7cc02408fa8ebbd3fc1/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:36:13-84
+557            android:enabled="true"
+557-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/83af8bdf9360c7cc02408fa8ebbd3fc1/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:37:13-35
+558            android:exported="false" />
+558-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/83af8bdf9360c7cc02408fa8ebbd3fc1/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:38:13-37
+559        <service
+559-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/83af8bdf9360c7cc02408fa8ebbd3fc1/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:39:9-43:72
+560            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+560-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/83af8bdf9360c7cc02408fa8ebbd3fc1/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:40:13-87
+561            android:enabled="true"
+561-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/83af8bdf9360c7cc02408fa8ebbd3fc1/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:41:13-35
+562            android:exported="false"
+562-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/83af8bdf9360c7cc02408fa8ebbd3fc1/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:42:13-37
+563            android:permission="android.permission.BIND_JOB_SERVICE" />
+563-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/dishasharma/.gradle/caches/transforms-3/83af8bdf9360c7cc02408fa8ebbd3fc1/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:43:13-69
+564
+565        <uses-library
+565-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/dishasharma/.gradle/caches/transforms-3/b059e431dec137acfc01c6bcb366bb88/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:23:9-25:40
+566            android:name="android.ext.adservices"
+566-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/dishasharma/.gradle/caches/transforms-3/b059e431dec137acfc01c6bcb366bb88/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:24:13-50
+567            android:required="false" />
+567-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/dishasharma/.gradle/caches/transforms-3/b059e431dec137acfc01c6bcb366bb88/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:25:13-37
+568
+569        <receiver
+569-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:42:9-49:20
+570            android:name="com.razorpay.RzpTokenReceiver"
+570-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:43:13-57
+571            android:exported="true" >
+571-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:44:13-36
+572            <intent-filter>
+572-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:46:13-48:29
+573                <action android:name="rzp.device_token.share" />
+573-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:37:13-61
+573-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:37:21-58
+574            </intent-filter>
+575        </receiver>
+576
+577        <activity
+577-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:51:9-59:20
+578            android:name="com.razorpay.CheckoutActivity"
+578-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:52:13-57
+579            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+579-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:53:13-83
+580            android:exported="false"
+580-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:54:13-37
+581            android:theme="@style/CheckoutTheme" >
+581-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:55:13-49
+582            <intent-filter>
+582-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:56:13-58:29
+583                <action android:name="android.intent.action.MAIN" />
+583-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:41:17-68
+583-->/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android/app/src/main/AndroidManifest.xml:41:25-66
+584            </intent-filter>
+585        </activity>
+586
+587        <meta-data
+587-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:61:9-63:58
+588            android:name="com.razorpay.plugin.googlepay_all"
+588-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:62:13-61
+589            android:value="com.razorpay.RzpGpayMerged" />
+589-->[com.razorpay:checkout:1.6.39] /Users/dishasharma/.gradle/caches/transforms-3/7c415bd38e2b68b52c1c479e5fbfcbf0/transformed/jetified-checkout-1.6.39/AndroidManifest.xml:63:13-55
+590
+591        <activity
+591-->[com.google.android.gms:play-services-auth:21.1.0] /Users/dishasharma/.gradle/caches/transforms-3/ea3b83f44294015b99580d128b7c239c/transformed/jetified-play-services-auth-21.1.0/AndroidManifest.xml:23:9-27:75
+592            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+592-->[com.google.android.gms:play-services-auth:21.1.0] /Users/dishasharma/.gradle/caches/transforms-3/ea3b83f44294015b99580d128b7c239c/transformed/jetified-play-services-auth-21.1.0/AndroidManifest.xml:24:13-93
+593            android:excludeFromRecents="true"
+593-->[com.google.android.gms:play-services-auth:21.1.0] /Users/dishasharma/.gradle/caches/transforms-3/ea3b83f44294015b99580d128b7c239c/transformed/jetified-play-services-auth-21.1.0/AndroidManifest.xml:25:13-46
+594            android:exported="false"
+594-->[com.google.android.gms:play-services-auth:21.1.0] /Users/dishasharma/.gradle/caches/transforms-3/ea3b83f44294015b99580d128b7c239c/transformed/jetified-play-services-auth-21.1.0/AndroidManifest.xml:26:13-37
+595            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+595-->[com.google.android.gms:play-services-auth:21.1.0] /Users/dishasharma/.gradle/caches/transforms-3/ea3b83f44294015b99580d128b7c239c/transformed/jetified-play-services-auth-21.1.0/AndroidManifest.xml:27:13-72
+596        <!--
+597            Service handling Google Sign-In user revocation. For apps that do not integrate with
+598            Google Sign-In, this service will never be started.
+599        -->
+600        <service
+600-->[com.google.android.gms:play-services-auth:21.1.0] /Users/dishasharma/.gradle/caches/transforms-3/ea3b83f44294015b99580d128b7c239c/transformed/jetified-play-services-auth-21.1.0/AndroidManifest.xml:33:9-37:51
+601            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+601-->[com.google.android.gms:play-services-auth:21.1.0] /Users/dishasharma/.gradle/caches/transforms-3/ea3b83f44294015b99580d128b7c239c/transformed/jetified-play-services-auth-21.1.0/AndroidManifest.xml:34:13-89
+602            android:exported="true"
+602-->[com.google.android.gms:play-services-auth:21.1.0] /Users/dishasharma/.gradle/caches/transforms-3/ea3b83f44294015b99580d128b7c239c/transformed/jetified-play-services-auth-21.1.0/AndroidManifest.xml:35:13-36
+603            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+603-->[com.google.android.gms:play-services-auth:21.1.0] /Users/dishasharma/.gradle/caches/transforms-3/ea3b83f44294015b99580d128b7c239c/transformed/jetified-play-services-auth-21.1.0/AndroidManifest.xml:36:13-107
+604            android:visibleToInstantApps="true" /> <!-- Needs to be explicitly declared on P+ -->
+604-->[com.google.android.gms:play-services-auth:21.1.0] /Users/dishasharma/.gradle/caches/transforms-3/ea3b83f44294015b99580d128b7c239c/transformed/jetified-play-services-auth-21.1.0/AndroidManifest.xml:37:13-48
+605        <uses-library
+605-->[com.google.android.gms:play-services-maps:17.0.0] /Users/dishasharma/.gradle/caches/transforms-3/acff4fdc9fafcd24dba5049e34318a6a/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+606            android:name="org.apache.http.legacy"
+606-->[com.google.android.gms:play-services-maps:17.0.0] /Users/dishasharma/.gradle/caches/transforms-3/acff4fdc9fafcd24dba5049e34318a6a/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+607            android:required="false" />
+607-->[com.google.android.gms:play-services-maps:17.0.0] /Users/dishasharma/.gradle/caches/transforms-3/acff4fdc9fafcd24dba5049e34318a6a/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+608
+609        <activity
+609-->[com.google.android.gms:play-services-base:18.3.0] /Users/dishasharma/.gradle/caches/transforms-3/f503e8844c59c42dfc11139664546715/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:9-22:45
+610            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+610-->[com.google.android.gms:play-services-base:18.3.0] /Users/dishasharma/.gradle/caches/transforms-3/f503e8844c59c42dfc11139664546715/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:19-85
+611            android:exported="false"
+611-->[com.google.android.gms:play-services-base:18.3.0] /Users/dishasharma/.gradle/caches/transforms-3/f503e8844c59c42dfc11139664546715/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:22:19-43
+612            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+612-->[com.google.android.gms:play-services-base:18.3.0] /Users/dishasharma/.gradle/caches/transforms-3/f503e8844c59c42dfc11139664546715/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:21:19-78
+613
+614        <provider
+614-->[com.google.firebase:firebase-common:20.4.2] /Users/dishasharma/.gradle/caches/transforms-3/8f4e5197a5fdff30ea4b8aa17d9962d6/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:23:9-28:39
+615            android:name="com.google.firebase.provider.FirebaseInitProvider"
+615-->[com.google.firebase:firebase-common:20.4.2] /Users/dishasharma/.gradle/caches/transforms-3/8f4e5197a5fdff30ea4b8aa17d9962d6/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:24:13-77
+616            android:authorities="com.education.english_madhyam.firebaseinitprovider"
+616-->[com.google.firebase:firebase-common:20.4.2] /Users/dishasharma/.gradle/caches/transforms-3/8f4e5197a5fdff30ea4b8aa17d9962d6/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:25:13-72
+617            android:directBootAware="true"
+617-->[com.google.firebase:firebase-common:20.4.2] /Users/dishasharma/.gradle/caches/transforms-3/8f4e5197a5fdff30ea4b8aa17d9962d6/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:26:13-43
+618            android:exported="false"
+618-->[com.google.firebase:firebase-common:20.4.2] /Users/dishasharma/.gradle/caches/transforms-3/8f4e5197a5fdff30ea4b8aa17d9962d6/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:27:13-37
+619            android:initOrder="100" />
+619-->[com.google.firebase:firebase-common:20.4.2] /Users/dishasharma/.gradle/caches/transforms-3/8f4e5197a5fdff30ea4b8aa17d9962d6/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:28:13-36
+620
+621        <meta-data
+621-->[com.google.android.gms:play-services-basement:18.3.0] /Users/dishasharma/.gradle/caches/transforms-3/a3f8554682d21d72e7de4e36a50a0f18/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+622            android:name="com.google.android.gms.version"
+622-->[com.google.android.gms:play-services-basement:18.3.0] /Users/dishasharma/.gradle/caches/transforms-3/a3f8554682d21d72e7de4e36a50a0f18/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+623            android:value="@integer/google_play_services_version" />
+623-->[com.google.android.gms:play-services-basement:18.3.0] /Users/dishasharma/.gradle/caches/transforms-3/a3f8554682d21d72e7de4e36a50a0f18/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+624
+625        <uses-library
+625-->[androidx.window:window:1.0.0-beta04] /Users/dishasharma/.gradle/caches/transforms-3/e9ebd4d28126f3d9bbe0e2e3bc89aaf4/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+626            android:name="androidx.window.extensions"
+626-->[androidx.window:window:1.0.0-beta04] /Users/dishasharma/.gradle/caches/transforms-3/e9ebd4d28126f3d9bbe0e2e3bc89aaf4/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+627            android:required="false" />
+627-->[androidx.window:window:1.0.0-beta04] /Users/dishasharma/.gradle/caches/transforms-3/e9ebd4d28126f3d9bbe0e2e3bc89aaf4/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+628        <uses-library
+628-->[androidx.window:window:1.0.0-beta04] /Users/dishasharma/.gradle/caches/transforms-3/e9ebd4d28126f3d9bbe0e2e3bc89aaf4/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+629            android:name="androidx.window.sidecar"
+629-->[androidx.window:window:1.0.0-beta04] /Users/dishasharma/.gradle/caches/transforms-3/e9ebd4d28126f3d9bbe0e2e3bc89aaf4/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+630            android:required="false" />
+630-->[androidx.window:window:1.0.0-beta04] /Users/dishasharma/.gradle/caches/transforms-3/e9ebd4d28126f3d9bbe0e2e3bc89aaf4/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+631
+632        <service
+632-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/dishasharma/.gradle/caches/transforms-3/e9fa8a209bed951f69b18a008e6a8f73/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
+633            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+633-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/dishasharma/.gradle/caches/transforms-3/e9fa8a209bed951f69b18a008e6a8f73/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
+634            android:exported="false" >
+634-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/dishasharma/.gradle/caches/transforms-3/e9fa8a209bed951f69b18a008e6a8f73/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
+635            <meta-data
+635-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/dishasharma/.gradle/caches/transforms-3/e9fa8a209bed951f69b18a008e6a8f73/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
+636                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+636-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/dishasharma/.gradle/caches/transforms-3/e9fa8a209bed951f69b18a008e6a8f73/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
+637                android:value="cct" />
+637-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/dishasharma/.gradle/caches/transforms-3/e9fa8a209bed951f69b18a008e6a8f73/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
+638        </service>
+639        <service
+639-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/dishasharma/.gradle/caches/transforms-3/55055ed9f8324293b13260e4c4c83ebc/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
+640            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+640-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/dishasharma/.gradle/caches/transforms-3/55055ed9f8324293b13260e4c4c83ebc/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
+641            android:exported="false"
+641-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/dishasharma/.gradle/caches/transforms-3/55055ed9f8324293b13260e4c4c83ebc/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
+642            android:permission="android.permission.BIND_JOB_SERVICE" >
+642-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/dishasharma/.gradle/caches/transforms-3/55055ed9f8324293b13260e4c4c83ebc/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
+643        </service>
+644
+645        <receiver
+645-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/dishasharma/.gradle/caches/transforms-3/55055ed9f8324293b13260e4c4c83ebc/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
+646            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+646-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/dishasharma/.gradle/caches/transforms-3/55055ed9f8324293b13260e4c4c83ebc/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
+647            android:exported="false" />
+647-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/dishasharma/.gradle/caches/transforms-3/55055ed9f8324293b13260e4c4c83ebc/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
+648        <receiver
+648-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+649            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+649-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+650            android:directBootAware="false"
+650-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+651            android:enabled="true"
+651-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+652            android:exported="true"
+652-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+653            android:permission="android.permission.DUMP" >
+653-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+654            <intent-filter>
+654-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+655                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+655-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+655-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+656            </intent-filter>
+657            <intent-filter>
+657-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+658                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+658-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+658-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+659            </intent-filter>
+660            <intent-filter>
+660-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+661                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+661-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+661-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+662            </intent-filter>
+663            <intent-filter>
+663-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+664                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+664-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+664-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+665            </intent-filter>
+666        </receiver>
+667    </application>
+668
+669</manifest>

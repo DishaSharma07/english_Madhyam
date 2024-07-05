@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/drawable-v21/mtrl_navigation_bar_item_background.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/285e4ce1bc4a7cc1fbad1426472e6da0/transformed/material-1.11.0/res/drawable-v21/mtrl_navigation_bar_item_background.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/65e279dc40631a9a2870691d44cc8b75/transformed/appcompat-1.6.1/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/65e279dc40631a9a2870691d44cc8b75/transformed/appcompat-1.6.1/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/drawable-v21/m3_tabs_background.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/285e4ce1bc4a7cc1fbad1426472e6da0/transformed/material-1.11.0/res/drawable-v21/m3_tabs_background.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/drawable-v21/abc_dialog_material_background.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/65e279dc40631a9a2870691d44cc8b75/transformed/appcompat-1.6.1/res/drawable-v21/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/drawable-v21/abc_list_divider_material.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/65e279dc40631a9a2870691d44cc8b75/transformed/appcompat-1.6.1/res/drawable-v21/abc_list_divider_material.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/65e279dc40631a9a2870691d44cc8b75/transformed/appcompat-1.6.1/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/drawable-v21/notification_action_background.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/f029137b02f3b27bf05ac27073628e69/transformed/core-1.9.0/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/intermediates/merged_res/release/drawable-v21/material_cursor_drawable.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/285e4ce1bc4a7cc1fbad1426472e6da0/transformed/material-1.11.0/res/drawable-v21/material_cursor_drawable.xml"
+    }
+]

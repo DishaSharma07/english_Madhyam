@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/razorpay_flutter/intermediates/merged_res/release/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/ea3b83f44294015b99580d128b7c239c/transformed/jetified-play-services-auth-21.1.0/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/razorpay_flutter/intermediates/merged_res/release/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/ea3b83f44294015b99580d128b7c239c/transformed/jetified-play-services-auth-21.1.0/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/razorpay_flutter/intermediates/merged_res/release/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/ea3b83f44294015b99580d128b7c239c/transformed/jetified-play-services-auth-21.1.0/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+    }
+]
