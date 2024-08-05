@@ -12,6 +12,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_downloader/flutter_downloader.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -37,8 +38,19 @@ class MyHttpOverrides extends HttpOverrides {
 }
 
 void main() async {
+  /// pdf download section
+  FlutterLocalNotificationsPlugin? flutterLocalNotificationsPlugin;
+
   WidgetsFlutterBinding.ensureInitialized();
   HttpOverrides.global = MyHttpOverrides();
+  /// pdf download initialization
+  flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
+  final android = AndroidInitializationSettings('@mipmap/logo_round');
+
+  if (Platform.isAndroid) {
+    final initSettings = InitializationSettings(android: android);
+    flutterLocalNotificationsPlugin!.initialize(initSettings);
+  }
 
   await Firebase.initializeApp();
   await FlutterDownloader.initialize(debug: debug, ignoreSsl: true);

@@ -36,13 +36,15 @@ class ParentCategories {
   int? id;
   String? name;
   String? image;
+  int ?ordering;
 
-  ParentCategories({this.id, this.name, this.image});
+  ParentCategories({this.id, this.name, this.image,this.ordering});
 
   ParentCategories.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     name = json['name'];
     image = json['image'];
+    ordering=json.containsKey('ordering')?json['ordering']:null;
   }
 
   Map<String, dynamic> toJson() {

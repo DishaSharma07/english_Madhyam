@@ -1,7 +1,7 @@
 [
     {
         "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/fluttertoast/intermediates/merged_res/release/drawable/corner.xml",
-        "source": "/Users/dishasharma/.pub-cache/hosted/pub.dev/fluttertoast-8.2.4/android/src/main/res/drawable/corner.xml"
+        "source": "/Users/dishasharma/.pub-cache/hosted/pub.dev/fluttertoast-8.2.6/android/src/main/res/drawable/corner.xml"
     },
     {
         "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/fluttertoast/intermediates/merged_res/release/drawable/notification_icon_background.xml",
@@ -17,7 +17,7 @@
     },
     {
         "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/fluttertoast/intermediates/merged_res/release/drawable/toast_bg.xml",
-        "source": "/Users/dishasharma/.pub-cache/hosted/pub.dev/fluttertoast-8.2.4/android/src/main/res/drawable/toast_bg.xml"
+        "source": "/Users/dishasharma/.pub-cache/hosted/pub.dev/fluttertoast-8.2.6/android/src/main/res/drawable/toast_bg.xml"
     },
     {
         "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/fluttertoast/intermediates/merged_res/release/drawable/notification_tile_bg.xml",

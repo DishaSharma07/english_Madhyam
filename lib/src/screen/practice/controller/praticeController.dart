@@ -23,7 +23,7 @@ class PraticeController extends GetxController {
   var practiceCategoryList = [].obs;
   var subCategoryId = "";
 
-  void getPracticeCategories(parentId) {
+  void getSubCategories(parentId) {
     try {
       isFirstLoadRunning(true);
       apiService.getSubcategory(parentId: parentId).then((resp) {

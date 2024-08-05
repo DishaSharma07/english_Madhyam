@@ -1,5 +1,6 @@
 import 'package:english_madhyam/resrc/utils/app_colors.dart';
 import 'package:english_madhyam/src/screen/category/controller/libraryController.dart';
+import 'package:english_madhyam/src/screen/favorite/controller/favoriteController.dart';
 import 'package:english_madhyam/src/screen/practice/page/praticeCategoryPage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -16,10 +17,12 @@ import '../../../custom/toolbarTitle.dart';
 import '../../../skeletonView/gridViewSkeleton.dart';
 import '../../../utils/colors/colors.dart';
 import '../../material/controller/materialController.dart';
-import '../../material/page/materialCategory.dart';
+import '../../material/page/material_category_list_page.dart';
 import '../../practice/controller/praticeController.dart';
-class LibraryPage extends GetView<LibraryController> {
-    LibraryPage({Key? key}) : super(key: key);
+class MaterialParentCategoriesPage
+ extends GetView<LibraryController> {
+    MaterialParentCategoriesPage
+({Key? key}) : super(key: key);
 
   final controller=Get.put(LibraryController());
    final MaterialController _materialController =
@@ -29,8 +32,10 @@ class LibraryPage extends GetView<LibraryController> {
    GlobalKey<RefreshIndicatorState>();
 
    final _praticeController = Get.put(PraticeController());
+    final FavoriteController _favoriteController = Get.find();
 
-   List<String> color = [
+
+    List<String> color = [
      "#EDF6FF",
      "#FFDDDD",
      "#F6F4FF",
@@ -43,6 +48,7 @@ class LibraryPage extends GetView<LibraryController> {
      await Future.delayed(const Duration(milliseconds: 1000));
      // if failed,use refreshFailed()
    }
+
 
    @override
    Widget build(BuildContext context) {
@@ -103,13 +109,21 @@ class LibraryPage extends GetView<LibraryController> {
    Widget buildChildMenuBody(int index, BuildContext context){
      return InkWell(
        onTap: (){
-         if(controller.parentCategories[index].id==1){
-           _materialController.getMaterialCategory(controller.parentCategories[index].id.toString());
-           Get.to(MaterialCategoryListPage(parentcateId: controller.parentCategories[index].id.toString(),));
+         if(!_favoriteController.isSavedQuestionNavigation.value){
+           if(controller.parentCategories[index].id==1){
+             _materialController.getMaterialCategory(controller.parentCategories[index].id.toString());
+             Get.to(MaterialCategoryListPage(parentcateId: controller.parentCategories[index].id.toString(),));
+           }else{
+             _praticeController.getSubCategories(controller.parentCategories[index].id.toString());
+             Get.to(MaterialSubCategoriesPage
+               (parentcateId: controller.parentCategories[index].id.toString(),));
+           }
          }else{
-           _praticeController.getPracticeCategories(controller.parentCategories[index].id.toString());
-           Get.to(PraticeCategorListPage(parentcateId: controller.parentCategories[index].id.toString(),));
+           _praticeController.getSubCategories(controller.parentCategories[index].id.toString());
+           Get.to(MaterialSubCategoriesPage
+             (parentcateId: controller.parentCategories[index].id.toString(),));
          }
+
        },
        child: Container(
          margin: const EdgeInsets.all(4),
@@ -180,51 +194,4 @@ class LibraryPage extends GetView<LibraryController> {
      );
    }
 
-   buildChildMenuBody1(int index, BuildContext context) {
-     return GestureDetector(
-       onTap: (){
-         print(controller.parentCategories[index].id.toString()+"ID");
-         if(controller.parentCategories[index].id==1){
-           _materialController.getMaterialCategory(controller.parentCategories[index].id.toString());
-           Get.to(MaterialCategoryListPage(parentcateId: controller.parentCategories[index].id.toString(),));
-         }else{
-           _praticeController.getPracticeCategories(controller.parentCategories[index].id.toString());
-           Get.to(PraticeCategorListPage(parentcateId: controller.parentCategories[index].id.toString(),));
-         }
-       },
-       child: Container(
-         margin: const EdgeInsets.all(3),
-         decoration: const BoxDecoration(
-             color: primaryColor,
-             shape: BoxShape.rectangle,
-             borderRadius: BorderRadius.all(Radius.circular(10))),
-         child: Center(
-           child: Padding(
-             padding: const EdgeInsets.all(6.0),
-             child: Column(
-               mainAxisAlignment: MainAxisAlignment.center,
-               mainAxisSize: MainAxisSize.min,
-               crossAxisAlignment: CrossAxisAlignment.center,
-               children: [
-                 //Icon(Icons.category),
-                 Image.network(
-                   controller.parentCategories[index].image ?? MyConstant.banner_image,
-                   height: 35,
-                 ),
-                 const SizedBox(
-                   height: 6,
-                 ),
-                 RegularTextView(
-                   text: controller.parentCategories[index].name ?? "",
-                   textSize: 14,
-                   maxLine: 2,
-                   textAlign: TextAlign.center,
-                 ),
-               ],
-             ),
-           ),
-         ),
-       ),
-     );
-   }
 }

@@ -24,19 +24,17 @@ class FeedModel {
 
 class Data {
   WordOfDay? wordOfDay;
-List<Dataum>?phrase;
+  WordOfDay?phrase;
   Data({this.wordOfDay,this.phrase});
 
   Data.fromJson(Map<String, dynamic> json) {
     wordOfDay =json.containsKey('word_of_day') ?json['word_of_day'] != null
         ? new WordOfDay.fromJson(json['word_of_day'])
         : null:null;
-    if (json.containsKey('phrase')&&json['phrase'] != null) {
-      phrase = <Dataum>[];
-      json['phrase'].forEach((v) {
-        phrase!.add(new Dataum.fromJson(v));
-      });
-  }}
+    phrase =json.containsKey('phrase') ?json['phrase'] != null
+        ? new WordOfDay.fromJson(json['phrase'])
+        : null:null;
+  }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();

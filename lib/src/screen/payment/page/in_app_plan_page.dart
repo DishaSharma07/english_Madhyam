@@ -31,13 +31,15 @@ final bool _kAutoConsume = Platform.isIOS || true;
 
 const String one_month_english = 'com.EngMadhyam.englishMadhyam.onemonthplan';
 const String three_month_english = 'com.EngMadhyam.englishMadhyam.threemonthplan';
-const String three_twelv_english = 'com.EngMadhyam.englishMadhyam.twelvemonthplan';
+const String twelv_month_english = 'com.EngMadhyam.englishMadhyam.twelvemonthplan';
+const String six_month_english = 'com.EngMadhyam.englishMadhyam.sixmonthplan';
 final PaymentController _paymentController = Get.put(PaymentController());
 
 const List<String> _kProductIds = <String>[
   one_month_english,
   three_month_english,
-  three_twelv_english
+  six_month_english,
+  twelv_month_english
 ];
 
 class InAppPlanDetail extends StatefulWidget {
@@ -169,7 +171,8 @@ class _InAppPlanDetailState extends State<InAppPlanDetail> {
         PlanID: purchaseDetails.productID == _kProductIds[0]
             ? planDetailsController.planIdOneMonth
             : purchaseDetails.productID == _kProductIds[1]
-            ? planDetailsController.planIdThreeMonth
+            ? planDetailsController.planIdThreeMonth:
+        purchaseDetails.productID == _kProductIds[2]?planDetailsController.planIdSixMonth
             : planDetailsController.planIdOneYear,
         paymentMethod: "in_app_purchase");
     setState(() {

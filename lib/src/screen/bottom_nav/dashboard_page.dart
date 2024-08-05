@@ -40,6 +40,7 @@ class DashboardPage extends GetView<DashboardController> {
   Widget build(BuildContext context) {
     return GetBuilder<DashboardController>(
       builder: (_) {
+        favoriteController.isSavedQuestionNavigation.value=false;
         return Scaffold(
           body: Stack(
             children: [
@@ -48,7 +49,8 @@ class DashboardPage extends GetView<DashboardController> {
                   index: controller.tabIndex,
                   children: [
                     HomePage(),
-                    LibraryPage(),
+                    MaterialParentCategoriesPage
+(),
                     FeedDashboard(),
                     VideoDashboardPage(),
                     PassPage()

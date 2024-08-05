@@ -8,10 +8,12 @@ import 'package:english_madhyam/src/screen/practice/controller/praticeExamDetail
 import 'package:english_madhyam/src/screen/favorite/controller/favoriteController.dart';
 import 'package:english_madhyam/src/utils/colors/colors.dart';
 import 'package:english_madhyam/src/screen/pages/page/custom_dmsans.dart';
+import 'package:english_madhyam/src/widgets/question_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_html_table/flutter_html_table.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'dart:async';
@@ -514,21 +516,65 @@ class _AttemptedQuizPageState extends State<AttemptedQuizPage> {
         ],
       ),
     );
-  }
+  }String a = """
+  "<p><strong>Q9. Match the following groups of words with the correct one-word substitutions</strong></p>
+  <table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width:500px\">
+      <tbody>
+          <tr>
+              <td><strong>Phrase</strong></td>
+              <td>One-word substitution</td>
+          </tr>
+          <tr>
+              <td>A.&nbsp;The act of looking into one&rsquo;s mind</td>
+              <td>1.&nbsp;Hallucination</td>
+          </tr>
+          <tr>
+              <td>B.&nbsp;Pleasure mixed with sadness at recalling happy moments in the past</td>
+              <td>2.&nbsp;Reverie</td>
+          </tr>
+          <tr>
+              <td>C.&nbsp;A false perception of thing that do not really exist</td>
+              <td>3.Introspection</td>
+          </tr>
+          <tr>
+              <td>D.&nbsp;A state of absent-minded daydreaming</td>
+              <td>4.Nostalgia</td>
+          </tr>
+      </tbody>
+  </table>"
+  """;
+  String htmlString = """
+  <table border="1" cellpadding="1" cellspacing="1" style="width:500px">
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+        <td>Row 1, Cell 3</td>
+      </tr>
+      <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+        <td>Row 2, Cell 3</td>
+      </tr>
+      <tr>
+        <td>Row 3, Cell 1</td>
+        <td>Row 3, Cell 2</td>
+        <td>Row 3, Cell 3</td>
+      </tr>
+    </tbody>
+  </table>
+""";
 
-  //check by mukesh
+
   Widget questionWidget() {
-    return Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: Html(
-          data: _examQuestion[selectedQuestion].eQuestion.toString(),
-          style: {
-            "body": Style(
-              fontSize: FontSize(18.0),
-            ),
-            "p": Style(fontSize: FontSize(18.0))
-          },
-        ));
+    return QuestionWidget(questionString:_examQuestion[selectedQuestion].eQuestion.toString() ,);
   }
 
 //check by mukesh

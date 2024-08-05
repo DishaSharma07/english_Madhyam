@@ -132,11 +132,13 @@ class PracticeExamListDetailPage extends GetView<PraticeExamListController> {
           } else {
             _subcontroller.profileDataFetch();
             if (Platform.isAndroid) {
-              // startAndResumeExam(data);
+              startAndResumeExam(data);
 
-              Get.to(() => const ChoosePlanDetails());
+              // Get.to(() => const ChoosePlanDetails());
             } else {
-              Get.to(() => InAppPlanDetail());
+              startAndResumeExam(data);
+
+              // Get.to(() => InAppPlanDetail());
             }
           }
         }else{
@@ -354,12 +356,27 @@ class PracticeExamListDetailPage extends GetView<PraticeExamListController> {
           eId: "",
           title: title.toString(),
           route: 1,
-        ));
+        )
+        );
       } else {
         if (Platform.isAndroid) {
-          Get.to(() => const ChoosePlanDetails());
+          Get.to(() => PerformanceReport(
+            id: data.id.toString(),
+            catId: id.toString(),
+            eId: "",
+            title: title.toString(),
+            route: 1,
+          ));
+          // Get.to(() => const ChoosePlanDetails());
         } else {
-          Get.to(() => InAppPlanDetail());
+          Get.to(() => PerformanceReport(
+            id: data.id.toString(),
+            catId: id.toString(),
+            eId: "",
+            title: title.toString(),
+            route: 1,
+          ));
+          // Get.to(() => InAppPlanDetail());
         }
       }
     } else {

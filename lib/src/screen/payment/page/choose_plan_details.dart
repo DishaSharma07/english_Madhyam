@@ -23,7 +23,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../material/controller/materialController.dart';
 import '../controller/paymentController.dart';
 
-
 class ChoosePlanDetails extends StatefulWidget {
   const ChoosePlanDetails({Key? key}) : super(key: key);
 
@@ -43,7 +42,6 @@ class _ChoosePlanDetailsState extends State<ChoosePlanDetails> {
   String _razorPayTxnId = "";
   int _selectedPlan = 0;
 
-
   @override
   void initState() {
     super.initState();
@@ -51,9 +49,8 @@ class _ChoosePlanDetailsState extends State<ChoosePlanDetails> {
       // executes after build
       _controller.onClickRadioButton(0);
       _controller.getPlanDetails();
-
-
     });
+
     _razorpay = Razorpay();
     _razorpay.on(Razorpay.EVENT_PAYMENT_SUCCESS, _handlePaymentSuccess);
     _razorpay.on(Razorpay.EVENT_PAYMENT_ERROR, _handlePaymentError);
@@ -155,7 +152,7 @@ class _ChoosePlanDetailsState extends State<ChoosePlanDetails> {
           //backgroundColor: Colors.white,
           centerTitle: true,
           title: const ToolbarTitle(
-           title: 'Choose Your Plan',
+            title: 'Choose Your Plan',
           ),
         ),
         body: SmartRefresher(
@@ -166,13 +163,15 @@ class _ChoosePlanDetailsState extends State<ChoosePlanDetails> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Align(alignment: Alignment.topCenter,
-              child: Image.asset(
-                "assets/img/ribbon.png",
-                height: MediaQuery.of(context).size.height * 0.2,
-                width: MediaQuery.of(context).size.width * 0.6,
-                fit: BoxFit.cover,
-              ),),
+              Align(
+                alignment: Alignment.topCenter,
+                child: Image.asset(
+                  "assets/img/ribbon.png",
+                  height: MediaQuery.of(context).size.height * 0.2,
+                  width: MediaQuery.of(context).size.width * 0.6,
+                  fit: BoxFit.cover,
+                ),
+              ),
               Padding(
                 padding: const EdgeInsets.only(left: 20.0, bottom: 10),
                 child: Row(
@@ -206,7 +205,7 @@ class _ChoosePlanDetailsState extends State<ChoosePlanDetails> {
                 ),
               ),
               Obx(() {
-                if (!_controller.isLoading.value) {
+                if (_controller.isLoading.isFalse) {
                   if (_controller.planDetails.value.result == false) {
                     return Center(
                       child: Lottie.asset('assets/animations/49993-search.json',
@@ -229,6 +228,12 @@ class _ChoosePlanDetailsState extends State<ChoosePlanDetails> {
                   );
                 }
               }),
+              // GetBuilder(
+              //     init: _controller,
+              //
+              //     builder: (val){
+              //
+              // }),
               InkWell(
                 onTap: () {
                   _paymentController.CouponListContr();
@@ -241,10 +246,10 @@ class _ChoosePlanDetailsState extends State<ChoosePlanDetails> {
                 child: Container(
                   decoration: BoxDecoration(
                       color: purpleColor.withOpacity(0.09),
-                    borderRadius: const BorderRadius.all(Radius.circular(10))
-                  ),
-                  margin: const EdgeInsets.symmetric(horizontal: 12,vertical: 6),
-
+                      borderRadius:
+                          const BorderRadius.all(Radius.circular(10))),
+                  margin:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                   padding: const EdgeInsets.all(4),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -258,7 +263,8 @@ class _ChoosePlanDetailsState extends State<ChoosePlanDetails> {
                           CustomDmSans(
                             text: "Use coupons",
                             fontWeight: FontWeight.w600,
-                            fontSize: 16,color: Colors.black,
+                            fontSize: 16,
+                            color: Colors.black,
                           ),
                         ],
                       ),
@@ -300,27 +306,8 @@ class _ChoosePlanDetailsState extends State<ChoosePlanDetails> {
                                       children: [
                                         CustomDmSans(text: "You Saved:"),
                                         CustomDmSans(
-                                            text: "\u{20B9}${_paymentController
-                                                            .applyCoupon
-                                                            .value
-                                                            .couponDetails!
-                                                            .discount
-                                                            .toString()
-                                                            .length >
-                                                        5
-                                                    ? _paymentController
-                                                        .applyCoupon
-                                                        .value
-                                                        .couponDetails!
-                                                        .discount
-                                                        .toString()
-                                                        .substring(0, 5)
-                                                    : _paymentController
-                                                        .applyCoupon
-                                                        .value
-                                                        .couponDetails!
-                                                        .discount
-                                                        .toString()}")
+                                            text:
+                                                "\u{20B9}${_paymentController.applyCoupon.value.couponDetails!.discount.toString().length > 5 ? _paymentController.applyCoupon.value.couponDetails!.discount.toString().substring(0, 5) : _paymentController.applyCoupon.value.couponDetails!.discount.toString()}")
                                       ],
                                     ),
                                     const SizedBox(
@@ -332,11 +319,8 @@ class _ChoosePlanDetailsState extends State<ChoosePlanDetails> {
                                       children: [
                                         CustomDmSans(text: "Final Amount:"),
                                         CustomDmSans(
-                                            text: "\u{20B9}${_paymentController
-                                                    .applyCoupon
-                                                    .value
-                                                    .couponDetails!
-                                                    .finalAmount}")
+                                            text:
+                                                "\u{20B9}${_paymentController.applyCoupon.value.couponDetails!.finalAmount}")
                                       ],
                                     ),
                                   ],
@@ -347,7 +331,9 @@ class _ChoosePlanDetailsState extends State<ChoosePlanDetails> {
                   ],
                 );
               }),
-              const SizedBox(height: 6,),
+              const SizedBox(
+                height: 6,
+              ),
               Obx(() {
                 return InkWell(
                   onTap: () {
@@ -410,119 +396,118 @@ class _ChoosePlanDetailsState extends State<ChoosePlanDetails> {
                   ),
                 );
               }),
-              const SizedBox(height: 6,),
+              const SizedBox(
+                height: 6,
+              ),
             ],
           )),
         ));
   }
+
   planListRow1(PlanList planData, int index) {
-    return Obx(
-     () {
-        return GestureDetector(
-          onTap: () {
-            _paymentController.couponCode.value = "";
-            _controller.groupValue.value = index;
-            // setState(() {
-
-              _selectedPlan = index;
-            // });
-
-          },
-          child: Container(
-            padding: const EdgeInsets.all(6),
-            margin: const EdgeInsets.symmetric(vertical: 6,horizontal: 12),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(18),
-            ),
-            child: Stack(
-              children: [
-                ListTile(
-                  leading: Padding(
-                    padding: const EdgeInsets.all(6.0),
-                    child: Icon(
-                      _controller.groupValue.value == index
-                          ? Icons.radio_button_checked
-                          : Icons.radio_button_off,
-                      color: _controller.groupValue.value == index
-                          ? primaryColor
-                          : Colors.grey,
-                    ),
-                  ),
-                  title: BoldTextView(
-                    text: "${planData.duration} Months",
-                    textAlign: TextAlign.start,
-                    textSize: 16,
-                  ),
-                  subtitle: BoldTextView(
-                  textAlign: TextAlign.start,
-                    color: primaryColor,weight: FontWeight.w500,
-                    text: _controller.planDetails.value.list![index].perDay!
-                                .toString()
-                                .length >
-                            5
-                        ? "(${_controller.planDetails.value.list![index].perDay!.toString().substring(0, 5)})" +
-                            " per day"
-                        : "${_controller.planDetails.value.list![index].perDay!}per day",
-                  ),
-                  trailing: Column(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      _controller.planDetails.value.list![index].discount != 0
-                          ? DottedBorder(
-                              borderType: BorderType.RRect,
-                              dashPattern: const [3, 3],
+    return GestureDetector(
+      onTap: () {
+        _paymentController.couponCode.value = "";
+        _controller.groupValue.value = index;
+        setState(() {
+          _selectedPlan = index;
+        });
+      },
+      child: Container(
+        padding: const EdgeInsets.all(6),
+        margin: const EdgeInsets.symmetric(vertical: 6, horizontal: 12),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(18),
+        ),
+        child: Stack(
+          children: [
+            ListTile(
+              leading: Padding(
+                padding: const EdgeInsets.all(6.0),
+                child: Icon(
+                  _controller.groupValue.value == index
+                      ? Icons.radio_button_checked
+                      : Icons.radio_button_off,
+                  color: _controller.groupValue.value == index
+                      ? primaryColor
+                      : Colors.grey,
+                ),
+              ),
+              title: BoldTextView(
+                text: "${planData.duration} Months",
+                textAlign: TextAlign.start,
+                textSize: 16,
+              ),
+              subtitle: BoldTextView(
+                textAlign: TextAlign.start,
+                color: primaryColor,
+                weight: FontWeight.w500,
+                text: _controller.planDetails.value.list![index].perDay!
+                            .toString()
+                            .length >
+                        5
+                    ? "(${_controller.planDetails.value.list![index].perDay!.toString().substring(0, 5)})" +
+                        " per day"
+                    : "${_controller.planDetails.value.list![index].perDay!}per day",
+              ),
+              trailing: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  _controller.planDetails.value.list![index].discount != 0
+                      ? DottedBorder(
+                          borderType: BorderType.RRect,
+                          dashPattern: const [3, 3],
+                          color: primaryColor,
+                          strokeWidth: 1,
+                          child: Padding(
+                            padding: const EdgeInsets.only(
+                                top: 3.0, bottom: 3, left: 10, right: 10),
+                            child: RegularTextView(
+                              text:
+                                  "${_controller.planDetails.value.list![index].discount}% OFF",
                               color: primaryColor,
-                              strokeWidth: 1,
-                              child: Padding(
-                                padding: const EdgeInsets.only(
-                                    top: 3.0, bottom: 3, left: 10, right: 10),
-                                child: RegularTextView(
-                                  text:
-                                      "${_controller.planDetails.value.list![index].discount}% OFF",
-                                  color: primaryColor,
-                                ),
-                              ))
-                          : const SizedBox(),
-                      const SizedBox(
-                        height: 6,
-                      ),
-
-                    ],
+                            ),
+                          ))
+                      : const SizedBox(),
+                  const SizedBox(
+                    height: 6,
                   ),
-                ),
-                Positioned(
-                    child: SizedBox(
-                  width: 150,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      planData.mrp != planData.fee!
-                          ? Text(
-                        "\u{20B9} ${_controller.planDetails.value.list![index].mrp}",
-                        style: GoogleFonts.roboto(
-                            color: examGreyColor,
-                            fontSize: 15,
-                            fontWeight: FontWeight.w500,
-                            decoration: TextDecoration.lineThrough),
-                      )
-                          : const SizedBox(),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      BoldTextView(
-                        text: "\u{20B9} ${planData.fee}",
-                        textSize: 18,
-                      ),
-                    ],
-                  ),
-                ),
-                bottom: 0,right: 0,),
-              ],
+                ],
+              ),
             ),
-          ),
-        );
-      }
+            Positioned(
+              child: SizedBox(
+                width: 150,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    planData.mrp != planData.fee!
+                        ? Text(
+                            "\u{20B9} ${_controller.planDetails.value.list![index].mrp}",
+                            style: GoogleFonts.roboto(
+                                color: examGreyColor,
+                                fontSize: 15,
+                                fontWeight: FontWeight.w500,
+                                decoration: TextDecoration.lineThrough),
+                          )
+                        : const SizedBox(),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    BoldTextView(
+                      text: "\u{20B9} ${planData.fee}",
+                      textSize: 18,
+                    ),
+                  ],
+                ),
+              ),
+              bottom: 0,
+              right: 0,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

@@ -80,7 +80,7 @@ class _PassPageState extends State<PassPage> {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: GetX<PaymentController>(
-                          init: PaymentController(),
+                          init: _controller,
                           builder: (contr) {
                             if (contr.purchaseloading.value) {
                               return SizedBox(
@@ -96,8 +96,8 @@ class _PassPageState extends State<PassPage> {
                                 ),
                               );
                             } else {
-                              if (contr.purchasehistory.value.purchaseHistory!
-                                  .isEmpty) {
+                              if (contr.purchasehistory.value.purchaseHistory==null ||
+                                  contr.purchasehistory.value.purchaseHistory!.isEmpty) {
                                 return SizedBox(
                                   height: MediaQuery.of(context).size.height *
                                       0.8,

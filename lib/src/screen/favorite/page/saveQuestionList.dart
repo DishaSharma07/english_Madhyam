@@ -16,12 +16,14 @@ import 'package:english_madhyam/resrc/widgets/regularTextView.dart';
 
 
 import '../../../utils/colors/colors.dart';
+import '../../../widgets/question_widget.dart';
 import '../../pages/page/converter.dart';
 import '../../pages/page/custom_dmsans.dart';
 
 class SaveQuestionList extends GetView<FavoriteController> {
   static const name = "SaveQuestionList";
-  SaveQuestionList({Key? key}) : super(key: key);
+  final String categoryId;
+  SaveQuestionList({Key? key,required this.categoryId}) : super(key: key);
 
   final FavoriteController favoriteController = Get.find();
   final RefreshController _refreshController =
@@ -61,13 +63,24 @@ class SaveQuestionList extends GetView<FavoriteController> {
           physics: const AlwaysScrollableScrollPhysics(),
           itemCount: saveWordsList.length,
           itemBuilder: (context, index) {
-            QuestionData wordData = saveWordsList[index];
-            return Card(
-              elevation: 5,
+            QuestionData questionData = saveWordsList[index];
+            return Container(
+              decoration: BoxDecoration(
+                boxShadow: const [
+                  BoxShadow(
+                  color: Colors.grey,
+                  offset: Offset(0,1),
+                  blurRadius: 3
+                )],
+                borderRadius: BorderRadius.circular(5),
+                color: Colors.white,
+
+              ),
+
+
               margin: const EdgeInsets.only(
                   left: 10, right: 0, bottom: 5, top: 10),
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(5)),
+
               child: Column(
                 // mainAxisSize: MainAxisSize.min,
                 children: [
@@ -87,21 +100,23 @@ class SaveQuestionList extends GetView<FavoriteController> {
 
                               ),),
                               Expanded(
+                              child: QuestionWidget(questionString:questionData.eQuestion.toString(),)
 
-                                child: Html(
 
-                                  data: wordData.eQuestion.toString(),
-                                  style: {
-                                    "body": Style(
-                                        fontSize: FontSize(18.0),
-                                        textAlign: TextAlign.justify
-
-                                    ),
-                                    "p": Style(fontSize: FontSize(18.0),
-                                        textAlign: TextAlign.justify
-                                    )
-                                  },
-                                ),
+            // child: Html(
+            //
+            //                       data: questionData.eQuestion.toString(),
+            //                       style: {
+            //                         "body": Style(
+            //                             fontSize: FontSize(18.0),
+            //                             textAlign: TextAlign.justify
+            //
+            //                         ),
+            //                         "p": Style(fontSize: FontSize(18.0),
+            //                             textAlign: TextAlign.justify
+            //                         )
+            //                       },
+            //                     ),
                               ),
                             ],
                           ),
@@ -112,7 +127,7 @@ class SaveQuestionList extends GetView<FavoriteController> {
                             onTap: () async {
                               await controller.removeQuestionFromList(
                                   context: context,
-                                  questionId: wordData.id.toString() ?? "");
+                                  questionId: questionData.id.toString() ?? "");
                               saveWordsList.removeAt(index);
                               controller.update();
                             },
@@ -128,7 +143,7 @@ class SaveQuestionList extends GetView<FavoriteController> {
                   // ListTile(
                   //   title: Html(
                   //
-                  //     data: wordData.eQuestion.toString(),
+                  //     data: questionData.eQuestion.toString(),
                   //     style: {
                   //       "body": Style(
                   //         fontSize: FontSize(18.0),
@@ -144,7 +159,7 @@ class SaveQuestionList extends GetView<FavoriteController> {
                   //     onTap: () async {
                   //       await controller.removeQuestionFromList(
                   //           context: context,
-                  //           questionId: wordData.id.toString() ?? "");
+                  //           questionId: questionData.id.toString() ?? "");
                   //       saveWordsList.removeAt(index);
                   //       controller.update();
                   //     },
@@ -154,7 +169,7 @@ class SaveQuestionList extends GetView<FavoriteController> {
                   //     ),
                   //   ),
                   // ),
-                  optionBody(wordData.options ?? []),
+                  optionBody(questionData.options ?? []),
                   CustomDmSans(
                     text: "Solutions :",
                     color: greenColor,
@@ -162,7 +177,7 @@ class SaveQuestionList extends GetView<FavoriteController> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Html(
-                      data: wordData.solutions!.eSolutions ?? "",
+                      data: questionData.solution!.eSolutions ?? "",
                       style: {
                         "body": Style(
                           fontSize: FontSize(14.0),
@@ -219,7 +234,7 @@ class SaveQuestionList extends GetView<FavoriteController> {
 
   void _onRefresh() async {
     // monitor network fetch
-    favoriteController.getSaveQuestionList();
+    favoriteController.getSaveQuestionList(categoryId);
 
     await Future.delayed(const Duration(milliseconds: 1000));
     // if failed,use refreshFailed()

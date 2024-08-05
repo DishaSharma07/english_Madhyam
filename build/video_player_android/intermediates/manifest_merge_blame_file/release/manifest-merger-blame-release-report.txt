@@ -3,9 +3,9 @@
 3    package="io.flutter.plugins.videoplayer" >
 4
 5    <uses-sdk
-6        android:minSdkVersion="16"
-6-->/Users/dishasharma/.pub-cache/hosted/pub.dev/video_player_android-2.4.12/android/src/main/AndroidManifest.xml
-7        android:targetSdkVersion="16" />
-7-->/Users/dishasharma/.pub-cache/hosted/pub.dev/video_player_android-2.4.12/android/src/main/AndroidManifest.xml
+6        android:minSdkVersion="19"
+6-->/Users/dishasharma/.pub-cache/hosted/pub.dev/video_player_android-2.5.2/android/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="19" />
+7-->/Users/dishasharma/.pub-cache/hosted/pub.dev/video_player_android-2.5.2/android/src/main/AndroidManifest.xml
 8
 9</manifest>

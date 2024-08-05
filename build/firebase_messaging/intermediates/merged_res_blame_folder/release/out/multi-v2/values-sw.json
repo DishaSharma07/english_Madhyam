@@ -4,23 +4,6 @@
             "outputFile": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/incremental/mergeReleaseResources/merged.dir/values-sw/values-sw.xml",
             "map": [
                 {
-                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/ce80c370c0bfe2a3b0c525a2d52f6871/transformed/jetified-play-services-basement-18.1.0/res/values-sw/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "141",
-                        "endOffsets": "336"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1070",
-                        "endColumns": "145",
-                        "endOffsets": "1211"
-                    }
-                },
-                {
                     "source": "/Users/dishasharma/.gradle/caches/transforms-3/a62712980377a57144aa85dd635f2e3f/transformed/core-1.6.0/res/values-sw/values-sw.xml",
                     "from": {
                         "startLines": "2",
@@ -52,6 +35,23 @@
                         "startOffsets": "55,159,315,440,549,712,837,956,1216,1381,1487,1641,1768,1918,2077,2145,2220",
                         "endColumns": "103,155,124,108,162,124,118,113,164,105,153,126,149,158,67,74,95",
                         "endOffsets": "154,310,435,544,707,832,951,1065,1376,1482,1636,1763,1913,2072,2140,2215,2311"
+                    }
+                },
+                {
+                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/a3f8554682d21d72e7de4e36a50a0f18/transformed/jetified-play-services-basement-18.3.0/res/values-sw/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "141",
+                        "endOffsets": "336"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1070",
+                        "endColumns": "145",
+                        "endOffsets": "1211"
                     }
                 }
             ]
@@ -60,23 +60,6 @@
             "outputFile": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/intermediates/merged_res/release/values-sw/values-sw.xml",
             "map": [
                 {
-                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/ce80c370c0bfe2a3b0c525a2d52f6871/transformed/jetified-play-services-basement-18.1.0/res/values-sw/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "141",
-                        "endOffsets": "336"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1070",
-                        "endColumns": "145",
-                        "endOffsets": "1211"
-                    }
-                },
-                {
                     "source": "/Users/dishasharma/.gradle/caches/transforms-3/a62712980377a57144aa85dd635f2e3f/transformed/core-1.6.0/res/values-sw/values-sw.xml",
                     "from": {
                         "startLines": "2",
@@ -108,6 +91,23 @@
                         "startOffsets": "55,159,315,440,549,712,837,956,1216,1381,1487,1641,1768,1918,2077,2145,2220",
                         "endColumns": "103,155,124,108,162,124,118,113,164,105,153,126,149,158,67,74,95",
                         "endOffsets": "154,310,435,544,707,832,951,1065,1376,1482,1636,1763,1913,2072,2140,2215,2311"
+                    }
+                },
+                {
+                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/a3f8554682d21d72e7de4e36a50a0f18/transformed/jetified-play-services-basement-18.3.0/res/values-sw/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "141",
+                        "endOffsets": "336"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1070",
+                        "endColumns": "145",
+                        "endOffsets": "1211"
                     }
                 }
             ]

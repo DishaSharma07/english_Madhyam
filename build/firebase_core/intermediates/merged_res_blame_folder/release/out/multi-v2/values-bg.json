@@ -4,23 +4,6 @@
             "outputFile": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_core/intermediates/merged_res/release/values-bg/values-bg.xml",
             "map": [
                 {
-                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/ce80c370c0bfe2a3b0c525a2d52f6871/transformed/jetified-play-services-basement-18.1.0/res/values-bg/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "133",
-                        "endOffsets": "328"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "137",
-                        "endOffsets": "188"
-                    }
-                },
-                {
                     "source": "/Users/dishasharma/.gradle/caches/transforms-3/a62712980377a57144aa85dd635f2e3f/transformed/core-1.6.0/res/values-bg/values-bg.xml",
                     "from": {
                         "startLines": "2",
@@ -35,6 +18,23 @@
                         "startOffsets": "193",
                         "endColumns": "100",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/a3f8554682d21d72e7de4e36a50a0f18/transformed/jetified-play-services-basement-18.3.0/res/values-bg/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "133",
+                        "endOffsets": "328"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "137",
+                        "endOffsets": "188"
                     }
                 }
             ]
@@ -43,23 +43,6 @@
             "outputFile": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_core/intermediates/incremental/mergeReleaseResources/merged.dir/values-bg/values-bg.xml",
             "map": [
                 {
-                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/ce80c370c0bfe2a3b0c525a2d52f6871/transformed/jetified-play-services-basement-18.1.0/res/values-bg/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "133",
-                        "endOffsets": "328"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "137",
-                        "endOffsets": "188"
-                    }
-                },
-                {
                     "source": "/Users/dishasharma/.gradle/caches/transforms-3/a62712980377a57144aa85dd635f2e3f/transformed/core-1.6.0/res/values-bg/values-bg.xml",
                     "from": {
                         "startLines": "2",
@@ -74,6 +57,23 @@
                         "startOffsets": "193",
                         "endColumns": "100",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/a3f8554682d21d72e7de4e36a50a0f18/transformed/jetified-play-services-basement-18.3.0/res/values-bg/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "133",
+                        "endOffsets": "328"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "137",
+                        "endOffsets": "188"
                     }
                 }
             ]

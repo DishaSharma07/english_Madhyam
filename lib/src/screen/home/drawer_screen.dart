@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:english_madhyam/resrc/utils/app_colors.dart';
 import 'package:english_madhyam/src/auth/login/login_page.dart';
+import 'package:english_madhyam/src/screen/category/page/libraryPage.dart';
 import 'package:english_madhyam/src/screen/menu/view/menuListView.dart';
 import 'package:english_madhyam/src/screen/payment/controller/paymentController.dart';
 import 'package:english_madhyam/src/screen/profile/controller/profile_controllers.dart';
@@ -188,9 +189,12 @@ class _DrawerNavigationState extends State<DrawerNavigation> {
             Get.to(() => const PurchaseHistoryScreen());
             break;
           case 1:
-            _favoriteController.getSaveQuestionList();
+            // _favoriteController.getSaveQuestionList();
+            _favoriteController.isSavedQuestionNavigation.value=true;
             Get.back();
-            Get.to(() => SaveQuestionList());
+            // Get.to(() => SaveQuestionList());
+            Get.to(() => MaterialParentCategoriesPage
+());
             break;
           case 2:
             _favoriteController.getSaveWordsList();

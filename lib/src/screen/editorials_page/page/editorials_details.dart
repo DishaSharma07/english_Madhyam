@@ -10,6 +10,7 @@ import 'package:english_madhyam/main.dart';
 import 'package:english_madhyam/src/custom/toolbarTitle.dart';
 import 'package:english_madhyam/src/screen/editorials_page/controller/editorial_detail_controler.dart';
 import 'package:english_madhyam/src/screen/editorials_page/page/editorial_detail_widgets/audio_player.dart';
+import 'package:english_madhyam/src/screen/editorials_page/widgets/quiz_button.dart';
 import 'package:english_madhyam/src/screen/practice/performance_report.dart';
 import 'package:english_madhyam/src/utils/colors/colors.dart';
 import 'package:english_madhyam/src/screen/pages/page/custom_dmsans.dart';
@@ -51,9 +52,6 @@ class CommonEditorialsDetailsPage extends StatefulWidget {
 class _CommonEditorialsDetailsPageState
     extends State<CommonEditorialsDetailsPage>
     with SingleTickerProviderStateMixin, CacheManager {
-  final PraticeExamDetailController Quizcontroller =
-      Get.put(PraticeExamDetailController());
-
   final FavoriteController _favoriteController = Get.put(FavoriteController());
 
   final HtmlConverter _htmlConverter = HtmlConverter();
@@ -231,19 +229,16 @@ class _CommonEditorialsDetailsPageState
   }
 
   AnimationController? _recordAnimCtrl;
-  List<EditorialDescription> readingData=[];
+  List<EditorialDescription> readingData = [];
+
   @override
   void initState() {
-
     super.initState();
     //darkmode=AdaptiveTheme.of(context).mode.isDark;
 
-   readingData= getEditorialDescriptions(widget.editorial_id.toString());
+    readingData = getEditorialDescriptions(widget.editorial_id.toString());
     if (readingData.isNotEmpty) {
       editable = true;
-
-
-
 
       // List<String> readingDataList = readingData.split("_");
       // startingPoint = int.parse(readingDataList[0]);
@@ -543,7 +538,6 @@ class _CommonEditorialsDetailsPageState
           child: GetBuilder<EditorialDetailController>(
             init: EditorialDetailController(),
             builder: (_controller) {
-
               if (_controller.loading.value) {
                 return SizedBox(
                   height: MediaQuery.of(context).size.height * 0.8,
@@ -664,61 +658,87 @@ class _CommonEditorialsDetailsPageState
                                       ),
                                     ),
                                   ),
-                                  _controller.editorials.value.editorialDetails!
-                                          .pdf!.isNotEmpty
-                                      ? downloadStart == true
-                                          ? Container(
-                                              height: 20,
-                                              width: 20,
-                                              child: CircularProgressIndicator(
-                                                strokeWidth: 1.4,
-                                                color: lightYellowColor,
-                                              ),
-                                            )
-                                          : Align(
-                                              alignment: Alignment.topRight,
-                                              child: InkWell(
-                                                onTap: () async {
-                                                  /// for downloading the pdf on tap
-                                                  _download(_controller
-                                                      .editorials
-                                                      .value
-                                                      .editorialDetails!
-                                                      .pdf![0]
-                                                      .file!);
-                                                },
-                                                child: Column(
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
-                                                  children: [
-                                                    SvgPicture.asset(
-                                                      "assets/icon/downloadicon.svg",
-                                                    ),
-                                                    CustomDmSans(text: "PDF")
-                                                  ],
-                                                ),
-                                              ),
-                                            )
-                                      : const SizedBox(),
+                               Row(
+                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                 children: [
+                                  readingData!=null? GestureDetector(
+                                     onTap: () {
+                                       setReadingData(
+                                           widget.editorial_id,
+                                          null);
+                                       for(int i=0;i<_controller
+                                           .descritionColorlist.length;i++){
+                                        setState(() {
+                                          _controller
+                                              .descritionColorlist[i].selected=false;
+                                        });
+                                       }
+                                       ScaffoldMessenger.of(context).showSnackBar(
+                                           SnackBar(
+                                               duration: Duration(seconds: 2),
+                                               content: Text("All data removed")));
+                                     },
+                                     child: Container(
+                                         padding: const EdgeInsets.all(5),
+                                         decoration: BoxDecoration(
+                                             color:
+                                             editable ? purplegrColor : white,
+                                             borderRadius:
+                                             BorderRadius.circular(8),
+                                             boxShadow: [
+                                               BoxShadow(
+                                                   color: Colors.grey
+                                                       .withOpacity(0.3),
+                                                   offset: Offset(-2, 3),
+                                                   spreadRadius: 3,
+                                                   blurRadius: 3)
+                                             ]),
+                                         child: Icon(
+                                           Icons.delete,
+                                           color: editable ? white : purpleColor,
+                                         )),
+                                   ):SizedBox(),
+                                   _controller.editorials.value.editorialDetails!
+                                       .pdf!.isNotEmpty
+                                       ? downloadStart == true
+                                       ? Container(
+                                     height: 20,
+                                     width: 20,
+                                     child: CircularProgressIndicator(
+                                       strokeWidth: 1.4,
+                                       color: lightYellowColor,
+                                     ),
+                                   )
+                                       : Align(
+                                     alignment: Alignment.topRight,
+                                     child: InkWell(
+                                       onTap: () async {
+                                         /// for downloading the pdf on tap
+                                         _download(_controller
+                                             .editorials
+                                             .value
+                                             .editorialDetails!
+                                             .pdf![0]
+                                             .file!);
+                                       },
+                                       child: Column(
+                                         crossAxisAlignment:
+                                         CrossAxisAlignment.center,
+                                         children: [
+                                           SvgPicture.asset(
+                                             "assets/icon/downloadicon.svg",
+                                           ),
+                                           CustomDmSans(text: "PDF")
+                                         ],
+                                       ),
+                                     ),
+                                   )
+                                       : const SizedBox(),
+                                 ],
+                               )
                                 ],
                               ),
                             ),
-                            // _controller.meaningListModel.value.result == false
-                            //     ? SizedBox(
-                            //         child: Text(
-                            //           _htmlConverter.parseHtmlString(controller
-                            //               .editorials
-                            //               .value
-                            //               .editorialDetails!
-                            //               .description!),
-                            //           textAlign: TextAlign.justify,
-                            //           style: TextStyle(
-                            //             wordSpacing: 10.0,
-                            //             fontSize: custFontSize,
-                            //           ),
-                            //         ),
-                            //       )
-                            //     :
                             Text.rich(
                               TextSpan(children: <InlineSpan>[
                                 for (int i = 0;
@@ -888,6 +908,10 @@ class _CommonEditorialsDetailsPageState
                                                     if (editable) {
                                                       if (startingPoint == -1) {
                                                         startingPoint = i;
+                                                        _controller
+                                                            .descritionColorlist[
+                                                                startingPoint]
+                                                            .selected = true;
 
                                                         ScaffoldMessenger.of(
                                                                 context)
@@ -897,23 +921,48 @@ class _CommonEditorialsDetailsPageState
                                                                         "Now Select the end of the bookmark")));
                                                       } else {
                                                         endingPoint = i;
-                                                        for(int j=startingPoint;j<=endingPoint;j++){
-                                                          _controller
-                                                              .descritionColorlist[
-                                                          j]
-                                                              .selected = true;
+
+                                                        for (int j =
+                                                                startingPoint;
+                                                            j <= endingPoint;
+                                                            j++) {
+                                                          if (_controller
+                                                                      .descritionColorlist[
+                                                                          startingPoint]
+                                                                      .selected ==
+                                                                  true &&
+                                                              _controller
+                                                                      .descritionColorlist[
+                                                                          endingPoint]
+                                                                      .selected ==
+                                                                  true) {
+                                                            startingPoint =
+                                                                startingPoint +
+                                                                    1;
+                                                            _controller
+                                                                .descritionColorlist[
+                                                                    j]
+                                                                .selected = false;
+                                                          } else {
+                                                            _controller
+                                                                .descritionColorlist[
+                                                                    j]
+                                                                .selected = true;
+                                                          }
                                                         }
+
                                                         startingPoint = -1;
+
                                                         /// setting the selected editorial data to cache
                                                         setReadingData(
                                                             widget.editorial_id,
                                                             jsonEncode(EditorialDescription
-                                                                .listToJson(_controller
-                                                                .descritionColorlist)));
+                                                                .listToJson(
+                                                                    _controller
+                                                                        .descritionColorlist)));
                                                       }
                                                     }
                                                   });
-
                                                 })),
                                 ]
                               ]),
@@ -922,7 +971,11 @@ class _CommonEditorialsDetailsPageState
                             SizedBox(
                                 height:
                                     MediaQuery.of(context).size.height * 0.0),
-                            _quizbutton(),
+                            QuizButton(
+                              controller: controller,
+                              editorialDetails:
+                                  controller.editorials.value.editorialDetails!,
+                            ),
                             SizedBox(height: context.height * 0.2),
                           ],
                         ),
@@ -957,217 +1010,4 @@ class _CommonEditorialsDetailsPageState
       await flutterTts.speak(text);
     }
   }
-
-  Widget _quizbutton() {
-    // if Quiz is available then show button
-    if ((controller.editorials.value.editorialDetails!.quizAvailable!) == 1) {
-// if not attempted nd not completed then start quiz
-
-      if ((controller.editorials.value.editorialDetails!.isAttempt!) == 0 &&
-          (controller.editorials.value.editorialDetails!.isCompleted!) == 0) {
-        return InkWell(
-          onTap: () {
-            if (controller.editorials.value.editorialDetails!.examId != null) {
-              Quizcontroller.getQuizDetailApi(
-                  controller.editorials.value.editorialDetails!.examId);
-              Get.off(() => TestInstructions(
-                    title: controller.editorials.value.editorialDetails!.title
-                        .toString(),
-                    type: 0,
-                    examid:
-                        controller.editorials.value.editorialDetails!.examId!,
-                    catTitle: "",
-                  ));
-            } else {
-              Fluttertoast.showToast(msg: "No Quizz Available");
-              cancel();
-            }
-          },
-          child: Center(
-            child: Container(
-              padding: const EdgeInsets.only(
-                  left: 30, right: 30, top: 10, bottom: 10),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(color: purplegrColor, width: 2),
-                boxShadow: [
-                  BoxShadow(
-                      color: greyColor,
-                      blurRadius: 2,
-                      spreadRadius: 1,
-                      offset: const Offset(1, 2))
-                ],
-                gradient: RadialGradient(
-                  center: const Alignment(0.0, 0.0),
-                  colors: [purpleColor, purplegrColor],
-                  radius: 3.0,
-                ),
-              ),
-              child: Text(
-                'Start Quiz',
-                style: GoogleFonts.roboto(
-                    color: whiteColor,
-                    decoration: TextDecoration.none,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
-                    shadows: [
-                      Shadow(
-                        offset: const Offset(1.0, 4),
-                        blurRadius: 3.0,
-                        color: greyColor.withOpacity(0.5),
-                      ),
-                    ]),
-              ),
-            ),
-          ),
-        );
-      }
-      //if attemptd but not completed then Quiz is pause
-      else if ((controller.editorials.value.editorialDetails!.isAttempt!) ==
-              1 &&
-          (controller.editorials.value.editorialDetails!.isCompleted!) == 0) {
-        return InkWell(
-          onTap: () {
-            if (controller.editorials.value.editorialDetails!.examId != null) {
-              controller.editorialid(
-                  controller.editorials.value.editorialDetails!.id!);
-
-              Quizcontroller.getQuizDetailApi(
-                  controller.editorials.value.editorialDetails!.examId);
-
-              Get.off(() => TestInstructions(
-                  title: controller.editorials.value.editorialDetails!.title
-                      .toString(),
-                  type: 0,
-                  catTitle: "",
-                  examid:
-                      controller.editorials.value.editorialDetails!.examId!));
-            } else {
-              Fluttertoast.showToast(msg: "No Quizz Available");
-              cancel();
-            }
-
-            // Get.to(() => BottomWidget());
-          },
-          child: Center(
-            child: Container(
-              padding: const EdgeInsets.only(
-                  left: 30, right: 30, top: 10, bottom: 10),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(color: purplegrColor, width: 2),
-                boxShadow: [
-                  BoxShadow(
-                      color: greyColor,
-                      blurRadius: 2,
-                      spreadRadius: 1,
-                      offset: const Offset(1, 2))
-                ],
-                gradient: RadialGradient(
-                  center: const Alignment(0.0, 0.0),
-                  colors: [purpleColor, purplegrColor],
-                  radius: 3.0,
-                ),
-              ),
-              child: Text(
-                'Resume Quiz',
-                style: GoogleFonts.roboto(
-                    color: whiteColor,
-                    decoration: TextDecoration.none,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
-                    shadows: [
-                      Shadow(
-                        offset: const Offset(1.0, 4),
-                        blurRadius: 3.0,
-                        color: greyColor.withOpacity(0.5),
-                      ),
-                    ]),
-              ),
-            ),
-          ),
-        );
-      }
-      // if attempted and completed too then show result
-      else {
-        return InkWell(
-          onTap: () {
-            Get.to(() => PerformanceReport(
-                  id: controller.editorials.value.editorialDetails!.examId!
-                      .toString(),
-                  eId: controller.editorials.value.editorialDetails!.id!
-                      .toString(),
-                  title: controller.editorials.value.editorialDetails!.title,
-                  catId: controller.editorials.value.editorialDetails!.id!
-                      .toString(),
-                  route: 0,
-                ));
-          },
-          child: Center(
-            child: Container(
-              padding: const EdgeInsets.only(
-                  left: 30, right: 30, top: 10, bottom: 10),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(color: purplegrColor, width: 2),
-                boxShadow: [
-                  BoxShadow(
-                      color: greyColor,
-                      blurRadius: 2,
-                      spreadRadius: 1,
-                      offset: const Offset(1, 2))
-                ],
-                gradient: RadialGradient(
-                  center: const Alignment(0.0, 0.0),
-                  colors: [purpleColor, purplegrColor],
-                  radius: 3.0,
-                ),
-              ),
-              child: Text(
-                'Show Report',
-                style: GoogleFonts.roboto(
-                    color: whiteColor,
-                    decoration: TextDecoration.none,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
-                    shadows: [
-                      Shadow(
-                        offset: const Offset(1.0, 4),
-                        blurRadius: 3.0,
-                        color: greyColor.withOpacity(0.5),
-                      ),
-                    ]),
-              ),
-            ),
-          ),
-        );
-      }
-    } else {
-      return const Text("");
-    }
-  }
-
-// Widget _buildRecordWidget() {
-//   return AnimatedBuilder(
-//     animation: _recordAnimCtrl!,
-//     builder: (_, child) {
-//       return Transform.rotate(
-//         angle: _recordAnimCtrl!.value * 2 * math.pi,
-//         child: child,
-//       );
-//     },
-//     child: Container(
-//       height: 50,
-//       width: 50,
-//       decoration: BoxDecoration(
-//           // color: redColor,
-//           shape: BoxShape.circle,
-//           image: DecorationImage(
-//               image: NetworkImage(
-//                   controller.editorials.value.editorialDetails!.image!),
-//               scale: 2,
-//               fit: BoxFit.cover)),
-//     ),
-//   );
-// }
 }

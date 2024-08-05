@@ -1,8 +1,23 @@
 <dependencies>
   <compile
-      roots="__local_aars__:/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/app/intermediates/flutter/release/libs.jar:unspecified@jar,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:firebase_messaging::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:firebase_core::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:platform_device_id::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_local_notifications::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:file_picker::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:path_provider_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:vibration::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:shared_preferences_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:just_audio::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:wakelock_plus::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:share_plus::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_image_compress_common::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:fluttertoast::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_tts::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:razorpay_flutter::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:image_picker_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:video_player_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_plugin_android_lifecycle::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:awesome_notifications::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:syncfusion_flutter_pdfviewer::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:url_launcher_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:google_sign_in_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_downloader::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_inappwebview_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:permission_handler_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:in_app_purchase_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:open_file::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:package_info_plus::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info_plus::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:audio_session::release,com.android.billingclient:billing:6.1.0@aar,com.google.firebase:firebase-analytics:21.5.0@aar,com.google.android.gms:play-services-measurement-api:21.5.0@aar,com.google.firebase:firebase-installations:17.2.0@aar,com.google.firebase:firebase-common-ktx:20.4.2@aar,io.flutter:flutter_embedding_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar,com.google.android.gms:play-services-location:19.0.0@aar,com.razorpay:checkout:1.6.39@aar,com.google.android.gms:play-services-auth:21.1.0@aar,com.google.android.gms:play-services-auth-api-phone:18.0.2@aar,com.google.android.gms:play-services-wallet:18.1.3@aar,com.google.android.gms:play-services-auth-base:18.0.10@aar,com.google.android.gms:play-services-fido:20.0.1@aar,com.google.android.gms:play-services-identity:17.0.0@aar,com.google.android.gms:play-services-maps:17.0.0@aar,com.google.android.gms:play-services-base:18.3.0@aar,com.google.firebase:firebase-common:20.4.2@aar,com.google.firebase:firebase-installations-interop:17.1.1@aar,androidx.window:window-java:1.0.0-beta04@aar,com.google.android.gms:play-services-measurement:21.5.0@aar,com.google.android.gms:play-services-measurement-sdk:21.5.0@aar,com.google.android.gms:play-services-measurement-impl:21.5.0@aar,androidx.privacysandbox.ads:ads-adservices-java:1.0.0-beta05@aar,androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05@aar,org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.1@jar,org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.1@jar,com.google.android.gms:play-services-tasks:18.1.0@aar,com.google.android.gms:play-services-places-placereport:17.0.0@aar,com.google.android.gms:play-services-ads-identifier:18.0.0@aar,com.google.android.gms:play-services-measurement-sdk-api:21.5.0@aar,com.google.android.gms:play-services-measurement-base:21.5.0@aar,com.google.android.gms:play-services-stats:17.0.2@aar,com.google.firebase:firebase-measurement-connector:19.0.0@aar,com.google.android.gms:play-services-basement:18.3.0@aar,androidx.fragment:fragment:1.5.7@aar,androidx.fragment:fragment:1.5.7@aar,androidx.activity:activity:1.8.0@aar,androidx.activity:activity:1.8.0@aar,androidx.legacy:legacy-support-core-utils:1.0.0@aar,androidx.loader:loader:1.1.0@aar,androidx.lifecycle:lifecycle-livedata-core:2.6.1@aar,androidx.lifecycle:lifecycle-livedata-core:2.6.1@aar,androidx.lifecycle:lifecycle-viewmodel:2.6.1@aar,androidx.lifecycle:lifecycle-viewmodel:2.6.1@aar,androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1@aar,androidx.core:core-ktx:1.10.1@aar,androidx.viewpager:viewpager:1.0.0@aar,androidx.customview:customview:1.1.0@aar,androidx.core:core:1.10.1@aar,androidx.core:core:1.10.1@aar,androidx.lifecycle:lifecycle-runtime:2.6.1@aar,androidx.lifecycle:lifecycle-common-java8:2.6.1@jar,androidx.lifecycle:lifecycle-common:2.6.1@jar,androidx.window:window:1.0.0-beta04@aar,org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22@jar,androidx.multidex:multidex:2.0.0@aar,io.flutter:armeabi_v7a_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar,io.flutter:arm64_v8a_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar,io.flutter:x86_64_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,androidx.collection:collection:1.1.0@jar,com.google.android.datatransport:transport-backend-cct:3.1.8@aar,com.google.android.datatransport:transport-runtime:3.1.8@aar,com.google.android.datatransport:transport-api:3.1.0@aar,androidx.savedstate:savedstate:1.2.1@aar,com.google.firebase:firebase-encoders-json:18.0.0@aar,com.google.firebase:firebase-encoders-proto:16.0.0@jar,com.google.firebase:firebase-encoders:17.0.0@jar,com.google.firebase:firebase-components:17.1.5@aar,androidx.arch.core:core-common:2.2.0@jar,androidx.documentfile:documentfile:1.0.0@aar,androidx.localbroadcastmanager:localbroadcastmanager:1.1.0@aar,androidx.print:print:1.0.0@aar,androidx.concurrent:concurrent-futures:1.1.0@jar,androidx.annotation:annotation-jvm:1.7.1@jar,androidx.annotation:annotation-experimental:1.3.0@aar,org.jetbrains.kotlin:kotlin-stdlib:1.8.22@jar,org.jetbrains.kotlin:kotlin-stdlib-common:1.8.22@jar,org.jetbrains:annotations:23.0.0@jar,com.google.guava:guava:32.1.3-android@jar,com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava@jar,androidx.tracing:tracing:1.0.0@aar,com.google.guava:failureaccess:1.0.1@jar,com.google.code.findbugs:jsr305:3.0.2@jar,org.checkerframework:checker-qual:3.37.0@jar,com.google.errorprone:error_prone_annotations:2.21.1@jar,com.google.firebase:firebase-annotations:16.2.0@jar,javax.inject:javax.inject:1@jar,com.google.j2objc:j2objc-annotations:2.8@jar">
+      roots="__local_aars__:/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/app/intermediates/flutter/release/libs.jar:unspecified@jar,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:audio_session::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:awesome_notifications::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info_plus::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:file_picker::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:firebase_messaging::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:firebase_core::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_downloader::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_image_compress_common::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_inappwebview_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_local_notifications::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_plugin_android_lifecycle::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_tts::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:fluttertoast::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:google_sign_in_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:image_picker_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:in_app_purchase_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:just_audio::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:open_file::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:package_info_plus::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:path_provider_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:permission_handler_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:platform_device_id::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:razorpay_flutter::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:share_plus::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:shared_preferences_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:syncfusion_flutter_pdfviewer::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:url_launcher_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:vibration::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:video_player_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:wakelock_plus::release,com.android.billingclient:billing:6.1.0@aar,com.google.firebase:firebase-analytics:21.6.1@aar,com.google.android.gms:play-services-measurement-api:21.6.1@aar,com.google.firebase:firebase-installations:17.2.0@aar,com.google.firebase:firebase-common-ktx:20.4.3@aar,io.flutter:flutter_embedding_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar,com.google.android.gms:play-services-location:19.0.0@aar,com.razorpay:checkout:1.6.39@aar,com.google.android.gms:play-services-auth:21.1.0@aar,com.google.android.gms:play-services-auth-api-phone:18.0.2@aar,com.google.android.gms:play-services-wallet:18.1.3@aar,com.google.android.gms:play-services-auth-base:18.0.10@aar,com.google.android.gms:play-services-fido:20.0.1@aar,com.google.android.gms:play-services-identity:17.0.0@aar,com.google.android.gms:play-services-maps:17.0.0@aar,com.google.android.gms:play-services-base:18.3.0@aar,com.google.firebase:firebase-common:20.4.3@aar,com.google.firebase:firebase-installations-interop:17.1.1@aar,androidx.window:window-java:1.0.0-beta04@aar,com.google.android.gms:play-services-measurement:21.6.1@aar,com.google.android.gms:play-services-measurement-sdk:21.6.1@aar,com.google.android.gms:play-services-measurement-impl:21.6.1@aar,androidx.privacysandbox.ads:ads-adservices-java:1.0.0-beta05@aar,androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05@aar,org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.1@jar,org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.1@jar,com.google.android.gms:play-services-tasks:18.1.0@aar,com.google.android.gms:play-services-places-placereport:17.0.0@aar,com.google.android.gms:play-services-ads-identifier:18.0.0@aar,com.google.android.gms:play-services-measurement-sdk-api:21.6.1@aar,com.google.android.gms:play-services-measurement-base:21.6.1@aar,com.google.android.gms:play-services-stats:17.0.2@aar,com.google.firebase:firebase-measurement-connector:19.0.0@aar,com.google.android.gms:play-services-basement:18.3.0@aar,androidx.fragment:fragment:1.5.7@aar,androidx.fragment:fragment:1.5.7@aar,androidx.activity:activity:1.8.0@aar,androidx.activity:activity:1.8.0@aar,androidx.legacy:legacy-support-core-utils:1.0.0@aar,androidx.loader:loader:1.1.0@aar,androidx.lifecycle:lifecycle-livedata-core:2.6.2@aar,androidx.lifecycle:lifecycle-livedata-core:2.6.2@aar,androidx.lifecycle:lifecycle-viewmodel:2.6.2@aar,androidx.lifecycle:lifecycle-viewmodel:2.6.2@aar,androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2@aar,androidx.core:core-ktx:1.13.1@aar,androidx.viewpager:viewpager:1.0.0@aar,androidx.customview:customview:1.1.0@aar,androidx.core:core:1.13.1@aar,androidx.core:core:1.13.1@aar,androidx.lifecycle:lifecycle-runtime:2.6.2@aar,androidx.lifecycle:lifecycle-common-java8:2.6.2@jar,androidx.lifecycle:lifecycle-common:2.6.2@jar,androidx.window:window:1.0.0-beta04@aar,org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22@jar,androidx.multidex:multidex:2.0.0@aar,io.flutter:armeabi_v7a_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar,io.flutter:arm64_v8a_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar,io.flutter:x86_64_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,androidx.collection:collection:1.2.0@jar,com.google.android.datatransport:transport-backend-cct:3.1.8@aar,com.google.android.datatransport:transport-runtime:3.1.8@aar,com.google.android.datatransport:transport-api:3.1.0@aar,androidx.savedstate:savedstate:1.2.1@aar,com.google.firebase:firebase-encoders-json:18.0.0@aar,com.google.firebase:firebase-encoders-proto:16.0.0@jar,com.google.firebase:firebase-encoders:17.0.0@jar,com.google.firebase:firebase-components:17.1.5@aar,androidx.arch.core:core-common:2.2.0@jar,androidx.documentfile:documentfile:1.0.0@aar,androidx.localbroadcastmanager:localbroadcastmanager:1.1.0@aar,androidx.print:print:1.0.0@aar,androidx.concurrent:concurrent-futures:1.1.0@jar,androidx.annotation:annotation-jvm:1.8.0@jar,androidx.annotation:annotation-experimental:1.4.0@aar,org.jetbrains.kotlin:kotlin-stdlib:1.8.22@jar,org.jetbrains.kotlin:kotlin-stdlib-common:1.8.22@jar,org.jetbrains:annotations:23.0.0@jar,com.google.guava:guava:33.2.1-android@jar,com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava@jar,androidx.tracing:tracing:1.0.0@aar,com.google.guava:failureaccess:1.0.2@jar,com.google.code.findbugs:jsr305:3.0.2@jar,org.checkerframework:checker-qual:3.42.0@jar,com.google.errorprone:error_prone_annotations:2.26.1@jar,com.google.firebase:firebase-annotations:16.2.0@jar,javax.inject:javax.inject:1@jar,com.google.j2objc:j2objc-annotations:3.0.0@jar">
     <dependency
         name="__local_aars__:/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/app/intermediates/flutter/release/libs.jar:unspecified@jar"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:audio_session::release"
+        simpleName="com.ryanheise.audio_session:audio_session"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:awesome_notifications::release"
+        simpleName="me.carda.awesome_notifications:awesome_notifications"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info::release"
+        simpleName="io.flutter.plugins.deviceinfo:device_info"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info_plus::release"
+        simpleName="dev.fluttercommunity.plus.device_info:device_info_plus"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:file_picker::release"
+        simpleName="com.mr.flutter.plugin.filepicker:file_picker"/>
     <dependency
         name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:firebase_messaging::release"
         simpleName="io.flutter.plugins.firebasemessaging:firebase_messaging"/>
@@ -10,80 +25,38 @@
         name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:firebase_core::release"
         simpleName="io.flutter.plugins.firebase.core:firebase_core"/>
     <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:platform_device_id::release"
-        simpleName="com.di1shuai.platform_device_id:platform_device_id"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_local_notifications::release"
-        simpleName="com.dexterous.flutterlocalnotifications:flutter_local_notifications"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:file_picker::release"
-        simpleName="com.mr.flutter.plugin.filepicker:file_picker"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:path_provider_android::release"
-        simpleName="io.flutter.plugins.pathprovider:path_provider_android"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:vibration::release"
-        simpleName="com.benjaminabel.vibration:vibration"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:shared_preferences_android::release"
-        simpleName="io.flutter.plugins.sharedpreferences:shared_preferences_android"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:just_audio::release"
-        simpleName="com.ryanheise.just_audio:just_audio"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:wakelock_plus::release"
-        simpleName="dev.fluttercommunity.plus.wakelock:wakelock_plus"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:share_plus::release"
-        simpleName="dev.fluttercommunity.plus.share:share_plus"/>
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_downloader::release"
+        simpleName="vn.hunghd.flutterdownloader:flutter_downloader"/>
     <dependency
         name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_image_compress_common::release"
         simpleName="com.fluttercandies.flutter_image_compress:flutter_image_compress_common"/>
     <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:fluttertoast::release"
-        simpleName="com.example.FlutterToast:fluttertoast"/>
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_inappwebview_android::release"
+        simpleName="com.pichillilorenzo.flutter_inappwebview_android:flutter_inappwebview_android"/>
     <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_tts::release"
-        simpleName="com.tundralabs.fluttertts:flutter_tts"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:razorpay_flutter::release"
-        simpleName="com.razorpay.razorpay_flutter:razorpay_flutter"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:image_picker_android::release"
-        simpleName="io.flutter.plugins.imagepicker:image_picker_android"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:video_player_android::release"
-        simpleName="io.flutter.plugins.videoplayer:video_player_android"/>
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_local_notifications::release"
+        simpleName="com.dexterous.flutterlocalnotifications:flutter_local_notifications"/>
     <dependency
         name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_plugin_android_lifecycle::release"
         simpleName="io.flutter.plugins.flutter_plugin_android_lifecycle:flutter_plugin_android_lifecycle"/>
     <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:awesome_notifications::release"
-        simpleName="me.carda.awesome_notifications:awesome_notifications"/>
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_tts::release"
+        simpleName="com.tundralabs.fluttertts:flutter_tts"/>
     <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:syncfusion_flutter_pdfviewer::release"
-        simpleName="com.syncfusion.flutter.pdfviewer:syncfusion_flutter_pdfviewer"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:url_launcher_android::release"
-        simpleName="io.flutter.plugins.urllauncher:url_launcher_android"/>
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:fluttertoast::release"
+        simpleName="com.example.FlutterToast:fluttertoast"/>
     <dependency
         name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:google_sign_in_android::release"
         simpleName="io.flutter.plugins.googlesignin:google_sign_in_android"/>
     <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_downloader::release"
-        simpleName="vn.hunghd.flutterdownloader:flutter_downloader"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_inappwebview_android::release"
-        simpleName="com.pichillilorenzo.flutter_inappwebview_android:flutter_inappwebview_android"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:permission_handler_android::release"
-        simpleName="com.baseflow.permissionhandler:permission_handler_android"/>
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:image_picker_android::release"
+        simpleName="io.flutter.plugins.imagepicker:image_picker_android"/>
     <dependency
         name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:in_app_purchase_android::release"
         simpleName="io.flutter.plugins.inapppurchase:in_app_purchase_android"/>
     <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info::release"
-        simpleName="io.flutter.plugins.deviceinfo:device_info"/>
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:just_audio::release"
+        simpleName="com.ryanheise.just_audio:just_audio"/>
     <dependency
         name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:open_file::release"
         simpleName="com.crazecoder.openfile:open_file"/>
@@ -91,23 +64,50 @@
         name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:package_info_plus::release"
         simpleName="dev.fluttercommunity.plus.packageinfo:package_info_plus"/>
     <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info_plus::release"
-        simpleName="dev.fluttercommunity.plus.device_info:device_info_plus"/>
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:path_provider_android::release"
+        simpleName="io.flutter.plugins.pathprovider:path_provider_android"/>
     <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:audio_session::release"
-        simpleName="com.ryanheise.audio_session:audio_session"/>
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:permission_handler_android::release"
+        simpleName="com.baseflow.permissionhandler:permission_handler_android"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:platform_device_id::release"
+        simpleName="com.di1shuai.platform_device_id:platform_device_id"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:razorpay_flutter::release"
+        simpleName="com.razorpay.razorpay_flutter:razorpay_flutter"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:share_plus::release"
+        simpleName="dev.fluttercommunity.plus.share:share_plus"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:shared_preferences_android::release"
+        simpleName="io.flutter.plugins.sharedpreferences:shared_preferences_android"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:syncfusion_flutter_pdfviewer::release"
+        simpleName="com.syncfusion.flutter.pdfviewer:syncfusion_flutter_pdfviewer"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:url_launcher_android::release"
+        simpleName="io.flutter.plugins.urllauncher:url_launcher_android"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:vibration::release"
+        simpleName="com.benjaminabel.vibration:vibration"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:video_player_android::release"
+        simpleName="io.flutter.plugins.videoplayer:video_player_android"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:wakelock_plus::release"
+        simpleName="dev.fluttercommunity.plus.wakelock:wakelock_plus"/>
     <dependency
         name="com.android.billingclient:billing:6.1.0@aar"/>
     <dependency
-        name="com.google.firebase:firebase-analytics:21.5.0@aar"/>
+        name="com.google.firebase:firebase-analytics:21.6.1@aar"/>
     <dependency
-        name="com.google.android.gms:play-services-measurement-api:21.5.0@aar"/>
+        name="com.google.android.gms:play-services-measurement-api:21.6.1@aar"/>
     <dependency
         name="com.google.firebase:firebase-installations:17.2.0@aar"/>
     <dependency
-        name="com.google.firebase:firebase-common-ktx:20.4.2@aar"/>
+        name="com.google.firebase:firebase-common-ktx:20.4.3@aar"/>
     <dependency
-        name="io.flutter:flutter_embedding_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar"/>
+        name="io.flutter:flutter_embedding_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar"/>
     <dependency
         name="com.google.android.gms:play-services-location:19.0.0@aar"/>
     <dependency
@@ -129,17 +129,17 @@
     <dependency
         name="com.google.android.gms:play-services-base:18.3.0@aar"/>
     <dependency
-        name="com.google.firebase:firebase-common:20.4.2@aar"/>
+        name="com.google.firebase:firebase-common:20.4.3@aar"/>
     <dependency
         name="com.google.firebase:firebase-installations-interop:17.1.1@aar"/>
     <dependency
         name="androidx.window:window-java:1.0.0-beta04@aar"/>
     <dependency
-        name="com.google.android.gms:play-services-measurement:21.5.0@aar"/>
+        name="com.google.android.gms:play-services-measurement:21.6.1@aar"/>
     <dependency
-        name="com.google.android.gms:play-services-measurement-sdk:21.5.0@aar"/>
+        name="com.google.android.gms:play-services-measurement-sdk:21.6.1@aar"/>
     <dependency
-        name="com.google.android.gms:play-services-measurement-impl:21.5.0@aar"/>
+        name="com.google.android.gms:play-services-measurement-impl:21.6.1@aar"/>
     <dependency
         name="androidx.privacysandbox.ads:ads-adservices-java:1.0.0-beta05@aar"/>
     <dependency
@@ -155,9 +155,9 @@
     <dependency
         name="com.google.android.gms:play-services-ads-identifier:18.0.0@aar"/>
     <dependency
-        name="com.google.android.gms:play-services-measurement-sdk-api:21.5.0@aar"/>
+        name="com.google.android.gms:play-services-measurement-sdk-api:21.6.1@aar"/>
     <dependency
-        name="com.google.android.gms:play-services-measurement-base:21.5.0@aar"/>
+        name="com.google.android.gms:play-services-measurement-base:21.6.1@aar"/>
     <dependency
         name="com.google.android.gms:play-services-stats:17.0.2@aar"/>
     <dependency
@@ -173,25 +173,25 @@
     <dependency
         name="androidx.loader:loader:1.1.0@aar"/>
     <dependency
-        name="androidx.lifecycle:lifecycle-livedata-core:2.6.1@aar"/>
+        name="androidx.lifecycle:lifecycle-livedata-core:2.6.2@aar"/>
     <dependency
-        name="androidx.lifecycle:lifecycle-viewmodel:2.6.1@aar"/>
+        name="androidx.lifecycle:lifecycle-viewmodel:2.6.2@aar"/>
     <dependency
-        name="androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1@aar"/>
+        name="androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2@aar"/>
     <dependency
-        name="androidx.core:core-ktx:1.10.1@aar"/>
+        name="androidx.core:core-ktx:1.13.1@aar"/>
     <dependency
         name="androidx.viewpager:viewpager:1.0.0@aar"/>
     <dependency
         name="androidx.customview:customview:1.1.0@aar"/>
     <dependency
-        name="androidx.core:core:1.10.1@aar"/>
+        name="androidx.core:core:1.13.1@aar"/>
     <dependency
-        name="androidx.lifecycle:lifecycle-runtime:2.6.1@aar"/>
+        name="androidx.lifecycle:lifecycle-runtime:2.6.2@aar"/>
     <dependency
-        name="androidx.lifecycle:lifecycle-common-java8:2.6.1@jar"/>
+        name="androidx.lifecycle:lifecycle-common-java8:2.6.2@jar"/>
     <dependency
-        name="androidx.lifecycle:lifecycle-common:2.6.1@jar"/>
+        name="androidx.lifecycle:lifecycle-common:2.6.2@jar"/>
     <dependency
         name="androidx.window:window:1.0.0-beta04@aar"/>
     <dependency
@@ -203,15 +203,15 @@
     <dependency
         name="androidx.multidex:multidex:2.0.0@aar"/>
     <dependency
-        name="io.flutter:armeabi_v7a_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar"/>
+        name="io.flutter:armeabi_v7a_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar"/>
     <dependency
-        name="io.flutter:arm64_v8a_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar"/>
+        name="io.flutter:arm64_v8a_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar"/>
     <dependency
-        name="io.flutter:x86_64_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar"/>
+        name="io.flutter:x86_64_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar"/>
     <dependency
         name="androidx.versionedparcelable:versionedparcelable:1.1.1@aar"/>
     <dependency
-        name="androidx.collection:collection:1.1.0@jar"/>
+        name="androidx.collection:collection:1.2.0@jar"/>
     <dependency
         name="com.google.android.datatransport:transport-backend-cct:3.1.8@aar"/>
     <dependency
@@ -239,9 +239,9 @@
     <dependency
         name="androidx.concurrent:concurrent-futures:1.1.0@jar"/>
     <dependency
-        name="androidx.annotation:annotation-jvm:1.7.1@jar"/>
+        name="androidx.annotation:annotation-jvm:1.8.0@jar"/>
     <dependency
-        name="androidx.annotation:annotation-experimental:1.3.0@aar"/>
+        name="androidx.annotation:annotation-experimental:1.4.0@aar"/>
     <dependency
         name="org.jetbrains.kotlin:kotlin-stdlib:1.8.22@jar"/>
     <dependency
@@ -249,30 +249,54 @@
     <dependency
         name="org.jetbrains:annotations:23.0.0@jar"/>
     <dependency
-        name="com.google.guava:guava:32.1.3-android@jar"/>
+        name="com.google.guava:guava:33.2.1-android@jar"/>
     <dependency
         name="com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava@jar"/>
     <dependency
         name="androidx.tracing:tracing:1.0.0@aar"/>
     <dependency
-        name="com.google.guava:failureaccess:1.0.1@jar"/>
+        name="com.google.guava:failureaccess:1.0.2@jar"/>
     <dependency
         name="com.google.code.findbugs:jsr305:3.0.2@jar"/>
     <dependency
-        name="org.checkerframework:checker-qual:3.37.0@jar"/>
+        name="org.checkerframework:checker-qual:3.42.0@jar"/>
     <dependency
-        name="com.google.errorprone:error_prone_annotations:2.21.1@jar"/>
+        name="com.google.errorprone:error_prone_annotations:2.26.1@jar"/>
     <dependency
         name="com.google.firebase:firebase-annotations:16.2.0@jar"/>
     <dependency
         name="javax.inject:javax.inject:1@jar"/>
     <dependency
-        name="com.google.j2objc:j2objc-annotations:2.8@jar"/>
+        name="com.google.j2objc:j2objc-annotations:3.0.0@jar"/>
   </compile>
   <package
-      roots="__local_aars__:/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/app/intermediates/flutter/release/libs.jar:unspecified@jar,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:firebase_messaging::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:firebase_core::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:platform_device_id::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_local_notifications::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:file_picker::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:path_provider_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:vibration::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:shared_preferences_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:just_audio::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:wakelock_plus::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:share_plus::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_image_compress_common::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:razorpay_flutter::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:fluttertoast::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_tts::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:image_picker_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:video_player_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_plugin_android_lifecycle::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:awesome_notifications::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:syncfusion_flutter_pdfviewer::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:url_launcher_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:google_sign_in_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_downloader::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_inappwebview_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:permission_handler_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:in_app_purchase_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:open_file::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:package_info_plus::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info_plus::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:audio_session::release,me.carda:AndroidAwnCore:0.9.3@aar,com.google.android.material:material:1.11.0@aar,com.android.billingclient:billing:6.1.0@aar,com.google.firebase:firebase-messaging:23.4.0@aar,com.google.firebase:firebase-analytics:21.5.0@aar,com.google.android.gms:play-services-measurement-api:21.5.0@aar,com.google.firebase:firebase-iid:21.1.0@aar,com.google.firebase:firebase-installations:17.2.0@aar,com.google.firebase:firebase-common-ktx:20.4.2@aar,androidx.work:work-runtime:2.7.1@aar,androidx.room:room-runtime:2.5.0@aar,androidx.room:room-common:2.5.0@jar,io.flutter:flutter_embedding_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar,androidx.window:window-java:1.0.0-beta04@aar,com.google.android.gms:play-services-measurement:21.5.0@aar,com.google.android.gms:play-services-measurement-sdk:21.5.0@aar,com.google.android.gms:play-services-measurement-impl:21.5.0@aar,androidx.privacysandbox.ads:ads-adservices-java:1.0.0-beta05@aar,androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05@aar,androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05@aar,com.google.android.exoplayer:exoplayer-dash:2.18.7@aar,com.google.android.exoplayer:exoplayer-hls:2.18.7@aar,com.google.android.exoplayer:exoplayer-smoothstreaming:2.18.7@aar,com.google.android.exoplayer:exoplayer-core:2.18.7@aar,androidx.appcompat:appcompat-resources:1.6.1@aar,androidx.constraintlayout:constraintlayout:2.0.1@aar,androidx.appcompat:appcompat:1.6.1@aar,com.razorpay:checkout:1.6.39@aar,com.google.android.gms:play-services-auth:21.1.0@aar,com.google.android.gms:play-services-wallet:18.1.3@aar,com.google.android.gms:play-services-auth-api-phone:18.0.2@aar,com.google.android.gms:play-services-location:19.0.0@aar,com.google.android.gms:play-services-auth-base:18.0.10@aar,com.google.android.gms:play-services-fido:20.0.1@aar,com.google.android.gms:play-services-identity:17.0.0@aar,com.google.android.gms:play-services-maps:17.0.0@aar,com.google.android.gms:play-services-base:18.3.0@aar,com.google.firebase:firebase-common:20.4.2@aar,com.google.firebase:firebase-iid-interop:17.1.0@aar,com.google.android.gms:play-services-cloud-messaging:17.1.0@aar,com.google.android.gms:play-services-stats:17.0.2@aar,com.google.firebase:firebase-measurement-connector:19.0.0@aar,com.google.android.gms:play-services-ads-identifier:18.0.0@aar,com.google.android.gms:play-services-measurement-sdk-api:21.5.0@aar,com.google.android.gms:play-services-measurement-base:21.5.0@aar,com.google.firebase:firebase-installations-interop:17.1.1@aar,org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.1@jar,com.google.android.gms:play-services-tasks:18.1.0@aar,com.google.android.gms:play-services-places-placereport:17.0.0@aar,com.google.android.gms:play-services-basement:18.3.0@aar,androidx.viewpager2:viewpager2:1.0.0@aar,androidx.fragment:fragment:1.5.7@aar,androidx.fragment:fragment:1.5.7@aar,androidx.core:core-ktx:1.10.1@aar,androidx.browser:browser:1.6.0@aar,androidx.webkit:webkit:1.8.0@aar,androidx.swiperefreshlayout:swiperefreshlayout:1.1.0@aar,androidx.media2:media2-session:1.2.1@aar,androidx.media2:media2-common:1.2.1@aar,androidx.media:media:1.7.0@aar,androidx.emoji2:emoji2-views-helper:1.2.0@aar,androidx.emoji2:emoji2:1.2.0@aar,androidx.dynamicanimation:dynamicanimation:1.0.0@aar,androidx.legacy:legacy-support-core-utils:1.0.0@aar,androidx.window:window:1.0.0-beta04@aar,androidx.loader:loader:1.1.0@aar,androidx.activity:activity:1.8.0@aar,androidx.activity:activity:1.8.0@aar,androidx.drawerlayout:drawerlayout:1.1.1@aar,androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar,androidx.transition:transition:1.2.0@aar,androidx.vectordrawable:vectordrawable-animated:1.1.0@aar,androidx.vectordrawable:vectordrawable:1.1.0@aar,androidx.viewpager:viewpager:1.0.0@aar,androidx.recyclerview:recyclerview:1.1.0@aar,androidx.customview:customview:1.1.0@aar,androidx.core:core:1.10.1@aar,androidx.core:core:1.10.1@aar,androidx.savedstate:savedstate:1.2.1@aar,androidx.lifecycle:lifecycle-livedata-core:2.6.1@aar,androidx.lifecycle:lifecycle-livedata-core:2.6.1@aar,androidx.lifecycle:lifecycle-service:2.6.1@aar,androidx.lifecycle:lifecycle-reactivestreams:2.6.1@aar,androidx.lifecycle:lifecycle-process:2.6.1@aar,androidx.lifecycle:lifecycle-livedata:2.6.1@aar,androidx.lifecycle:lifecycle-common-java8:2.6.1@jar,androidx.lifecycle:lifecycle-common:2.6.1@jar,androidx.lifecycle:lifecycle-viewmodel:2.6.1@aar,androidx.lifecycle:lifecycle-viewmodel:2.6.1@aar,androidx.lifecycle:lifecycle-runtime:2.6.1@aar,androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1@aar,org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1@jar,org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.1@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22@jar,androidx.multidex:multidex:2.0.0@aar,io.flutter:armeabi_v7a_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar,io.flutter:arm64_v8a_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar,io.flutter:x86_64_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar,com.google.firebase:firebase-datatransport:18.1.7@aar,com.google.android.datatransport:transport-backend-cct:3.1.8@aar,com.google.android.datatransport:transport-runtime:3.1.8@aar,com.google.firebase:firebase-encoders-proto:16.0.0@jar,com.google.firebase:firebase-encoders-json:18.0.0@aar,com.google.firebase:firebase-encoders:17.0.0@jar,androidx.heifwriter:heifwriter:1.0.0@aar,androidx.exifinterface:exifinterface:1.3.6@aar,androidx.localbroadcastmanager:localbroadcastmanager:1.1.0@aar,androidx.localbroadcastmanager:localbroadcastmanager:1.1.0@aar,androidx.profileinstaller:profileinstaller:1.3.0@aar,androidx.startup:startup-runtime:1.1.1@aar,androidx.tracing:tracing:1.0.0@aar,com.google.firebase:firebase-components:17.1.5@aar,androidx.concurrent:concurrent-futures:1.1.0@jar,com.google.android.exoplayer:exoplayer-datasource:2.18.7@aar,com.google.android.exoplayer:exoplayer-extractor:2.18.7@aar,com.google.android.exoplayer:exoplayer-decoder:2.18.7@aar,com.google.android.exoplayer:exoplayer-database:2.18.7@aar,com.google.android.exoplayer:exoplayer-common:2.18.7@aar,androidx.interpolator:interpolator:1.0.0@aar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,com.google.android.datatransport:transport-api:3.1.0@aar,androidx.sqlite:sqlite-framework:2.3.0@aar,androidx.sqlite:sqlite:2.3.0@aar,androidx.collection:collection:1.1.0@jar,androidx.cursoradapter:cursoradapter:1.0.0@aar,androidx.resourceinspection:resourceinspection-annotation:1.0.1@jar,androidx.arch.core:core-runtime:2.2.0@aar,androidx.arch.core:core-common:2.2.0@jar,androidx.cardview:cardview:1.0.0@aar,androidx.documentfile:documentfile:1.0.0@aar,androidx.print:print:1.0.0@aar,com.google.code.gson:gson:2.10.1@jar,androidx.annotation:annotation-jvm:1.7.1@jar,androidx.annotation:annotation-experimental:1.3.0@aar,org.jetbrains.kotlin:kotlin-stdlib:1.8.22@jar,commons-io:commons-io:2.6@jar,com.google.guava:guava:32.1.3-android@jar,com.google.firebase:firebase-annotations:16.2.0@jar,org.jetbrains.kotlin:kotlin-stdlib-common:1.8.22@jar,com.google.errorprone:error_prone_annotations:2.21.1@jar,me.leolin:ShortcutBadger:1.1.22@aar,com.google.guava:failureaccess:1.0.1@jar,com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava@jar,com.google.code.findbugs:jsr305:3.0.2@jar,org.checkerframework:checker-qual:3.37.0@jar,javax.inject:javax.inject:1@jar,org.jetbrains:annotations:23.0.0@jar,org.reactivestreams:reactive-streams:1.0.0@jar,androidx.constraintlayout:constraintlayout-solver:2.0.1@jar">
+      roots="__local_aars__:/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/app/intermediates/flutter/release/libs.jar:unspecified@jar,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:just_audio::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:audio_session::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:awesome_notifications::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:platform_device_id::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:syncfusion_flutter_pdfviewer::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info_plus::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:file_picker::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:firebase_messaging::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:firebase_core::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_downloader::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_image_compress_common::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_inappwebview_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_local_notifications::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:image_picker_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_plugin_android_lifecycle::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_tts::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:razorpay_flutter::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:fluttertoast::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:google_sign_in_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:in_app_purchase_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:open_file::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:wakelock_plus::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:package_info_plus::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:path_provider_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:permission_handler_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:share_plus::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:shared_preferences_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:url_launcher_android::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:vibration::release,/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:video_player_android::release,me.carda:AndroidAwnCore:0.9.3@aar,com.google.android.material:material:1.11.0@aar,com.android.billingclient:billing:6.1.0@aar,com.google.firebase:firebase-messaging:23.4.1@aar,com.google.firebase:firebase-analytics:21.6.1@aar,com.google.android.gms:play-services-measurement-api:21.6.1@aar,com.google.firebase:firebase-installations:17.2.0@aar,com.google.firebase:firebase-common-ktx:20.4.3@aar,androidx.work:work-runtime:2.7.1@aar,androidx.room:room-runtime:2.5.0@aar,androidx.room:room-common:2.5.0@jar,io.flutter:flutter_embedding_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar,androidx.window:window-java:1.0.0-beta04@aar,com.google.android.gms:play-services-measurement:21.6.1@aar,com.google.android.gms:play-services-measurement-sdk:21.6.1@aar,com.google.android.gms:play-services-measurement-impl:21.6.1@aar,androidx.privacysandbox.ads:ads-adservices-java:1.0.0-beta05@aar,androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05@aar,androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05@aar,androidx.window:window:1.0.0-beta04@aar,androidx.appcompat:appcompat-resources:1.6.1@aar,androidx.constraintlayout:constraintlayout:2.0.1@aar,androidx.appcompat:appcompat:1.6.1@aar,androidx.webkit:webkit:1.8.0@aar,androidx.browser:browser:1.6.0@aar,androidx.swiperefreshlayout:swiperefreshlayout:1.1.0@aar,com.google.android.exoplayer:exoplayer-dash:2.18.7@aar,com.google.android.exoplayer:exoplayer-hls:2.18.7@aar,com.google.android.exoplayer:exoplayer-smoothstreaming:2.18.7@aar,com.google.android.exoplayer:exoplayer-core:2.18.7@aar,androidx.media3:media3-extractor:1.3.1@aar,androidx.media3:media3-container:1.3.1@aar,androidx.media3:media3-datasource:1.3.1@aar,androidx.media3:media3-decoder:1.3.1@aar,androidx.media3:media3-database:1.3.1@aar,androidx.media3:media3-common:1.3.1@aar,androidx.media3:media3-exoplayer-hls:1.3.1@aar,androidx.media3:media3-exoplayer-dash:1.3.1@aar,androidx.media3:media3-exoplayer-smoothstreaming:1.3.1@aar,androidx.media3:media3-exoplayer:1.3.1@aar,androidx.media2:media2-session:1.2.1@aar,androidx.media2:media2-common:1.2.1@aar,androidx.media:media:1.7.0@aar,com.google.firebase:firebase-common:20.4.3@aar,com.razorpay:checkout:1.6.39@aar,com.google.firebase:firebase-iid-interop:17.1.0@aar,com.google.android.gms:play-services-cloud-messaging:17.1.0@aar,com.google.android.gms:play-services-auth:21.1.0@aar,com.google.android.gms:play-services-auth-api-phone:18.0.2@aar,com.google.android.gms:play-services-location:19.0.0@aar,com.google.android.gms:play-services-wallet:18.1.3@aar,com.google.firebase:firebase-installations-interop:17.1.1@aar,com.google.android.gms:play-services-auth-base:18.0.10@aar,com.google.android.gms:play-services-fido:20.0.1@aar,com.google.android.gms:play-services-identity:17.0.0@aar,com.google.android.gms:play-services-maps:17.0.0@aar,com.google.android.gms:play-services-base:18.3.0@aar,org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.1@jar,com.google.android.gms:play-services-tasks:18.1.0@aar,com.google.android.gms:play-services-stats:17.0.2@aar,com.google.firebase:firebase-measurement-connector:19.0.0@aar,com.google.android.gms:play-services-ads-identifier:18.0.0@aar,com.google.android.gms:play-services-measurement-sdk-api:21.6.1@aar,com.google.android.gms:play-services-measurement-base:21.6.1@aar,com.google.android.gms:play-services-places-placereport:17.0.0@aar,com.google.android.gms:play-services-basement:18.3.0@aar,androidx.emoji2:emoji2-views-helper:1.2.0@aar,androidx.emoji2:emoji2:1.2.0@aar,androidx.viewpager2:viewpager2:1.0.0@aar,androidx.fragment:fragment:1.5.7@aar,androidx.fragment:fragment:1.5.7@aar,androidx.activity:activity:1.8.0@aar,androidx.activity:activity:1.8.0@aar,androidx.dynamicanimation:dynamicanimation:1.0.0@aar,androidx.legacy:legacy-support-core-utils:1.0.0@aar,androidx.loader:loader:1.1.0@aar,androidx.lifecycle:lifecycle-viewmodel:2.6.2@aar,androidx.lifecycle:lifecycle-viewmodel:2.6.2@aar,androidx.lifecycle:lifecycle-service:2.6.2@aar,androidx.lifecycle:lifecycle-reactivestreams:2.6.2@aar,androidx.lifecycle:lifecycle-process:2.6.2@aar,androidx.lifecycle:lifecycle-livedata-core:2.6.2@aar,androidx.lifecycle:lifecycle-livedata-core:2.6.2@aar,androidx.lifecycle:lifecycle-livedata:2.6.2@aar,androidx.lifecycle:lifecycle-common-java8:2.6.2@jar,androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2@aar,androidx.core:core-ktx:1.13.1@aar,androidx.drawerlayout:drawerlayout:1.1.1@aar,androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar,androidx.transition:transition:1.2.0@aar,androidx.vectordrawable:vectordrawable-animated:1.1.0@aar,androidx.vectordrawable:vectordrawable:1.1.0@aar,androidx.recyclerview:recyclerview:1.1.0@aar,androidx.viewpager:viewpager:1.0.0@aar,androidx.customview:customview:1.1.0@aar,androidx.core:core:1.13.1@aar,androidx.core:core:1.13.1@aar,androidx.lifecycle:lifecycle-runtime:2.6.2@aar,androidx.savedstate:savedstate:1.2.1@aar,androidx.lifecycle:lifecycle-common:2.6.2@jar,org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1@jar,org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.1@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22@jar,androidx.multidex:multidex:2.0.0@aar,io.flutter:armeabi_v7a_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar,io.flutter:arm64_v8a_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar,io.flutter:x86_64_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar,com.google.firebase:firebase-datatransport:18.1.7@aar,com.google.android.datatransport:transport-backend-cct:3.1.8@aar,com.google.android.datatransport:transport-runtime:3.1.8@aar,com.google.firebase:firebase-encoders-proto:16.0.0@jar,com.google.firebase:firebase-encoders-json:18.0.0@aar,com.google.firebase:firebase-encoders:17.0.0@jar,com.google.android.exoplayer:exoplayer-datasource:2.18.7@aar,com.google.android.exoplayer:exoplayer-extractor:2.18.7@aar,com.google.android.exoplayer:exoplayer-decoder:2.18.7@aar,com.google.android.exoplayer:exoplayer-database:2.18.7@aar,com.google.android.exoplayer:exoplayer-common:2.18.7@aar,com.google.guava:guava:33.2.1-android@jar,androidx.sqlite:sqlite-framework:2.3.0@aar,androidx.sqlite:sqlite:2.3.0@aar,androidx.annotation:annotation-experimental:1.4.0@aar,androidx.localbroadcastmanager:localbroadcastmanager:1.1.0@aar,androidx.localbroadcastmanager:localbroadcastmanager:1.1.0@aar,androidx.heifwriter:heifwriter:1.0.0@aar,androidx.exifinterface:exifinterface:1.3.7@aar,androidx.profileinstaller:profileinstaller:1.3.0@aar,androidx.startup:startup-runtime:1.1.1@aar,androidx.tracing:tracing:1.0.0@aar,androidx.concurrent:concurrent-futures:1.1.0@jar,com.google.firebase:firebase-components:17.1.5@aar,com.google.android.datatransport:transport-api:3.1.0@aar,androidx.interpolator:interpolator:1.0.0@aar,androidx.cursoradapter:cursoradapter:1.0.0@aar,androidx.resourceinspection:resourceinspection-annotation:1.0.1@jar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,androidx.collection:collection:1.2.0@jar,androidx.cardview:cardview:1.0.0@aar,androidx.arch.core:core-runtime:2.2.0@aar,androidx.arch.core:core-common:2.2.0@jar,androidx.documentfile:documentfile:1.0.0@aar,androidx.print:print:1.0.0@aar,androidx.annotation:annotation-jvm:1.8.0@jar,org.jetbrains.kotlin:kotlin-stdlib:1.8.22@jar,commons-io:commons-io:2.6@jar,com.google.code.gson:gson:2.10.1@jar,com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava@jar,me.leolin:ShortcutBadger:1.1.22@aar,com.google.firebase:firebase-annotations:16.2.0@jar,com.google.errorprone:error_prone_annotations:2.26.1@jar,com.google.guava:failureaccess:1.0.2@jar,com.google.code.findbugs:jsr305:3.0.2@jar,org.checkerframework:checker-qual:3.42.0@jar,org.jetbrains.kotlin:kotlin-stdlib-common:1.8.22@jar,org.reactivestreams:reactive-streams:1.0.0@jar,javax.inject:javax.inject:1@jar,org.jetbrains:annotations:23.0.0@jar,androidx.constraintlayout:constraintlayout-solver:2.0.1@jar">
     <dependency
         name="__local_aars__:/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/app/intermediates/flutter/release/libs.jar:unspecified@jar"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:just_audio::release"
+        simpleName="com.ryanheise.just_audio:just_audio"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:audio_session::release"
+        simpleName="com.ryanheise.audio_session:audio_session"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:awesome_notifications::release"
+        simpleName="me.carda.awesome_notifications:awesome_notifications"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:platform_device_id::release"
+        simpleName="com.di1shuai.platform_device_id:platform_device_id"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info::release"
+        simpleName="io.flutter.plugins.deviceinfo:device_info"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:syncfusion_flutter_pdfviewer::release"
+        simpleName="com.syncfusion.flutter.pdfviewer:syncfusion_flutter_pdfviewer"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info_plus::release"
+        simpleName="dev.fluttercommunity.plus.device_info:device_info_plus"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:file_picker::release"
+        simpleName="com.mr.flutter.plugin.filepicker:file_picker"/>
     <dependency
         name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:firebase_messaging::release"
         simpleName="io.flutter.plugins.firebasemessaging:firebase_messaging"/>
@@ -280,35 +304,26 @@
         name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:firebase_core::release"
         simpleName="io.flutter.plugins.firebase.core:firebase_core"/>
     <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:platform_device_id::release"
-        simpleName="com.di1shuai.platform_device_id:platform_device_id"/>
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_downloader::release"
+        simpleName="vn.hunghd.flutterdownloader:flutter_downloader"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_image_compress_common::release"
+        simpleName="com.fluttercandies.flutter_image_compress:flutter_image_compress_common"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_inappwebview_android::release"
+        simpleName="com.pichillilorenzo.flutter_inappwebview_android:flutter_inappwebview_android"/>
     <dependency
         name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_local_notifications::release"
         simpleName="com.dexterous.flutterlocalnotifications:flutter_local_notifications"/>
     <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:file_picker::release"
-        simpleName="com.mr.flutter.plugin.filepicker:file_picker"/>
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:image_picker_android::release"
+        simpleName="io.flutter.plugins.imagepicker:image_picker_android"/>
     <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:path_provider_android::release"
-        simpleName="io.flutter.plugins.pathprovider:path_provider_android"/>
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_plugin_android_lifecycle::release"
+        simpleName="io.flutter.plugins.flutter_plugin_android_lifecycle:flutter_plugin_android_lifecycle"/>
     <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:vibration::release"
-        simpleName="com.benjaminabel.vibration:vibration"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:shared_preferences_android::release"
-        simpleName="io.flutter.plugins.sharedpreferences:shared_preferences_android"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:just_audio::release"
-        simpleName="com.ryanheise.just_audio:just_audio"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:wakelock_plus::release"
-        simpleName="dev.fluttercommunity.plus.wakelock:wakelock_plus"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:share_plus::release"
-        simpleName="dev.fluttercommunity.plus.share:share_plus"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_image_compress_common::release"
-        simpleName="com.fluttercandies.flutter_image_compress:flutter_image_compress_common"/>
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_tts::release"
+        simpleName="com.tundralabs.fluttertts:flutter_tts"/>
     <dependency
         name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:razorpay_flutter::release"
         simpleName="com.razorpay.razorpay_flutter:razorpay_flutter"/>
@@ -316,56 +331,41 @@
         name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:fluttertoast::release"
         simpleName="com.example.FlutterToast:fluttertoast"/>
     <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_tts::release"
-        simpleName="com.tundralabs.fluttertts:flutter_tts"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:image_picker_android::release"
-        simpleName="io.flutter.plugins.imagepicker:image_picker_android"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:video_player_android::release"
-        simpleName="io.flutter.plugins.videoplayer:video_player_android"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_plugin_android_lifecycle::release"
-        simpleName="io.flutter.plugins.flutter_plugin_android_lifecycle:flutter_plugin_android_lifecycle"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:awesome_notifications::release"
-        simpleName="me.carda.awesome_notifications:awesome_notifications"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:syncfusion_flutter_pdfviewer::release"
-        simpleName="com.syncfusion.flutter.pdfviewer:syncfusion_flutter_pdfviewer"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:url_launcher_android::release"
-        simpleName="io.flutter.plugins.urllauncher:url_launcher_android"/>
-    <dependency
         name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:google_sign_in_android::release"
         simpleName="io.flutter.plugins.googlesignin:google_sign_in_android"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_downloader::release"
-        simpleName="vn.hunghd.flutterdownloader:flutter_downloader"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_inappwebview_android::release"
-        simpleName="com.pichillilorenzo.flutter_inappwebview_android:flutter_inappwebview_android"/>
-    <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:permission_handler_android::release"
-        simpleName="com.baseflow.permissionhandler:permission_handler_android"/>
     <dependency
         name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:in_app_purchase_android::release"
         simpleName="io.flutter.plugins.inapppurchase:in_app_purchase_android"/>
     <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info::release"
-        simpleName="io.flutter.plugins.deviceinfo:device_info"/>
-    <dependency
         name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:open_file::release"
         simpleName="com.crazecoder.openfile:open_file"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:wakelock_plus::release"
+        simpleName="dev.fluttercommunity.plus.wakelock:wakelock_plus"/>
     <dependency
         name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:package_info_plus::release"
         simpleName="dev.fluttercommunity.plus.packageinfo:package_info_plus"/>
     <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info_plus::release"
-        simpleName="dev.fluttercommunity.plus.device_info:device_info_plus"/>
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:path_provider_android::release"
+        simpleName="io.flutter.plugins.pathprovider:path_provider_android"/>
     <dependency
-        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:audio_session::release"
-        simpleName="com.ryanheise.audio_session:audio_session"/>
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:permission_handler_android::release"
+        simpleName="com.baseflow.permissionhandler:permission_handler_android"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:share_plus::release"
+        simpleName="dev.fluttercommunity.plus.share:share_plus"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:shared_preferences_android::release"
+        simpleName="io.flutter.plugins.sharedpreferences:shared_preferences_android"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:url_launcher_android::release"
+        simpleName="io.flutter.plugins.urllauncher:url_launcher_android"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:vibration::release"
+        simpleName="com.benjaminabel.vibration:vibration"/>
+    <dependency
+        name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:video_player_android::release"
+        simpleName="io.flutter.plugins.videoplayer:video_player_android"/>
     <dependency
         name="me.carda:AndroidAwnCore:0.9.3@aar"/>
     <dependency
@@ -373,17 +373,15 @@
     <dependency
         name="com.android.billingclient:billing:6.1.0@aar"/>
     <dependency
-        name="com.google.firebase:firebase-messaging:23.4.0@aar"/>
+        name="com.google.firebase:firebase-messaging:23.4.1@aar"/>
     <dependency
-        name="com.google.firebase:firebase-analytics:21.5.0@aar"/>
+        name="com.google.firebase:firebase-analytics:21.6.1@aar"/>
     <dependency
-        name="com.google.android.gms:play-services-measurement-api:21.5.0@aar"/>
-    <dependency
-        name="com.google.firebase:firebase-iid:21.1.0@aar"/>
+        name="com.google.android.gms:play-services-measurement-api:21.6.1@aar"/>
     <dependency
         name="com.google.firebase:firebase-installations:17.2.0@aar"/>
     <dependency
-        name="com.google.firebase:firebase-common-ktx:20.4.2@aar"/>
+        name="com.google.firebase:firebase-common-ktx:20.4.3@aar"/>
     <dependency
         name="androidx.work:work-runtime:2.7.1@aar"/>
     <dependency
@@ -391,19 +389,33 @@
     <dependency
         name="androidx.room:room-common:2.5.0@jar"/>
     <dependency
-        name="io.flutter:flutter_embedding_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar"/>
+        name="io.flutter:flutter_embedding_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar"/>
     <dependency
         name="androidx.window:window-java:1.0.0-beta04@aar"/>
     <dependency
-        name="com.google.android.gms:play-services-measurement:21.5.0@aar"/>
+        name="com.google.android.gms:play-services-measurement:21.6.1@aar"/>
     <dependency
-        name="com.google.android.gms:play-services-measurement-sdk:21.5.0@aar"/>
+        name="com.google.android.gms:play-services-measurement-sdk:21.6.1@aar"/>
     <dependency
-        name="com.google.android.gms:play-services-measurement-impl:21.5.0@aar"/>
+        name="com.google.android.gms:play-services-measurement-impl:21.6.1@aar"/>
     <dependency
         name="androidx.privacysandbox.ads:ads-adservices-java:1.0.0-beta05@aar"/>
     <dependency
         name="androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05@aar"/>
+    <dependency
+        name="androidx.window:window:1.0.0-beta04@aar"/>
+    <dependency
+        name="androidx.appcompat:appcompat-resources:1.6.1@aar"/>
+    <dependency
+        name="androidx.constraintlayout:constraintlayout:2.0.1@aar"/>
+    <dependency
+        name="androidx.appcompat:appcompat:1.6.1@aar"/>
+    <dependency
+        name="androidx.webkit:webkit:1.8.0@aar"/>
+    <dependency
+        name="androidx.browser:browser:1.6.0@aar"/>
+    <dependency
+        name="androidx.swiperefreshlayout:swiperefreshlayout:1.1.0@aar"/>
     <dependency
         name="com.google.android.exoplayer:exoplayer-dash:2.18.7@aar"/>
     <dependency
@@ -413,21 +425,49 @@
     <dependency
         name="com.google.android.exoplayer:exoplayer-core:2.18.7@aar"/>
     <dependency
-        name="androidx.appcompat:appcompat-resources:1.6.1@aar"/>
+        name="androidx.media3:media3-extractor:1.3.1@aar"/>
     <dependency
-        name="androidx.constraintlayout:constraintlayout:2.0.1@aar"/>
+        name="androidx.media3:media3-container:1.3.1@aar"/>
     <dependency
-        name="androidx.appcompat:appcompat:1.6.1@aar"/>
+        name="androidx.media3:media3-datasource:1.3.1@aar"/>
+    <dependency
+        name="androidx.media3:media3-decoder:1.3.1@aar"/>
+    <dependency
+        name="androidx.media3:media3-database:1.3.1@aar"/>
+    <dependency
+        name="androidx.media3:media3-common:1.3.1@aar"/>
+    <dependency
+        name="androidx.media3:media3-exoplayer-hls:1.3.1@aar"/>
+    <dependency
+        name="androidx.media3:media3-exoplayer-dash:1.3.1@aar"/>
+    <dependency
+        name="androidx.media3:media3-exoplayer-smoothstreaming:1.3.1@aar"/>
+    <dependency
+        name="androidx.media3:media3-exoplayer:1.3.1@aar"/>
+    <dependency
+        name="androidx.media2:media2-session:1.2.1@aar"/>
+    <dependency
+        name="androidx.media2:media2-common:1.2.1@aar"/>
+    <dependency
+        name="androidx.media:media:1.7.0@aar"/>
+    <dependency
+        name="com.google.firebase:firebase-common:20.4.3@aar"/>
     <dependency
         name="com.razorpay:checkout:1.6.39@aar"/>
     <dependency
-        name="com.google.android.gms:play-services-auth:21.1.0@aar"/>
+        name="com.google.firebase:firebase-iid-interop:17.1.0@aar"/>
     <dependency
-        name="com.google.android.gms:play-services-wallet:18.1.3@aar"/>
+        name="com.google.android.gms:play-services-cloud-messaging:17.1.0@aar"/>
+    <dependency
+        name="com.google.android.gms:play-services-auth:21.1.0@aar"/>
     <dependency
         name="com.google.android.gms:play-services-auth-api-phone:18.0.2@aar"/>
     <dependency
         name="com.google.android.gms:play-services-location:19.0.0@aar"/>
+    <dependency
+        name="com.google.android.gms:play-services-wallet:18.1.3@aar"/>
+    <dependency
+        name="com.google.firebase:firebase-installations-interop:17.1.1@aar"/>
     <dependency
         name="com.google.android.gms:play-services-auth-base:18.0.10@aar"/>
     <dependency
@@ -439,11 +479,9 @@
     <dependency
         name="com.google.android.gms:play-services-base:18.3.0@aar"/>
     <dependency
-        name="com.google.firebase:firebase-common:20.4.2@aar"/>
+        name="org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.1@jar"/>
     <dependency
-        name="com.google.firebase:firebase-iid-interop:17.1.0@aar"/>
-    <dependency
-        name="com.google.android.gms:play-services-cloud-messaging:17.1.0@aar"/>
+        name="com.google.android.gms:play-services-tasks:18.1.0@aar"/>
     <dependency
         name="com.google.android.gms:play-services-stats:17.0.2@aar"/>
     <dependency
@@ -451,51 +489,47 @@
     <dependency
         name="com.google.android.gms:play-services-ads-identifier:18.0.0@aar"/>
     <dependency
-        name="com.google.android.gms:play-services-measurement-sdk-api:21.5.0@aar"/>
+        name="com.google.android.gms:play-services-measurement-sdk-api:21.6.1@aar"/>
     <dependency
-        name="com.google.android.gms:play-services-measurement-base:21.5.0@aar"/>
-    <dependency
-        name="com.google.firebase:firebase-installations-interop:17.1.1@aar"/>
-    <dependency
-        name="org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.1@jar"/>
-    <dependency
-        name="com.google.android.gms:play-services-tasks:18.1.0@aar"/>
+        name="com.google.android.gms:play-services-measurement-base:21.6.1@aar"/>
     <dependency
         name="com.google.android.gms:play-services-places-placereport:17.0.0@aar"/>
     <dependency
         name="com.google.android.gms:play-services-basement:18.3.0@aar"/>
     <dependency
+        name="androidx.emoji2:emoji2-views-helper:1.2.0@aar"/>
+    <dependency
+        name="androidx.emoji2:emoji2:1.2.0@aar"/>
+    <dependency
         name="androidx.viewpager2:viewpager2:1.0.0@aar"/>
     <dependency
         name="androidx.fragment:fragment:1.5.7@aar"/>
     <dependency
-        name="androidx.core:core-ktx:1.10.1@aar"/>
-    <dependency
-        name="androidx.browser:browser:1.6.0@aar"/>
-    <dependency
-        name="androidx.webkit:webkit:1.8.0@aar"/>
-    <dependency
-        name="androidx.swiperefreshlayout:swiperefreshlayout:1.1.0@aar"/>
-    <dependency
-        name="androidx.media2:media2-session:1.2.1@aar"/>
-    <dependency
-        name="androidx.media2:media2-common:1.2.1@aar"/>
-    <dependency
-        name="androidx.media:media:1.7.0@aar"/>
-    <dependency
-        name="androidx.emoji2:emoji2-views-helper:1.2.0@aar"/>
-    <dependency
-        name="androidx.emoji2:emoji2:1.2.0@aar"/>
+        name="androidx.activity:activity:1.8.0@aar"/>
     <dependency
         name="androidx.dynamicanimation:dynamicanimation:1.0.0@aar"/>
     <dependency
         name="androidx.legacy:legacy-support-core-utils:1.0.0@aar"/>
     <dependency
-        name="androidx.window:window:1.0.0-beta04@aar"/>
-    <dependency
         name="androidx.loader:loader:1.1.0@aar"/>
     <dependency
-        name="androidx.activity:activity:1.8.0@aar"/>
+        name="androidx.lifecycle:lifecycle-viewmodel:2.6.2@aar"/>
+    <dependency
+        name="androidx.lifecycle:lifecycle-service:2.6.2@aar"/>
+    <dependency
+        name="androidx.lifecycle:lifecycle-reactivestreams:2.6.2@aar"/>
+    <dependency
+        name="androidx.lifecycle:lifecycle-process:2.6.2@aar"/>
+    <dependency
+        name="androidx.lifecycle:lifecycle-livedata-core:2.6.2@aar"/>
+    <dependency
+        name="androidx.lifecycle:lifecycle-livedata:2.6.2@aar"/>
+    <dependency
+        name="androidx.lifecycle:lifecycle-common-java8:2.6.2@jar"/>
+    <dependency
+        name="androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2@aar"/>
+    <dependency
+        name="androidx.core:core-ktx:1.13.1@aar"/>
     <dependency
         name="androidx.drawerlayout:drawerlayout:1.1.1@aar"/>
     <dependency
@@ -507,35 +541,19 @@
     <dependency
         name="androidx.vectordrawable:vectordrawable:1.1.0@aar"/>
     <dependency
-        name="androidx.viewpager:viewpager:1.0.0@aar"/>
-    <dependency
         name="androidx.recyclerview:recyclerview:1.1.0@aar"/>
+    <dependency
+        name="androidx.viewpager:viewpager:1.0.0@aar"/>
     <dependency
         name="androidx.customview:customview:1.1.0@aar"/>
     <dependency
-        name="androidx.core:core:1.10.1@aar"/>
+        name="androidx.core:core:1.13.1@aar"/>
+    <dependency
+        name="androidx.lifecycle:lifecycle-runtime:2.6.2@aar"/>
     <dependency
         name="androidx.savedstate:savedstate:1.2.1@aar"/>
     <dependency
-        name="androidx.lifecycle:lifecycle-livedata-core:2.6.1@aar"/>
-    <dependency
-        name="androidx.lifecycle:lifecycle-service:2.6.1@aar"/>
-    <dependency
-        name="androidx.lifecycle:lifecycle-reactivestreams:2.6.1@aar"/>
-    <dependency
-        name="androidx.lifecycle:lifecycle-process:2.6.1@aar"/>
-    <dependency
-        name="androidx.lifecycle:lifecycle-livedata:2.6.1@aar"/>
-    <dependency
-        name="androidx.lifecycle:lifecycle-common-java8:2.6.1@jar"/>
-    <dependency
-        name="androidx.lifecycle:lifecycle-common:2.6.1@jar"/>
-    <dependency
-        name="androidx.lifecycle:lifecycle-viewmodel:2.6.1@aar"/>
-    <dependency
-        name="androidx.lifecycle:lifecycle-runtime:2.6.1@aar"/>
-    <dependency
-        name="androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1@aar"/>
+        name="androidx.lifecycle:lifecycle-common:2.6.2@jar"/>
     <dependency
         name="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1@jar"/>
     <dependency
@@ -547,11 +565,11 @@
     <dependency
         name="androidx.multidex:multidex:2.0.0@aar"/>
     <dependency
-        name="io.flutter:armeabi_v7a_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar"/>
+        name="io.flutter:armeabi_v7a_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar"/>
     <dependency
-        name="io.flutter:arm64_v8a_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar"/>
+        name="io.flutter:arm64_v8a_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar"/>
     <dependency
-        name="io.flutter:x86_64_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar"/>
+        name="io.flutter:x86_64_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar"/>
     <dependency
         name="com.google.firebase:firebase-datatransport:18.1.7@aar"/>
     <dependency
@@ -565,22 +583,6 @@
     <dependency
         name="com.google.firebase:firebase-encoders:17.0.0@jar"/>
     <dependency
-        name="androidx.heifwriter:heifwriter:1.0.0@aar"/>
-    <dependency
-        name="androidx.exifinterface:exifinterface:1.3.6@aar"/>
-    <dependency
-        name="androidx.localbroadcastmanager:localbroadcastmanager:1.1.0@aar"/>
-    <dependency
-        name="androidx.profileinstaller:profileinstaller:1.3.0@aar"/>
-    <dependency
-        name="androidx.startup:startup-runtime:1.1.1@aar"/>
-    <dependency
-        name="androidx.tracing:tracing:1.0.0@aar"/>
-    <dependency
-        name="com.google.firebase:firebase-components:17.1.5@aar"/>
-    <dependency
-        name="androidx.concurrent:concurrent-futures:1.1.0@jar"/>
-    <dependency
         name="com.google.android.exoplayer:exoplayer-datasource:2.18.7@aar"/>
     <dependency
         name="com.google.android.exoplayer:exoplayer-extractor:2.18.7@aar"/>
@@ -591,65 +593,81 @@
     <dependency
         name="com.google.android.exoplayer:exoplayer-common:2.18.7@aar"/>
     <dependency
-        name="androidx.interpolator:interpolator:1.0.0@aar"/>
-    <dependency
-        name="androidx.versionedparcelable:versionedparcelable:1.1.1@aar"/>
-    <dependency
-        name="com.google.android.datatransport:transport-api:3.1.0@aar"/>
+        name="com.google.guava:guava:33.2.1-android@jar"/>
     <dependency
         name="androidx.sqlite:sqlite-framework:2.3.0@aar"/>
     <dependency
         name="androidx.sqlite:sqlite:2.3.0@aar"/>
     <dependency
-        name="androidx.collection:collection:1.1.0@jar"/>
+        name="androidx.annotation:annotation-experimental:1.4.0@aar"/>
+    <dependency
+        name="androidx.localbroadcastmanager:localbroadcastmanager:1.1.0@aar"/>
+    <dependency
+        name="androidx.heifwriter:heifwriter:1.0.0@aar"/>
+    <dependency
+        name="androidx.exifinterface:exifinterface:1.3.7@aar"/>
+    <dependency
+        name="androidx.profileinstaller:profileinstaller:1.3.0@aar"/>
+    <dependency
+        name="androidx.startup:startup-runtime:1.1.1@aar"/>
+    <dependency
+        name="androidx.tracing:tracing:1.0.0@aar"/>
+    <dependency
+        name="androidx.concurrent:concurrent-futures:1.1.0@jar"/>
+    <dependency
+        name="com.google.firebase:firebase-components:17.1.5@aar"/>
+    <dependency
+        name="com.google.android.datatransport:transport-api:3.1.0@aar"/>
+    <dependency
+        name="androidx.interpolator:interpolator:1.0.0@aar"/>
     <dependency
         name="androidx.cursoradapter:cursoradapter:1.0.0@aar"/>
     <dependency
         name="androidx.resourceinspection:resourceinspection-annotation:1.0.1@jar"/>
     <dependency
+        name="androidx.versionedparcelable:versionedparcelable:1.1.1@aar"/>
+    <dependency
+        name="androidx.collection:collection:1.2.0@jar"/>
+    <dependency
+        name="androidx.cardview:cardview:1.0.0@aar"/>
+    <dependency
         name="androidx.arch.core:core-runtime:2.2.0@aar"/>
     <dependency
         name="androidx.arch.core:core-common:2.2.0@jar"/>
-    <dependency
-        name="androidx.cardview:cardview:1.0.0@aar"/>
     <dependency
         name="androidx.documentfile:documentfile:1.0.0@aar"/>
     <dependency
         name="androidx.print:print:1.0.0@aar"/>
     <dependency
-        name="com.google.code.gson:gson:2.10.1@jar"/>
-    <dependency
-        name="androidx.annotation:annotation-jvm:1.7.1@jar"/>
-    <dependency
-        name="androidx.annotation:annotation-experimental:1.3.0@aar"/>
+        name="androidx.annotation:annotation-jvm:1.8.0@jar"/>
     <dependency
         name="org.jetbrains.kotlin:kotlin-stdlib:1.8.22@jar"/>
     <dependency
         name="commons-io:commons-io:2.6@jar"/>
     <dependency
-        name="com.google.guava:guava:32.1.3-android@jar"/>
-    <dependency
-        name="com.google.firebase:firebase-annotations:16.2.0@jar"/>
-    <dependency
-        name="org.jetbrains.kotlin:kotlin-stdlib-common:1.8.22@jar"/>
-    <dependency
-        name="com.google.errorprone:error_prone_annotations:2.21.1@jar"/>
-    <dependency
-        name="me.leolin:ShortcutBadger:1.1.22@aar"/>
-    <dependency
-        name="com.google.guava:failureaccess:1.0.1@jar"/>
+        name="com.google.code.gson:gson:2.10.1@jar"/>
     <dependency
         name="com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava@jar"/>
     <dependency
+        name="me.leolin:ShortcutBadger:1.1.22@aar"/>
+    <dependency
+        name="com.google.firebase:firebase-annotations:16.2.0@jar"/>
+    <dependency
+        name="com.google.errorprone:error_prone_annotations:2.26.1@jar"/>
+    <dependency
+        name="com.google.guava:failureaccess:1.0.2@jar"/>
+    <dependency
         name="com.google.code.findbugs:jsr305:3.0.2@jar"/>
     <dependency
-        name="org.checkerframework:checker-qual:3.37.0@jar"/>
+        name="org.checkerframework:checker-qual:3.42.0@jar"/>
+    <dependency
+        name="org.jetbrains.kotlin:kotlin-stdlib-common:1.8.22@jar"/>
+    <dependency
+        name="org.reactivestreams:reactive-streams:1.0.0@jar"/>
     <dependency
         name="javax.inject:javax.inject:1@jar"/>
     <dependency
         name="org.jetbrains:annotations:23.0.0@jar"/>
-    <dependency
-        name="org.reactivestreams:reactive-streams:1.0.0@jar"/>
     <dependency
         name="androidx.constraintlayout:constraintlayout-solver:2.0.1@jar"/>
   </package>

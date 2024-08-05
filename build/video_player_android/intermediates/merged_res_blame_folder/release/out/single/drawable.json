@@ -1,18 +1,18 @@
 [
     {
         "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/video_player_android/intermediates/merged_res/release/drawable/notification_tile_bg.xml",
-        "source": "/Users/dishasharma/.gradle/caches/transforms-3/e70091b21537f3044a5772ea49633be0/transformed/core-1.7.0/res/drawable/notification_tile_bg.xml"
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/ed0edbcea1c7e835f31754eacd6d922d/transformed/core-1.8.0/res/drawable/notification_tile_bg.xml"
     },
     {
         "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/video_player_android/intermediates/merged_res/release/drawable/notification_bg_low.xml",
-        "source": "/Users/dishasharma/.gradle/caches/transforms-3/e70091b21537f3044a5772ea49633be0/transformed/core-1.7.0/res/drawable/notification_bg_low.xml"
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/ed0edbcea1c7e835f31754eacd6d922d/transformed/core-1.8.0/res/drawable/notification_bg_low.xml"
     },
     {
         "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/video_player_android/intermediates/merged_res/release/drawable/notification_icon_background.xml",
-        "source": "/Users/dishasharma/.gradle/caches/transforms-3/e70091b21537f3044a5772ea49633be0/transformed/core-1.7.0/res/drawable/notification_icon_background.xml"
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/ed0edbcea1c7e835f31754eacd6d922d/transformed/core-1.8.0/res/drawable/notification_icon_background.xml"
     },
     {
         "merged": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/video_player_android/intermediates/merged_res/release/drawable/notification_bg.xml",
-        "source": "/Users/dishasharma/.gradle/caches/transforms-3/e70091b21537f3044a5772ea49633be0/transformed/core-1.7.0/res/drawable/notification_bg.xml"
+        "source": "/Users/dishasharma/.gradle/caches/transforms-3/ed0edbcea1c7e835f31754eacd6d922d/transformed/core-1.8.0/res/drawable/notification_bg.xml"
     }
 ]

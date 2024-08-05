@@ -203,7 +203,7 @@ class RestClient {
         throw ServerException(message: "Server went down");
       default:
         throw HttpException(
-            statusCode: response.statusCode, message: "Somwthing went wrong");
+            statusCode: response.statusCode, message: "Something went wrong");
     }
   }
 

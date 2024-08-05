@@ -112,15 +112,28 @@ String getInitials(bank_account_name) {
   return initials;
 }
 
+// var themeData = ThemeData(
+//   backgroundColor: primaryColor,
+//   primaryTextTheme: TextTheme(headline6: TextStyle(color: blackColor)),
+//   appBarTheme: AppBarTheme(
+//     centerTitle: false,
+//     color: whiteColor,
+//     iconTheme: IconThemeData(color: blackColor, size: 25),
+//   ),
+//   scaffoldBackgroundColor: whiteColor,
+//   /*fontFamily: 'Segoe',*/
+// );
 var themeData = ThemeData(
-  backgroundColor: primaryColor,
-  primaryTextTheme: TextTheme(headline6: TextStyle(color: blackColor)),
+
+  primaryTextTheme: TextTheme(titleLarge: TextStyle(color: blackColor)),
   appBarTheme: AppBarTheme(
     centerTitle: false,
     color: whiteColor,
     iconTheme: IconThemeData(color: blackColor, size: 25),
   ),
   scaffoldBackgroundColor: whiteColor,
+
+  // colorScheme: ColorScheme(background: primaryColor, brightness: null, primary: null, onPrimary: null, onSecondary: null,),
   /*fontFamily: 'Segoe',*/
 );
 /*

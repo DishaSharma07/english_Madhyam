@@ -49,18 +49,19 @@ class PraticeExamDetailController extends GetxController {
       loading(false);
     }
   }
-  Future<void> reportQuiz(dynamic requestBody) async {
+  Future<bool> reportQuiz(dynamic requestBody) async {
     loading(true);
-    SignUpModel? response = await apiService.reportQuestion(requestBody);
+    bool? response = await apiService.reportQuestion(requestBody);
     loading(false);
-    if (response?.result == 'success') {
+    if (response == true) {
 
       Fluttertoast.showToast(
-          msg: response!.message! + '      ${response.result!}');
+          msg: "Successfully reported");
     } else {
       Fluttertoast.showToast(
-          msg: response!.message! + '      ${response.result!}');
+          msg: "Error Ocuured");
     }
+    return  response;
   }
 
   ///navigation between questions

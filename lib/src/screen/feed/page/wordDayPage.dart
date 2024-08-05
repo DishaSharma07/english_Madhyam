@@ -10,16 +10,15 @@ import 'package:flutter_tts/flutter_tts.dart';
 
 
 class WordDayPage extends StatefulWidget {
-  const WordDayPage({Key? key}) : super(key: key);
+  final Function(int pageCount) paginationCallback;
+  const WordDayPage({Key? key,required this.paginationCallback}) : super(key: key);
 
   @override
   _WordDayPageState createState() => _WordDayPageState();
 }
 
 class _WordDayPageState extends State<WordDayPage> {
-  // var wordDay = controller.wordOfDayList[index];
-  // FormattedDate = DateFormat("MMM -d-y")
-  //     .format(DateTime.parse(wordDay.date!));
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,24 +50,30 @@ class _WordDayPageState extends State<WordDayPage> {
         return Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            InkWell(
-
-                onTap: () {
-                  _speak(controller.wordOfDayList[0].word!);
-                },
-                child: Padding(
-                  padding: const EdgeInsets.only(right: 35.0),
-                  child: CircleAvatar(
-                    radius: 13,
-                    backgroundColor: purpleColor,
-                    child: Icon(
-                      Icons.volume_up_outlined,
-                      color: whiteColor,
-                    ),
-                  ),
-                )),
+            // InkWell(
+            //
+            //     onTap: () {
+            //       _speak(controller.wordOfDayList[0].word!);
+            //     },
+            //     child: Padding(
+            //       padding: const EdgeInsets.only(right: 35.0),
+            //       child: CircleAvatar(
+            //         radius: 13,
+            //         backgroundColor: purpleColor,
+            //         child: Icon(
+            //           Icons.volume_up_outlined,
+            //           color: whiteColor,
+            //         ),
+            //       ),
+            //     )),
             CardSliderWidget(
               list: controller.wordOfDayList,
+              paginationCallback: (page){
+                widget.paginationCallback(page);
+                controller.pageCounter.value=controller.pageCounter.value+1;
+              },
+              currentPageCount: controller.pageCounter.value,
+
             ),
           ],
         );

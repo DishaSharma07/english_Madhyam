@@ -10,6 +10,7 @@ import 'package:english_madhyam/src/screen/editorials_page/page/editorials_page.
 import 'package:english_madhyam/src/screen/favorite/controller/favoriteController.dart';
 import 'package:english_madhyam/src/utils/colors/colors.dart';
 import 'package:english_madhyam/src/screen/pages/page/custom_dmsans.dart';
+import 'package:english_madhyam/src/widgets/question_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -1009,9 +1010,9 @@ class _PlayQuizPageState extends State<PlayQuizPage> {
                     onPressed: () {
                       var requestBody = {
                         "exam_id": widget.examDetails.content!.id.toString(),
-                        "reportTitle": dropdownValue.toString(),
+                        "report_type": dropdownValue.toString(),
                         "message": reportQuestionController.text,
-                        "QusNo": widget.examDetails.content!
+                        "q_id": widget.examDetails.content!
                             .examQuestion![selectedQuestion].id
                             .toString()
                       };
@@ -1125,17 +1126,8 @@ class _PlayQuizPageState extends State<PlayQuizPage> {
 
   //check by mukesh
   Widget questionWidget() {
-    return Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: Html(
-          data: _examQuestion[selectedQuestion].eQuestion.toString(),
-          style: {
-            "body": Style(
-              fontSize: FontSize(18.0),
-            ),
-            "p": Style(fontSize: FontSize(18.0))
-          },
-        ));
+    return QuestionWidget(questionString:_examQuestion[selectedQuestion].eQuestion.toString() ,);
+
   }
 
 //check by mukesh

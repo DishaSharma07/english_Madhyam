@@ -8,8 +8,7 @@
     buildFolder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/app"
     bootClassPath="/Users/dishasharma/Library/Android/sdk/platforms/android-34/android.jar:/Users/dishasharma/Library/Android/sdk/build-tools/30.0.3/core-lambda-stubs.jar"
     javaSourceLevel="1.8"
-    compileTarget="android-34"
-    neverShrinking="true">
+    compileTarget="android-34">
   <lintOptions
       abortOnError="true"
       absolutePaths="true"

@@ -3110,6 +3110,7 @@ drawable notification_bg_low_pressed
 drawable notification_bg_normal
 drawable notification_bg_normal_pressed
 drawable notification_icon_background
+drawable notification_oversize_large_icon_bg
 drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
@@ -3305,6 +3306,7 @@ id easeInOut
 id easeOut
 id edge
 id edit_query
+id edit_text_id
 id elastic
 id embed
 id end
@@ -3344,6 +3346,7 @@ id grayscale
 id group_divider
 id groups
 id header_title
+id hide_ime_id
 id hideable
 id holo_dark
 id holo_light
@@ -3780,6 +3783,8 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout floating_action_mode
 layout floating_action_mode_item
+layout ime_base_split_test_activity
+layout ime_secondary_split_test_activity
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

@@ -4,8 +4,8 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="16"
-6-->/Users/dishasharma/.pub-cache/hosted/pub.dev/just_audio-0.9.37/android/src/main/AndroidManifest.xml
+6-->/Users/dishasharma/.pub-cache/hosted/pub.dev/just_audio-0.9.39/android/src/main/AndroidManifest.xml
 7        android:targetSdkVersion="16" />
-7-->/Users/dishasharma/.pub-cache/hosted/pub.dev/just_audio-0.9.37/android/src/main/AndroidManifest.xml
+7-->/Users/dishasharma/.pub-cache/hosted/pub.dev/just_audio-0.9.39/android/src/main/AndroidManifest.xml
 8
 9</manifest>

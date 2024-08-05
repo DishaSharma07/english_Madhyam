@@ -9,7 +9,7 @@ class SignUpModel {
   SignUpModel.fromJson(Map<String, dynamic> json) {
     result = json['result'];
     token = json.containsKey('token')?json['token']:null;
-    message = json['message'];
+    message = json.containsKey('message')?json['message']:null;
     user = json.containsKey('user')?json['user'] != null ? new User.fromJson(json['user']) : null:null;
   }
 

@@ -180,6 +180,8 @@ class PaymentController extends GetxController {
           cancel();
         }
       } else {
+        purchaseloading(false);
+
         return null;
       }
     } catch (e) {

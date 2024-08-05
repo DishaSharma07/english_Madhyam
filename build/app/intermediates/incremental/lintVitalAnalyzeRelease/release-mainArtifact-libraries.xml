@@ -4,6 +4,71 @@
       jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/app/intermediates/flutter/release/libs.jar"
       resolved="__local_aars__:/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/app/intermediates/flutter/release/libs.jar:unspecified"/>
   <library
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:audio_session::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/audio_session/.transforms/64547d5572f1405b5d1c3c1ffcb1043b/transformed/out/jars/classes.jar"
+      resolved="com.ryanheise.audio_session:audio_session:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/audio_session/.transforms/64547d5572f1405b5d1c3c1ffcb1043b/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:awesome_notifications::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/.transforms/3084ea6602418b5f6ab449b5042bfe4e/transformed/out/jars/classes.jar"
+      resolved="me.carda.awesome_notifications:awesome_notifications:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/.transforms/3084ea6602418b5f6ab449b5042bfe4e/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/device_info/.transforms/55c3ed03988a66e8f2952bffe0a739ba/transformed/out/jars/classes.jar"
+      resolved="io.flutter.plugins.deviceinfo:device_info:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/device_info/.transforms/55c3ed03988a66e8f2952bffe0a739ba/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info_plus::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/device_info_plus/.transforms/397205d923bc2dda99076339177b0bc4/transformed/out/jars/classes.jar"
+      resolved="dev.fluttercommunity.plus.device_info:device_info_plus:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/device_info_plus/.transforms/397205d923bc2dda99076339177b0bc4/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:file_picker::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/file_picker/.transforms/2988cde81a1a45cffc18ffd14994e64f/transformed/out/jars/classes.jar"
+      resolved="com.mr.flutter.plugin.filepicker:file_picker:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/file_picker/.transforms/2988cde81a1a45cffc18ffd14994e64f/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:firebase_messaging::release"
       jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/firebase_messaging/.transforms/5468b57fc01658efbd261db1f03aa395/transformed/out/jars/classes.jar"
       resolved="io.flutter.plugins.firebasemessaging:firebase_messaging:unspecified"
@@ -30,114 +95,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:platform_device_id::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/platform_device_id/.transforms/809c1678a7051ea3b86d01466887acc4/transformed/out/jars/classes.jar"
-      resolved="com.di1shuai.platform_device_id:platform_device_id:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/platform_device_id/.transforms/809c1678a7051ea3b86d01466887acc4/transformed/out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_local_notifications::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/.transforms/5ce287c546d8617a31b4a167fc2da424/transformed/out/jars/classes.jar"
-      resolved="com.dexterous.flutterlocalnotifications:flutter_local_notifications:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/.transforms/5ce287c546d8617a31b4a167fc2da424/transformed/out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:file_picker::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/file_picker/.transforms/2988cde81a1a45cffc18ffd14994e64f/transformed/out/jars/classes.jar"
-      resolved="com.mr.flutter.plugin.filepicker:file_picker:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/file_picker/.transforms/2988cde81a1a45cffc18ffd14994e64f/transformed/out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:path_provider_android::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/path_provider_android/.transforms/1cbf7508f257924a78e688d1f82be511/transformed/out/jars/classes.jar"
-      resolved="io.flutter.plugins.pathprovider:path_provider_android:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/path_provider_android/.transforms/1cbf7508f257924a78e688d1f82be511/transformed/out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:vibration::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/vibration/.transforms/3b3595c87995f0b685b2aa3b4e17c83e/transformed/out/jars/classes.jar"
-      resolved="com.benjaminabel.vibration:vibration:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/vibration/.transforms/3b3595c87995f0b685b2aa3b4e17c83e/transformed/out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:shared_preferences_android::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/shared_preferences_android/.transforms/e9d25adc0e4bd342e21ab872eb299459/transformed/out/jars/classes.jar"
-      resolved="io.flutter.plugins.sharedpreferences:shared_preferences_android:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/shared_preferences_android/.transforms/e9d25adc0e4bd342e21ab872eb299459/transformed/out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:just_audio::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/just_audio/.transforms/d3da695e340cfbe79091ac93b41c516b/transformed/out/jars/classes.jar"
-      resolved="com.ryanheise.just_audio:just_audio:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/just_audio/.transforms/d3da695e340cfbe79091ac93b41c516b/transformed/out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:wakelock_plus::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/wakelock_plus/.transforms/3e6ab846b51e490484e6bbd4b6431d02/transformed/out/jars/classes.jar"
-      resolved="dev.fluttercommunity.plus.wakelock:wakelock_plus:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/wakelock_plus/.transforms/3e6ab846b51e490484e6bbd4b6431d02/transformed/out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:share_plus::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/share_plus/.transforms/b042b35855a7def3465d9a78a119f8b0/transformed/out/jars/classes.jar"
-      resolved="dev.fluttercommunity.plus.share:share_plus:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/share_plus/.transforms/b042b35855a7def3465d9a78a119f8b0/transformed/out"
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_downloader::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_downloader/.transforms/82ce92c4ff51d6116bfc8fa78f34d5cc/transformed/out/jars/classes.jar"
+      resolved="vn.hunghd.flutterdownloader:flutter_downloader:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_downloader/.transforms/82ce92c4ff51d6116bfc8fa78f34d5cc/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -160,10 +121,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:fluttertoast::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/fluttertoast/.transforms/e69e1ea6bb44f152413a70f65b02a46a/transformed/out/jars/classes.jar"
-      resolved="com.example.FlutterToast:fluttertoast:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/fluttertoast/.transforms/e69e1ea6bb44f152413a70f65b02a46a/transformed/out"
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_inappwebview_android::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/.transforms/270d29900fe399f74d14d079fe522b4c/transformed/out/jars/classes.jar"
+      resolved="com.pichillilorenzo.flutter_inappwebview_android:flutter_inappwebview_android:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/.transforms/270d29900fe399f74d14d079fe522b4c/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -173,49 +134,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_tts::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_tts/.transforms/30975af13aaa89e980dd41dc1e5937cf/transformed/out/jars/classes.jar"
-      resolved="com.tundralabs.fluttertts:flutter_tts:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_tts/.transforms/30975af13aaa89e980dd41dc1e5937cf/transformed/out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:razorpay_flutter::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/razorpay_flutter/.transforms/3185e43ca166a43c79d15f5cd4da73ba/transformed/out/jars/classes.jar"
-      resolved="com.razorpay.razorpay_flutter:razorpay_flutter:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/razorpay_flutter/.transforms/3185e43ca166a43c79d15f5cd4da73ba/transformed/out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:image_picker_android::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/image_picker_android/.transforms/08d864ff73a91e3e2ae13aed35a0d501/transformed/out/jars/classes.jar"
-      resolved="io.flutter.plugins.imagepicker:image_picker_android:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/image_picker_android/.transforms/08d864ff73a91e3e2ae13aed35a0d501/transformed/out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:video_player_android::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/video_player_android/.transforms/3672682c979f9026a31623ad447245a1/transformed/out/jars/classes.jar"
-      resolved="io.flutter.plugins.videoplayer:video_player_android:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/video_player_android/.transforms/3672682c979f9026a31623ad447245a1/transformed/out"
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_local_notifications::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/.transforms/5ce287c546d8617a31b4a167fc2da424/transformed/out/jars/classes.jar"
+      resolved="com.dexterous.flutterlocalnotifications:flutter_local_notifications:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_local_notifications/.transforms/5ce287c546d8617a31b4a167fc2da424/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -238,10 +160,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:awesome_notifications::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/.transforms/3084ea6602418b5f6ab449b5042bfe4e/transformed/out/jars/classes.jar"
-      resolved="me.carda.awesome_notifications:awesome_notifications:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/awesome_notifications/.transforms/3084ea6602418b5f6ab449b5042bfe4e/transformed/out"
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_tts::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_tts/.transforms/30975af13aaa89e980dd41dc1e5937cf/transformed/out/jars/classes.jar"
+      resolved="com.tundralabs.fluttertts:flutter_tts:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_tts/.transforms/30975af13aaa89e980dd41dc1e5937cf/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -251,23 +173,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:syncfusion_flutter_pdfviewer::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/syncfusion_flutter_pdfviewer/.transforms/7f33d78f9f3ac775d787e315a3540252/transformed/out/jars/classes.jar"
-      resolved="com.syncfusion.flutter.pdfviewer:syncfusion_flutter_pdfviewer:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/syncfusion_flutter_pdfviewer/.transforms/7f33d78f9f3ac775d787e315a3540252/transformed/out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:url_launcher_android::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/url_launcher_android/.transforms/0e40ddecc632abd4a7883b818ecea0a9/transformed/out/jars/classes.jar"
-      resolved="io.flutter.plugins.urllauncher:url_launcher_android:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/url_launcher_android/.transforms/0e40ddecc632abd4a7883b818ecea0a9/transformed/out"
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:fluttertoast::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/fluttertoast/.transforms/e69e1ea6bb44f152413a70f65b02a46a/transformed/out/jars/classes.jar"
+      resolved="com.example.FlutterToast:fluttertoast:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/fluttertoast/.transforms/e69e1ea6bb44f152413a70f65b02a46a/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -290,36 +199,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_downloader::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_downloader/.transforms/82ce92c4ff51d6116bfc8fa78f34d5cc/transformed/out/jars/classes.jar"
-      resolved="vn.hunghd.flutterdownloader:flutter_downloader:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_downloader/.transforms/82ce92c4ff51d6116bfc8fa78f34d5cc/transformed/out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:flutter_inappwebview_android::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/.transforms/270d29900fe399f74d14d079fe522b4c/transformed/out/jars/classes.jar"
-      resolved="com.pichillilorenzo.flutter_inappwebview_android:flutter_inappwebview_android:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/flutter_inappwebview_android/.transforms/270d29900fe399f74d14d079fe522b4c/transformed/out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:permission_handler_android::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/permission_handler_android/.transforms/6cec64e0e2bdd54d2d498e455eda37a5/transformed/out/jars/classes.jar"
-      resolved="com.baseflow.permissionhandler:permission_handler_android:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/permission_handler_android/.transforms/6cec64e0e2bdd54d2d498e455eda37a5/transformed/out"
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:image_picker_android::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/image_picker_android/.transforms/08d864ff73a91e3e2ae13aed35a0d501/transformed/out/jars/classes.jar"
+      resolved="io.flutter.plugins.imagepicker:image_picker_android:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/image_picker_android/.transforms/08d864ff73a91e3e2ae13aed35a0d501/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -342,10 +225,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/device_info/.transforms/55c3ed03988a66e8f2952bffe0a739ba/transformed/out/jars/classes.jar"
-      resolved="io.flutter.plugins.deviceinfo:device_info:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/device_info/.transforms/55c3ed03988a66e8f2952bffe0a739ba/transformed/out"
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:just_audio::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/just_audio/.transforms/d3da695e340cfbe79091ac93b41c516b/transformed/out/jars/classes.jar"
+      resolved="com.ryanheise.just_audio:just_audio:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/just_audio/.transforms/d3da695e340cfbe79091ac93b41c516b/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -381,10 +264,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:device_info_plus::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/device_info_plus/.transforms/397205d923bc2dda99076339177b0bc4/transformed/out/jars/classes.jar"
-      resolved="dev.fluttercommunity.plus.device_info:device_info_plus:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/device_info_plus/.transforms/397205d923bc2dda99076339177b0bc4/transformed/out"
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:path_provider_android::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/path_provider_android/.transforms/1cbf7508f257924a78e688d1f82be511/transformed/out/jars/classes.jar"
+      resolved="io.flutter.plugins.pathprovider:path_provider_android:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/path_provider_android/.transforms/1cbf7508f257924a78e688d1f82be511/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -394,10 +277,127 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:audio_session::release"
-      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/audio_session/.transforms/64547d5572f1405b5d1c3c1ffcb1043b/transformed/out/jars/classes.jar"
-      resolved="com.ryanheise.audio_session:audio_session:unspecified"
-      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/audio_session/.transforms/64547d5572f1405b5d1c3c1ffcb1043b/transformed/out"
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:permission_handler_android::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/permission_handler_android/.transforms/6cec64e0e2bdd54d2d498e455eda37a5/transformed/out/jars/classes.jar"
+      resolved="com.baseflow.permissionhandler:permission_handler_android:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/permission_handler_android/.transforms/6cec64e0e2bdd54d2d498e455eda37a5/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:platform_device_id::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/platform_device_id/.transforms/809c1678a7051ea3b86d01466887acc4/transformed/out/jars/classes.jar"
+      resolved="com.di1shuai.platform_device_id:platform_device_id:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/platform_device_id/.transforms/809c1678a7051ea3b86d01466887acc4/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:razorpay_flutter::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/razorpay_flutter/.transforms/3185e43ca166a43c79d15f5cd4da73ba/transformed/out/jars/classes.jar"
+      resolved="com.razorpay.razorpay_flutter:razorpay_flutter:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/razorpay_flutter/.transforms/3185e43ca166a43c79d15f5cd4da73ba/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:share_plus::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/share_plus/.transforms/b042b35855a7def3465d9a78a119f8b0/transformed/out/jars/classes.jar"
+      resolved="dev.fluttercommunity.plus.share:share_plus:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/share_plus/.transforms/b042b35855a7def3465d9a78a119f8b0/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:shared_preferences_android::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/shared_preferences_android/.transforms/e9d25adc0e4bd342e21ab872eb299459/transformed/out/jars/classes.jar"
+      resolved="io.flutter.plugins.sharedpreferences:shared_preferences_android:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/shared_preferences_android/.transforms/e9d25adc0e4bd342e21ab872eb299459/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:syncfusion_flutter_pdfviewer::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/syncfusion_flutter_pdfviewer/.transforms/7f33d78f9f3ac775d787e315a3540252/transformed/out/jars/classes.jar"
+      resolved="com.syncfusion.flutter.pdfviewer:syncfusion_flutter_pdfviewer:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/syncfusion_flutter_pdfviewer/.transforms/7f33d78f9f3ac775d787e315a3540252/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:url_launcher_android::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/url_launcher_android/.transforms/0e40ddecc632abd4a7883b818ecea0a9/transformed/out/jars/classes.jar"
+      resolved="io.flutter.plugins.urllauncher:url_launcher_android:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/url_launcher_android/.transforms/0e40ddecc632abd4a7883b818ecea0a9/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:vibration::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/vibration/.transforms/3b3595c87995f0b685b2aa3b4e17c83e/transformed/out/jars/classes.jar"
+      resolved="com.benjaminabel.vibration:vibration:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/vibration/.transforms/3b3595c87995f0b685b2aa3b4e17c83e/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:video_player_android::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/video_player_android/.transforms/3672682c979f9026a31623ad447245a1/transformed/out/jars/classes.jar"
+      resolved="io.flutter.plugins.videoplayer:video_player_android:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/video_player_android/.transforms/3672682c979f9026a31623ad447245a1/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/android@@:wakelock_plus::release"
+      jars="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/wakelock_plus/.transforms/3e6ab846b51e490484e6bbd4b6431d02/transformed/out/jars/classes.jar"
+      resolved="dev.fluttercommunity.plus.wakelock:wakelock_plus:unspecified"
+      folder="/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/wakelock_plus/.transforms/3e6ab846b51e490484e6bbd4b6431d02/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -420,10 +420,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.firebase:firebase-analytics:21.5.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/f1cf29c439b083454abb07434872ace4/transformed/jetified-firebase-analytics-21.5.0/jars/classes.jar"
-      resolved="com.google.firebase:firebase-analytics:21.5.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/f1cf29c439b083454abb07434872ace4/transformed/jetified-firebase-analytics-21.5.0"
+      name="com.google.firebase:firebase-analytics:21.6.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/1eae57479ab7c9dd9a2dfc24254fa6e2/transformed/jetified-firebase-analytics-21.6.1/jars/classes.jar"
+      resolved="com.google.firebase:firebase-analytics:21.6.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/1eae57479ab7c9dd9a2dfc24254fa6e2/transformed/jetified-firebase-analytics-21.6.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -433,10 +433,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.android.gms:play-services-measurement-api:21.5.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/41e39fe53eec339ce8930971fb666fcd/transformed/jetified-play-services-measurement-api-21.5.0/jars/classes.jar"
-      resolved="com.google.android.gms:play-services-measurement-api:21.5.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/41e39fe53eec339ce8930971fb666fcd/transformed/jetified-play-services-measurement-api-21.5.0"
+      name="com.google.android.gms:play-services-measurement-api:21.6.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/792b85d3a02303f85a37ebf2f072efb9/transformed/jetified-play-services-measurement-api-21.6.1/jars/classes.jar"
+      resolved="com.google.android.gms:play-services-measurement-api:21.6.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/792b85d3a02303f85a37ebf2f072efb9/transformed/jetified-play-services-measurement-api-21.6.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -459,10 +459,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.firebase:firebase-common-ktx:20.4.2@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/c27116673e1b8dd037ed1253ad380799/transformed/jetified-firebase-common-ktx-20.4.2/jars/classes.jar"
-      resolved="com.google.firebase:firebase-common-ktx:20.4.2"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/c27116673e1b8dd037ed1253ad380799/transformed/jetified-firebase-common-ktx-20.4.2"
+      name="com.google.firebase:firebase-common-ktx:20.4.3@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/1c327279061301e3254a34df9a57b4d8/transformed/jetified-firebase-common-ktx-20.4.3/jars/classes.jar"
+      resolved="com.google.firebase:firebase-common-ktx:20.4.3"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/1c327279061301e3254a34df9a57b4d8/transformed/jetified-firebase-common-ktx-20.4.3"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -472,9 +472,9 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="io.flutter:flutter_embedding_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar"
-      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/io.flutter/flutter_embedding_release/1.0.0-04817c99c9fd4956f27505204f7e344335810aed/32809c8dc647f1ac834899bf9e489202692ad1b2/flutter_embedding_release-1.0.0-04817c99c9fd4956f27505204f7e344335810aed.jar"
-      resolved="io.flutter:flutter_embedding_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed"/>
+      name="io.flutter:flutter_embedding_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar"
+      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/io.flutter/flutter_embedding_release/1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a/3aa8bc7a64fdc57dbcfbbe5f1592ea9b8e0df5b3/flutter_embedding_release-1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a.jar"
+      resolved="io.flutter:flutter_embedding_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a"/>
   <library
       name="com.google.android.gms:play-services-location:19.0.0@aar"
       jars="/Users/dishasharma/.gradle/caches/transforms-3/89f8fcd1e7ae017e0afdbc8c802f420e/transformed/jetified-play-services-location-19.0.0/jars/classes.jar"
@@ -606,10 +606,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.firebase:firebase-common:20.4.2@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/8f4e5197a5fdff30ea4b8aa17d9962d6/transformed/jetified-firebase-common-20.4.2/jars/classes.jar"
-      resolved="com.google.firebase:firebase-common:20.4.2"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/8f4e5197a5fdff30ea4b8aa17d9962d6/transformed/jetified-firebase-common-20.4.2"
+      name="com.google.firebase:firebase-common:20.4.3@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/f17800cf4367ace8095e29cb514cf6f8/transformed/jetified-firebase-common-20.4.3/jars/classes.jar"
+      resolved="com.google.firebase:firebase-common:20.4.3"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/f17800cf4367ace8095e29cb514cf6f8/transformed/jetified-firebase-common-20.4.3"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -645,10 +645,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.android.gms:play-services-measurement:21.5.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/83af8bdf9360c7cc02408fa8ebbd3fc1/transformed/jetified-play-services-measurement-21.5.0/jars/classes.jar"
-      resolved="com.google.android.gms:play-services-measurement:21.5.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/83af8bdf9360c7cc02408fa8ebbd3fc1/transformed/jetified-play-services-measurement-21.5.0"
+      name="com.google.android.gms:play-services-measurement:21.6.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/b345eb6e8e01d8e6eecb97ead2604d79/transformed/jetified-play-services-measurement-21.6.1/jars/classes.jar"
+      resolved="com.google.android.gms:play-services-measurement:21.6.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/b345eb6e8e01d8e6eecb97ead2604d79/transformed/jetified-play-services-measurement-21.6.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -658,10 +658,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.android.gms:play-services-measurement-sdk:21.5.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/239b12c8d12dfe44da39cd302b3b8554/transformed/jetified-play-services-measurement-sdk-21.5.0/jars/classes.jar"
-      resolved="com.google.android.gms:play-services-measurement-sdk:21.5.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/239b12c8d12dfe44da39cd302b3b8554/transformed/jetified-play-services-measurement-sdk-21.5.0"
+      name="com.google.android.gms:play-services-measurement-sdk:21.6.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/9c4adbbf6a537931f6b7b2d1681dbda1/transformed/jetified-play-services-measurement-sdk-21.6.1/jars/classes.jar"
+      resolved="com.google.android.gms:play-services-measurement-sdk:21.6.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/9c4adbbf6a537931f6b7b2d1681dbda1/transformed/jetified-play-services-measurement-sdk-21.6.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -671,10 +671,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.android.gms:play-services-measurement-impl:21.5.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/3d48ebd12d4d16d53bafd54794ff879c/transformed/jetified-play-services-measurement-impl-21.5.0/jars/classes.jar"
-      resolved="com.google.android.gms:play-services-measurement-impl:21.5.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/3d48ebd12d4d16d53bafd54794ff879c/transformed/jetified-play-services-measurement-impl-21.5.0"
+      name="com.google.android.gms:play-services-measurement-impl:21.6.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/9a6d4d8da38522e9590623ad264e0604/transformed/jetified-play-services-measurement-impl-21.6.1/jars/classes.jar"
+      resolved="com.google.android.gms:play-services-measurement-impl:21.6.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/9a6d4d8da38522e9590623ad264e0604/transformed/jetified-play-services-measurement-impl-21.6.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -757,10 +757,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.android.gms:play-services-measurement-sdk-api:21.5.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/59304c36ce81b40d770d39e857607749/transformed/jetified-play-services-measurement-sdk-api-21.5.0/jars/classes.jar"
-      resolved="com.google.android.gms:play-services-measurement-sdk-api:21.5.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/59304c36ce81b40d770d39e857607749/transformed/jetified-play-services-measurement-sdk-api-21.5.0"
+      name="com.google.android.gms:play-services-measurement-sdk-api:21.6.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/3f793f8746f5471eee3a52e0fc13b7b6/transformed/jetified-play-services-measurement-sdk-api-21.6.1/jars/classes.jar"
+      resolved="com.google.android.gms:play-services-measurement-sdk-api:21.6.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/3f793f8746f5471eee3a52e0fc13b7b6/transformed/jetified-play-services-measurement-sdk-api-21.6.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -770,10 +770,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.android.gms:play-services-measurement-base:21.5.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/7506e765d30c45e38deb726219dc415c/transformed/jetified-play-services-measurement-base-21.5.0/jars/classes.jar"
-      resolved="com.google.android.gms:play-services-measurement-base:21.5.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/7506e765d30c45e38deb726219dc415c/transformed/jetified-play-services-measurement-base-21.5.0"
+      name="com.google.android.gms:play-services-measurement-base:21.6.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/bb33033c263dad0674856a7c50e88144/transformed/jetified-play-services-measurement-base-21.6.1/jars/classes.jar"
+      resolved="com.google.android.gms:play-services-measurement-base:21.6.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/bb33033c263dad0674856a7c50e88144/transformed/jetified-play-services-measurement-base-21.6.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -874,10 +874,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.lifecycle:lifecycle-livedata-core:2.6.1@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/037a3d8eb3beaed74e417408582399c8/transformed/lifecycle-livedata-core-2.6.1/jars/classes.jar"
-      resolved="androidx.lifecycle:lifecycle-livedata-core:2.6.1"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/037a3d8eb3beaed74e417408582399c8/transformed/lifecycle-livedata-core-2.6.1"
+      name="androidx.lifecycle:lifecycle-livedata-core:2.6.2@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/a0fb430f7a05671d35bb5c07f1b4e17e/transformed/lifecycle-livedata-core-2.6.2/jars/classes.jar"
+      resolved="androidx.lifecycle:lifecycle-livedata-core:2.6.2"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/a0fb430f7a05671d35bb5c07f1b4e17e/transformed/lifecycle-livedata-core-2.6.2"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -887,10 +887,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.lifecycle:lifecycle-viewmodel:2.6.1@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/f8028843ecd752ec1cbd03b7ecfca4a3/transformed/lifecycle-viewmodel-2.6.1/jars/classes.jar"
-      resolved="androidx.lifecycle:lifecycle-viewmodel:2.6.1"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/f8028843ecd752ec1cbd03b7ecfca4a3/transformed/lifecycle-viewmodel-2.6.1"
+      name="androidx.lifecycle:lifecycle-viewmodel:2.6.2@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/ac9192ff44eb3270138f7de94c2593c6/transformed/lifecycle-viewmodel-2.6.2/jars/classes.jar"
+      resolved="androidx.lifecycle:lifecycle-viewmodel:2.6.2"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/ac9192ff44eb3270138f7de94c2593c6/transformed/lifecycle-viewmodel-2.6.2"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -900,10 +900,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/e569cbdeadef18601dafd3a8760c2efe/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.1/jars/classes.jar"
-      resolved="androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/e569cbdeadef18601dafd3a8760c2efe/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.1"
+      name="androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/6123350055668ec1a0fb60da5c4aa51a/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.2/jars/classes.jar"
+      resolved="androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/6123350055668ec1a0fb60da5c4aa51a/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.2"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -913,10 +913,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.core:core-ktx:1.10.1@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/b2ebde7e11a60a5d385c13dda1ceda5a/transformed/jetified-core-ktx-1.10.1/jars/classes.jar"
-      resolved="androidx.core:core-ktx:1.10.1"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/b2ebde7e11a60a5d385c13dda1ceda5a/transformed/jetified-core-ktx-1.10.1"
+      name="androidx.core:core-ktx:1.13.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/86708738416f97b943b7016538c2d190/transformed/jetified-core-ktx-1.13.1/jars/classes.jar"
+      resolved="androidx.core:core-ktx:1.13.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/86708738416f97b943b7016538c2d190/transformed/jetified-core-ktx-1.13.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -952,10 +952,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.core:core:1.10.1@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/d88caaa22406966a164be15a8d5c0322/transformed/core-1.10.1/jars/classes.jar"
-      resolved="androidx.core:core:1.10.1"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/d88caaa22406966a164be15a8d5c0322/transformed/core-1.10.1"
+      name="androidx.core:core:1.13.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/221626504d99aa7dc7525ae51aad4f51/transformed/core-1.13.1/jars/classes.jar"
+      resolved="androidx.core:core:1.13.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/221626504d99aa7dc7525ae51aad4f51/transformed/core-1.13.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -965,10 +965,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.lifecycle:lifecycle-runtime:2.6.1@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/f314f1e813b1c0a77cb033b3e2bb64de/transformed/lifecycle-runtime-2.6.1/jars/classes.jar"
-      resolved="androidx.lifecycle:lifecycle-runtime:2.6.1"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/f314f1e813b1c0a77cb033b3e2bb64de/transformed/lifecycle-runtime-2.6.1"
+      name="androidx.lifecycle:lifecycle-runtime:2.6.2@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/3573f7b331f7a6b277209e799a8b2824/transformed/lifecycle-runtime-2.6.2/jars/classes.jar"
+      resolved="androidx.lifecycle:lifecycle-runtime:2.6.2"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/3573f7b331f7a6b277209e799a8b2824/transformed/lifecycle-runtime-2.6.2"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -978,13 +978,13 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.lifecycle:lifecycle-common-java8:2.6.1@jar"
-      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common-java8/2.6.1/2ad14aed781c4a73ed4dbb421966d408a0a06686/lifecycle-common-java8-2.6.1.jar"
-      resolved="androidx.lifecycle:lifecycle-common-java8:2.6.1"/>
+      name="androidx.lifecycle:lifecycle-common-java8:2.6.2@jar"
+      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common-java8/2.6.2/2ad14aed781c4a73ed4dbb421966d408a0a06686/lifecycle-common-java8-2.6.2.jar"
+      resolved="androidx.lifecycle:lifecycle-common-java8:2.6.2"/>
   <library
-      name="androidx.lifecycle:lifecycle-common:2.6.1@jar"
-      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.6.1/10f354fdb64868baecd67128560c5a0d6312c495/lifecycle-common-2.6.1.jar"
-      resolved="androidx.lifecycle:lifecycle-common:2.6.1"/>
+      name="androidx.lifecycle:lifecycle-common:2.6.2@jar"
+      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.6.2/10f354fdb64868baecd67128560c5a0d6312c495/lifecycle-common-2.6.2.jar"
+      resolved="androidx.lifecycle:lifecycle-common:2.6.2"/>
   <library
       name="androidx.window:window:1.0.0-beta04@aar"
       jars="/Users/dishasharma/.gradle/caches/transforms-3/e9ebd4d28126f3d9bbe0e2e3bc89aaf4/transformed/jetified-window-1.0.0-beta04/jars/classes.jar"
@@ -1024,17 +1024,17 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="io.flutter:armeabi_v7a_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar"
-      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/io.flutter/armeabi_v7a_release/1.0.0-04817c99c9fd4956f27505204f7e344335810aed/43c705a45bf4af2dd17d26bb2e23f79d4bc37513/armeabi_v7a_release-1.0.0-04817c99c9fd4956f27505204f7e344335810aed.jar"
-      resolved="io.flutter:armeabi_v7a_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed"/>
+      name="io.flutter:armeabi_v7a_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar"
+      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/io.flutter/armeabi_v7a_release/1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a/d503f85fdf712378616984cbdfbaa53850e8f5af/armeabi_v7a_release-1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a.jar"
+      resolved="io.flutter:armeabi_v7a_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a"/>
   <library
-      name="io.flutter:arm64_v8a_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar"
-      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/io.flutter/arm64_v8a_release/1.0.0-04817c99c9fd4956f27505204f7e344335810aed/ac2063ed943d55d78781745168a59aff3b27cdd2/arm64_v8a_release-1.0.0-04817c99c9fd4956f27505204f7e344335810aed.jar"
-      resolved="io.flutter:arm64_v8a_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed"/>
+      name="io.flutter:arm64_v8a_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar"
+      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/io.flutter/arm64_v8a_release/1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a/f2a5d9ed23c3b7120895d73a281b12ff5e78ae84/arm64_v8a_release-1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a.jar"
+      resolved="io.flutter:arm64_v8a_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a"/>
   <library
-      name="io.flutter:x86_64_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed@jar"
-      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/io.flutter/x86_64_release/1.0.0-04817c99c9fd4956f27505204f7e344335810aed/9a40d6a486e44cdca88de950fef76ef42a2421d8/x86_64_release-1.0.0-04817c99c9fd4956f27505204f7e344335810aed.jar"
-      resolved="io.flutter:x86_64_release:1.0.0-04817c99c9fd4956f27505204f7e344335810aed"/>
+      name="io.flutter:x86_64_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a@jar"
+      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/io.flutter/x86_64_release/1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a/62fe9585521d9bd30dd719e9e61b920f6344e7f8/x86_64_release-1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a.jar"
+      resolved="io.flutter:x86_64_release:1.0.0-235db911ba279722f5e685f38b0ed30fa7e8570a"/>
   <library
       name="androidx.versionedparcelable:versionedparcelable:1.1.1@aar"
       jars="/Users/dishasharma/.gradle/caches/transforms-3/80936e8c707513c0587d48e3c6e5186c/transformed/versionedparcelable-1.1.1/jars/classes.jar"
@@ -1049,9 +1049,9 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.collection:collection:1.1.0@jar"
-      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar"
-      resolved="androidx.collection:collection:1.1.0"/>
+      name="androidx.collection:collection:1.2.0@jar"
+      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.2.0/34dbc21d203cc4d4d623ac572a21acd4ccd716af/collection-1.2.0.jar"
+      resolved="androidx.collection:collection:1.2.0"/>
   <library
       name="com.google.android.datatransport:transport-backend-cct:3.1.8@aar"
       jars="/Users/dishasharma/.gradle/caches/transforms-3/e9fa8a209bed951f69b18a008e6a8f73/transformed/jetified-transport-backend-cct-3.1.8/jars/classes.jar"
@@ -1186,14 +1186,14 @@
       jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/androidx.concurrent/concurrent-futures/1.1.0/50b7fb98350d5f42a4e49704b03278542293ba48/concurrent-futures-1.1.0.jar"
       resolved="androidx.concurrent:concurrent-futures:1.1.0"/>
   <library
-      name="androidx.annotation:annotation-jvm:1.7.1@jar"
-      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation-jvm/1.7.1/920472d40adcdef5e18708976b3e314f9a636fcd/annotation-jvm-1.7.1.jar"
-      resolved="androidx.annotation:annotation-jvm:1.7.1"/>
+      name="androidx.annotation:annotation-jvm:1.8.0@jar"
+      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation-jvm/1.8.0/b8a16fe526014b7941c1debaccaf9c5153692dbb/annotation-jvm-1.8.0.jar"
+      resolved="androidx.annotation:annotation-jvm:1.8.0"/>
   <library
-      name="androidx.annotation:annotation-experimental:1.3.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/fbda0697614ecbedabe2aeb9afdb5949/transformed/jetified-annotation-experimental-1.3.0/jars/classes.jar"
-      resolved="androidx.annotation:annotation-experimental:1.3.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/fbda0697614ecbedabe2aeb9afdb5949/transformed/jetified-annotation-experimental-1.3.0"
+      name="androidx.annotation:annotation-experimental:1.4.0@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/ba2a6449fe1c8dd89dad112329720a02/transformed/jetified-annotation-experimental-1.4.0/jars/classes.jar"
+      resolved="androidx.annotation:annotation-experimental:1.4.0"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/ba2a6449fe1c8dd89dad112329720a02/transformed/jetified-annotation-experimental-1.4.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -1215,9 +1215,9 @@
       jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/23.0.0/8cc20c07506ec18e0834947b84a864bfc094484e/annotations-23.0.0.jar"
       resolved="org.jetbrains:annotations:23.0.0"/>
   <library
-      name="com.google.guava:guava:32.1.3-android@jar"
-      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/32.1.3-android/ea090dd85ca2fa12d42d054369df888665230dd7/guava-32.1.3-android.jar"
-      resolved="com.google.guava:guava:32.1.3-android"/>
+      name="com.google.guava:guava:33.2.1-android@jar"
+      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/33.2.1-android/e4b6190e40480888763b7ba80b4912a3eb03a3f4/guava-33.2.1-android.jar"
+      resolved="com.google.guava:guava:33.2.1-android"/>
   <library
       name="com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava@jar"
       jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
@@ -1236,21 +1236,21 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.guava:failureaccess:1.0.1@jar"
-      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar"
-      resolved="com.google.guava:failureaccess:1.0.1"/>
+      name="com.google.guava:failureaccess:1.0.2@jar"
+      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.2/c4a06a64e650562f30b7bf9aaec1bfed43aca12b/failureaccess-1.0.2.jar"
+      resolved="com.google.guava:failureaccess:1.0.2"/>
   <library
       name="com.google.code.findbugs:jsr305:3.0.2@jar"
       jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar"
       resolved="com.google.code.findbugs:jsr305:3.0.2"/>
   <library
-      name="org.checkerframework:checker-qual:3.37.0@jar"
-      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.37.0/ba74746d38026581c12166e164bb3c15e90cc4ea/checker-qual-3.37.0.jar"
-      resolved="org.checkerframework:checker-qual:3.37.0"/>
+      name="org.checkerframework:checker-qual:3.42.0@jar"
+      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.42.0/638ec33f363a94d41a4f03c3e7d3dcfba64e402d/checker-qual-3.42.0.jar"
+      resolved="org.checkerframework:checker-qual:3.42.0"/>
   <library
-      name="com.google.errorprone:error_prone_annotations:2.21.1@jar"
-      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.21.1/6d9b10773b5237df178a7b3c1b4208df7d0e7f94/error_prone_annotations-2.21.1.jar"
-      resolved="com.google.errorprone:error_prone_annotations:2.21.1"/>
+      name="com.google.errorprone:error_prone_annotations:2.26.1@jar"
+      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.26.1/c1fde57694bdc14e8618899aaa6e857d9465d7de/error_prone_annotations-2.26.1.jar"
+      resolved="com.google.errorprone:error_prone_annotations:2.26.1"/>
   <library
       name="com.google.firebase:firebase-annotations:16.2.0@jar"
       jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-annotations/16.2.0/ba0806703ca285d03fa9c888b5868f101134a501/firebase-annotations-16.2.0.jar"
@@ -1260,9 +1260,9 @@
       jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
       resolved="javax.inject:javax.inject:1"/>
   <library
-      name="com.google.j2objc:j2objc-annotations:2.8@jar"
-      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/2.8/c85270e307e7b822f1086b93689124b89768e273/j2objc-annotations-2.8.jar"
-      resolved="com.google.j2objc:j2objc-annotations:2.8"
+      name="com.google.j2objc:j2objc-annotations:3.0.0@jar"
+      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/3.0.0/7399e65dd7e9ff3404f4535b2f017093bdb134c7/j2objc-annotations-3.0.0.jar"
+      resolved="com.google.j2objc:j2objc-annotations:3.0.0"
       provided="true"/>
   <library
       name="me.carda:AndroidAwnCore:0.9.3@aar"
@@ -1291,23 +1291,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.firebase:firebase-messaging:23.4.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0/jars/classes.jar"
-      resolved="com.google.firebase:firebase-messaging:23.4.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/8c5d297e374af81c9edb934753457c51/transformed/jetified-firebase-messaging-23.4.0"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="com.google.firebase:firebase-iid:21.1.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/489619a8500d595b1fea3e41eff127ab/transformed/jetified-firebase-iid-21.1.0/jars/classes.jar"
-      resolved="com.google.firebase:firebase-iid:21.1.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/489619a8500d595b1fea3e41eff127ab/transformed/jetified-firebase-iid-21.1.0"
+      name="com.google.firebase:firebase-messaging:23.4.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/c19dfe3a9b12a04f8e493938f6b49c42/transformed/jetified-firebase-messaging-23.4.1/jars/classes.jar"
+      resolved="com.google.firebase:firebase-messaging:23.4.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/c19dfe3a9b12a04f8e493938f6b49c42/transformed/jetified-firebase-messaging-23.4.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -1346,6 +1333,84 @@
       name="androidx.room:room-common:2.5.0@jar"
       jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/androidx.room/room-common/2.5.0/829a83fb92f1696a8a32f3beea884dfc87b2693/room-common-2.5.0.jar"
       resolved="androidx.room:room-common:2.5.0"/>
+  <library
+      name="androidx.appcompat:appcompat-resources:1.6.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/62c0981f6ca0a8ef3c6004fd28ebe1cd/transformed/jetified-appcompat-resources-1.6.1/jars/classes.jar"
+      resolved="androidx.appcompat:appcompat-resources:1.6.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/62c0981f6ca0a8ef3c6004fd28ebe1cd/transformed/jetified-appcompat-resources-1.6.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.constraintlayout:constraintlayout:2.0.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/8ff9cc934b0b523a0cc61f9a5fe2bb22/transformed/constraintlayout-2.0.1/jars/classes.jar"
+      resolved="androidx.constraintlayout:constraintlayout:2.0.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/8ff9cc934b0b523a0cc61f9a5fe2bb22/transformed/constraintlayout-2.0.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.appcompat:appcompat:1.6.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/65e279dc40631a9a2870691d44cc8b75/transformed/appcompat-1.6.1/jars/classes.jar"
+      resolved="androidx.appcompat:appcompat:1.6.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/65e279dc40631a9a2870691d44cc8b75/transformed/appcompat-1.6.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.webkit:webkit:1.8.0@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/26d72dd36e2dd77e9ea1f5b81acf18b1/transformed/webkit-1.8.0/jars/classes.jar"
+      resolved="androidx.webkit:webkit:1.8.0"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/26d72dd36e2dd77e9ea1f5b81acf18b1/transformed/webkit-1.8.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.browser:browser:1.6.0@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/a9c368e82978c608025ef203191d3685/transformed/browser-1.6.0/jars/classes.jar"
+      resolved="androidx.browser:browser:1.6.0"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/a9c368e82978c608025ef203191d3685/transformed/browser-1.6.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.swiperefreshlayout:swiperefreshlayout:1.1.0@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/0f0973df038dc094f72dd8e3a4ffce99/transformed/swiperefreshlayout-1.1.0/jars/classes.jar"
+      resolved="androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/0f0973df038dc094f72dd8e3a4ffce99/transformed/swiperefreshlayout-1.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
   <library
       name="com.google.android.exoplayer:exoplayer-dash:2.18.7@aar"
       jars="/Users/dishasharma/.gradle/caches/transforms-3/4355a820a93e73c01397066a56aa5ddf/transformed/jetified-exoplayer-dash-2.18.7/jars/classes.jar"
@@ -1399,10 +1464,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.appcompat:appcompat-resources:1.6.1@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/62c0981f6ca0a8ef3c6004fd28ebe1cd/transformed/jetified-appcompat-resources-1.6.1/jars/classes.jar"
-      resolved="androidx.appcompat:appcompat-resources:1.6.1"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/62c0981f6ca0a8ef3c6004fd28ebe1cd/transformed/jetified-appcompat-resources-1.6.1"
+      name="androidx.media3:media3-extractor:1.3.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/53da02ae4bc0bbeed0eef5fbf4f11b92/transformed/jetified-media3-extractor-1.3.1/jars/classes.jar"
+      resolved="androidx.media3:media3-extractor:1.3.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/53da02ae4bc0bbeed0eef5fbf4f11b92/transformed/jetified-media3-extractor-1.3.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -1412,10 +1477,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.constraintlayout:constraintlayout:2.0.1@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/8ff9cc934b0b523a0cc61f9a5fe2bb22/transformed/constraintlayout-2.0.1/jars/classes.jar"
-      resolved="androidx.constraintlayout:constraintlayout:2.0.1"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/8ff9cc934b0b523a0cc61f9a5fe2bb22/transformed/constraintlayout-2.0.1"
+      name="androidx.media3:media3-container:1.3.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/dc628a9f7fc041c83eafd86728b7e4e9/transformed/jetified-media3-container-1.3.1/jars/classes.jar"
+      resolved="androidx.media3:media3-container:1.3.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/dc628a9f7fc041c83eafd86728b7e4e9/transformed/jetified-media3-container-1.3.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -1425,10 +1490,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.appcompat:appcompat:1.6.1@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/65e279dc40631a9a2870691d44cc8b75/transformed/appcompat-1.6.1/jars/classes.jar"
-      resolved="androidx.appcompat:appcompat:1.6.1"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/65e279dc40631a9a2870691d44cc8b75/transformed/appcompat-1.6.1"
+      name="androidx.media3:media3-datasource:1.3.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/c95f62bcb8ecb838a8696641a08bd9b4/transformed/jetified-media3-datasource-1.3.1/jars/classes.jar"
+      resolved="androidx.media3:media3-datasource:1.3.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/c95f62bcb8ecb838a8696641a08bd9b4/transformed/jetified-media3-datasource-1.3.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -1438,10 +1503,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.firebase:firebase-iid-interop:17.1.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/487f90fa62d376479cb2e315c685283e/transformed/jetified-firebase-iid-interop-17.1.0/jars/classes.jar"
-      resolved="com.google.firebase:firebase-iid-interop:17.1.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/487f90fa62d376479cb2e315c685283e/transformed/jetified-firebase-iid-interop-17.1.0"
+      name="androidx.media3:media3-decoder:1.3.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/8906732ba6071344f6769fe43c67ac8e/transformed/jetified-media3-decoder-1.3.1/jars/classes.jar"
+      resolved="androidx.media3:media3-decoder:1.3.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/8906732ba6071344f6769fe43c67ac8e/transformed/jetified-media3-decoder-1.3.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -1451,10 +1516,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.android.gms:play-services-cloud-messaging:17.1.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/ae3a3533770fdd61262082e353d9c6bb/transformed/jetified-play-services-cloud-messaging-17.1.0/jars/classes.jar"
-      resolved="com.google.android.gms:play-services-cloud-messaging:17.1.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/ae3a3533770fdd61262082e353d9c6bb/transformed/jetified-play-services-cloud-messaging-17.1.0"
+      name="androidx.media3:media3-database:1.3.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/a48e19c573b626ad140cc537fc15559f/transformed/jetified-media3-database-1.3.1/jars/classes.jar"
+      resolved="androidx.media3:media3-database:1.3.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/a48e19c573b626ad140cc537fc15559f/transformed/jetified-media3-database-1.3.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -1464,10 +1529,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.viewpager2:viewpager2:1.0.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/3ff612b09bd9ed08e7f5d67fb9afa66e/transformed/jetified-viewpager2-1.0.0/jars/classes.jar"
-      resolved="androidx.viewpager2:viewpager2:1.0.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/3ff612b09bd9ed08e7f5d67fb9afa66e/transformed/jetified-viewpager2-1.0.0"
+      name="androidx.media3:media3-common:1.3.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/beac5dac38cf30b9b768088ba9cc361a/transformed/jetified-media3-common-1.3.1/jars/classes.jar"
+      resolved="androidx.media3:media3-common:1.3.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/beac5dac38cf30b9b768088ba9cc361a/transformed/jetified-media3-common-1.3.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -1477,10 +1542,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.browser:browser:1.6.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/a9c368e82978c608025ef203191d3685/transformed/browser-1.6.0/jars/classes.jar"
-      resolved="androidx.browser:browser:1.6.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/a9c368e82978c608025ef203191d3685/transformed/browser-1.6.0"
+      name="androidx.media3:media3-exoplayer-hls:1.3.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/9a31d639bfa94754407288735ab8482d/transformed/jetified-media3-exoplayer-hls-1.3.1/jars/classes.jar"
+      resolved="androidx.media3:media3-exoplayer-hls:1.3.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/9a31d639bfa94754407288735ab8482d/transformed/jetified-media3-exoplayer-hls-1.3.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -1490,10 +1555,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.webkit:webkit:1.8.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/26d72dd36e2dd77e9ea1f5b81acf18b1/transformed/webkit-1.8.0/jars/classes.jar"
-      resolved="androidx.webkit:webkit:1.8.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/26d72dd36e2dd77e9ea1f5b81acf18b1/transformed/webkit-1.8.0"
+      name="androidx.media3:media3-exoplayer-dash:1.3.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/3f3b7daff7dbbffcafcd004781cd0529/transformed/jetified-media3-exoplayer-dash-1.3.1/jars/classes.jar"
+      resolved="androidx.media3:media3-exoplayer-dash:1.3.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/3f3b7daff7dbbffcafcd004781cd0529/transformed/jetified-media3-exoplayer-dash-1.3.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -1503,10 +1568,23 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.swiperefreshlayout:swiperefreshlayout:1.1.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/0f0973df038dc094f72dd8e3a4ffce99/transformed/swiperefreshlayout-1.1.0/jars/classes.jar"
-      resolved="androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/0f0973df038dc094f72dd8e3a4ffce99/transformed/swiperefreshlayout-1.1.0"
+      name="androidx.media3:media3-exoplayer-smoothstreaming:1.3.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/99dcad8d7a76fca46601b1d5e407ffaf/transformed/jetified-media3-exoplayer-smoothstreaming-1.3.1/jars/classes.jar"
+      resolved="androidx.media3:media3-exoplayer-smoothstreaming:1.3.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/99dcad8d7a76fca46601b1d5e407ffaf/transformed/jetified-media3-exoplayer-smoothstreaming-1.3.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.media3:media3-exoplayer:1.3.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/926256fd47951ea03f8bd54a694f5991/transformed/jetified-media3-exoplayer-1.3.1/jars/classes.jar"
+      resolved="androidx.media3:media3-exoplayer:1.3.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/926256fd47951ea03f8bd54a694f5991/transformed/jetified-media3-exoplayer-1.3.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -1555,6 +1633,32 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="com.google.firebase:firebase-iid-interop:17.1.0@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/487f90fa62d376479cb2e315c685283e/transformed/jetified-firebase-iid-interop-17.1.0/jars/classes.jar"
+      resolved="com.google.firebase:firebase-iid-interop:17.1.0"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/487f90fa62d376479cb2e315c685283e/transformed/jetified-firebase-iid-interop-17.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.google.android.gms:play-services-cloud-messaging:17.1.0@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/ae3a3533770fdd61262082e353d9c6bb/transformed/jetified-play-services-cloud-messaging-17.1.0/jars/classes.jar"
+      resolved="com.google.android.gms:play-services-cloud-messaging:17.1.0"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/ae3a3533770fdd61262082e353d9c6bb/transformed/jetified-play-services-cloud-messaging-17.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="androidx.emoji2:emoji2-views-helper:1.2.0@aar"
       jars="/Users/dishasharma/.gradle/caches/transforms-3/1f5f81ef361bbd8ef548004552591143/transformed/jetified-emoji2-views-helper-1.2.0/jars/classes.jar"
       resolved="androidx.emoji2:emoji2-views-helper:1.2.0"
@@ -1581,10 +1685,75 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="androidx.viewpager2:viewpager2:1.0.0@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/3ff612b09bd9ed08e7f5d67fb9afa66e/transformed/jetified-viewpager2-1.0.0/jars/classes.jar"
+      resolved="androidx.viewpager2:viewpager2:1.0.0"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/3ff612b09bd9ed08e7f5d67fb9afa66e/transformed/jetified-viewpager2-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="androidx.dynamicanimation:dynamicanimation:1.0.0@aar"
       jars="/Users/dishasharma/.gradle/caches/transforms-3/07479c0902160a7ee0e51bb795ff8c0f/transformed/dynamicanimation-1.0.0/jars/classes.jar"
       resolved="androidx.dynamicanimation:dynamicanimation:1.0.0"
       folder="/Users/dishasharma/.gradle/caches/transforms-3/07479c0902160a7ee0e51bb795ff8c0f/transformed/dynamicanimation-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.lifecycle:lifecycle-service:2.6.2@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/88e26d706c26e6db76884389e973216d/transformed/jetified-lifecycle-service-2.6.2/jars/classes.jar"
+      resolved="androidx.lifecycle:lifecycle-service:2.6.2"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/88e26d706c26e6db76884389e973216d/transformed/jetified-lifecycle-service-2.6.2"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.lifecycle:lifecycle-reactivestreams:2.6.2@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/18a609a13daa26e8a8ac45c6802c28b3/transformed/lifecycle-reactivestreams-2.6.2/jars/classes.jar"
+      resolved="androidx.lifecycle:lifecycle-reactivestreams:2.6.2"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/18a609a13daa26e8a8ac45c6802c28b3/transformed/lifecycle-reactivestreams-2.6.2"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.lifecycle:lifecycle-process:2.6.2@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/53ba544743ecaa04f5c6dd5e3b9d24b8/transformed/jetified-lifecycle-process-2.6.2/jars/classes.jar"
+      resolved="androidx.lifecycle:lifecycle-process:2.6.2"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/53ba544743ecaa04f5c6dd5e3b9d24b8/transformed/jetified-lifecycle-process-2.6.2"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.lifecycle:lifecycle-livedata:2.6.2@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/538512e5328b62afdf96de4cbc10aab3/transformed/lifecycle-livedata-2.6.2/jars/classes.jar"
+      resolved="androidx.lifecycle:lifecycle-livedata:2.6.2"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/538512e5328b62afdf96de4cbc10aab3/transformed/lifecycle-livedata-2.6.2"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -1672,114 +1841,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.lifecycle:lifecycle-service:2.6.1@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/4cdf6e628f1f454128b3f473db735037/transformed/jetified-lifecycle-service-2.6.1/jars/classes.jar"
-      resolved="androidx.lifecycle:lifecycle-service:2.6.1"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/4cdf6e628f1f454128b3f473db735037/transformed/jetified-lifecycle-service-2.6.1"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="androidx.lifecycle:lifecycle-reactivestreams:2.6.1@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/1f88e89d2ab61b2ce32e16d1150d9358/transformed/lifecycle-reactivestreams-2.6.1/jars/classes.jar"
-      resolved="androidx.lifecycle:lifecycle-reactivestreams:2.6.1"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/1f88e89d2ab61b2ce32e16d1150d9358/transformed/lifecycle-reactivestreams-2.6.1"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="androidx.lifecycle:lifecycle-process:2.6.1@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/f9ef196bc34d4620085145b349b9e386/transformed/jetified-lifecycle-process-2.6.1/jars/classes.jar"
-      resolved="androidx.lifecycle:lifecycle-process:2.6.1"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/f9ef196bc34d4620085145b349b9e386/transformed/jetified-lifecycle-process-2.6.1"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="androidx.lifecycle:lifecycle-livedata:2.6.1@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/61ed525bd56d95228ee30b82adde264c/transformed/lifecycle-livedata-2.6.1/jars/classes.jar"
-      resolved="androidx.lifecycle:lifecycle-livedata:2.6.1"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/61ed525bd56d95228ee30b82adde264c/transformed/lifecycle-livedata-2.6.1"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
       name="com.google.firebase:firebase-datatransport:18.1.7@aar"
       jars="/Users/dishasharma/.gradle/caches/transforms-3/706fcf0905f265e7ba0baa43bb09fc0a/transformed/jetified-firebase-datatransport-18.1.7/jars/classes.jar"
       resolved="com.google.firebase:firebase-datatransport:18.1.7"
       folder="/Users/dishasharma/.gradle/caches/transforms-3/706fcf0905f265e7ba0baa43bb09fc0a/transformed/jetified-firebase-datatransport-18.1.7"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="androidx.heifwriter:heifwriter:1.0.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/425f301ee4885ac960577209c8f5ee57/transformed/heifwriter-1.0.0/jars/classes.jar"
-      resolved="androidx.heifwriter:heifwriter:1.0.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/425f301ee4885ac960577209c8f5ee57/transformed/heifwriter-1.0.0"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="androidx.exifinterface:exifinterface:1.3.6@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/ce2afd4d3fb5da3a54a1f4410a2f81f7/transformed/exifinterface-1.3.6/jars/classes.jar"
-      resolved="androidx.exifinterface:exifinterface:1.3.6"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/ce2afd4d3fb5da3a54a1f4410a2f81f7/transformed/exifinterface-1.3.6"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="androidx.profileinstaller:profileinstaller:1.3.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/jars/classes.jar"
-      resolved="androidx.profileinstaller:profileinstaller:1.3.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="androidx.startup:startup-runtime:1.1.1@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/f19b9174a27f733a496778be36f94c60/transformed/jetified-startup-runtime-1.1.1/jars/classes.jar"
-      resolved="androidx.startup:startup-runtime:1.1.1"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/f19b9174a27f733a496778be36f94c60/transformed/jetified-startup-runtime-1.1.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -1854,19 +1919,6 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.interpolator:interpolator:1.0.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/cf225162bbb325ca4c942ab8bc50b81a/transformed/interpolator-1.0.0/jars/classes.jar"
-      resolved="androidx.interpolator:interpolator:1.0.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/cf225162bbb325ca4c942ab8bc50b81a/transformed/interpolator-1.0.0"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
       name="androidx.sqlite:sqlite-framework:2.3.0@aar"
       jars="/Users/dishasharma/.gradle/caches/transforms-3/8b5e9c0a101d90f08a0171cbb6ccb351/transformed/sqlite-framework-2.3.0/jars/classes.jar"
       resolved="androidx.sqlite:sqlite-framework:2.3.0"
@@ -1893,6 +1945,71 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="androidx.heifwriter:heifwriter:1.0.0@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/425f301ee4885ac960577209c8f5ee57/transformed/heifwriter-1.0.0/jars/classes.jar"
+      resolved="androidx.heifwriter:heifwriter:1.0.0"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/425f301ee4885ac960577209c8f5ee57/transformed/heifwriter-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.exifinterface:exifinterface:1.3.7@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/4c631a44c90abe122c1a1d9b4d68f4c8/transformed/exifinterface-1.3.7/jars/classes.jar"
+      resolved="androidx.exifinterface:exifinterface:1.3.7"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/4c631a44c90abe122c1a1d9b4d68f4c8/transformed/exifinterface-1.3.7"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.profileinstaller:profileinstaller:1.3.0@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0/jars/classes.jar"
+      resolved="androidx.profileinstaller:profileinstaller:1.3.0"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/9ddcd7cbabbc1edfc2718a85ddf251fe/transformed/jetified-profileinstaller-1.3.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.startup:startup-runtime:1.1.1@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/f19b9174a27f733a496778be36f94c60/transformed/jetified-startup-runtime-1.1.1/jars/classes.jar"
+      resolved="androidx.startup:startup-runtime:1.1.1"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/f19b9174a27f733a496778be36f94c60/transformed/jetified-startup-runtime-1.1.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.interpolator:interpolator:1.0.0@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/cf225162bbb325ca4c942ab8bc50b81a/transformed/interpolator-1.0.0/jars/classes.jar"
+      resolved="androidx.interpolator:interpolator:1.0.0"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/cf225162bbb325ca4c942ab8bc50b81a/transformed/interpolator-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="androidx.cursoradapter:cursoradapter:1.0.0@aar"
       jars="/Users/dishasharma/.gradle/caches/transforms-3/2ed2bb4bfd5cb416ee0553e5351810b5/transformed/cursoradapter-1.0.0/jars/classes.jar"
       resolved="androidx.cursoradapter:cursoradapter:1.0.0"
@@ -1910,19 +2027,6 @@
       jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/androidx.resourceinspection/resourceinspection-annotation/1.0.1/8c21f8ff5d96d5d52c948707f7e4d6ca6773feef/resourceinspection-annotation-1.0.1.jar"
       resolved="androidx.resourceinspection:resourceinspection-annotation:1.0.1"/>
   <library
-      name="androidx.arch.core:core-runtime:2.2.0@aar"
-      jars="/Users/dishasharma/.gradle/caches/transforms-3/41e864b6384eac96a497a90e2217a7fa/transformed/core-runtime-2.2.0/jars/classes.jar"
-      resolved="androidx.arch.core:core-runtime:2.2.0"
-      folder="/Users/dishasharma/.gradle/caches/transforms-3/41e864b6384eac96a497a90e2217a7fa/transformed/core-runtime-2.2.0"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
       name="androidx.cardview:cardview:1.0.0@aar"
       jars="/Users/dishasharma/.gradle/caches/transforms-3/610c15c7b84681440d3aa0cc1c0b49da/transformed/cardview-1.0.0/jars/classes.jar"
       resolved="androidx.cardview:cardview:1.0.0"
@@ -1936,13 +2040,26 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.code.gson:gson:2.10.1@jar"
-      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10.1/b3add478d4382b78ea20b1671390a858002feb6c/gson-2.10.1.jar"
-      resolved="com.google.code.gson:gson:2.10.1"/>
+      name="androidx.arch.core:core-runtime:2.2.0@aar"
+      jars="/Users/dishasharma/.gradle/caches/transforms-3/41e864b6384eac96a497a90e2217a7fa/transformed/core-runtime-2.2.0/jars/classes.jar"
+      resolved="androidx.arch.core:core-runtime:2.2.0"
+      folder="/Users/dishasharma/.gradle/caches/transforms-3/41e864b6384eac96a497a90e2217a7fa/transformed/core-runtime-2.2.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
   <library
       name="commons-io:commons-io:2.6@jar"
       jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.6/815893df5f31da2ece4040fe0a12fd44b577afaf/commons-io-2.6.jar"
       resolved="commons-io:commons-io:2.6"/>
+  <library
+      name="com.google.code.gson:gson:2.10.1@jar"
+      jars="/Users/dishasharma/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10.1/b3add478d4382b78ea20b1671390a858002feb6c/gson-2.10.1.jar"
+      resolved="com.google.code.gson:gson:2.10.1"/>
   <library
       name="me.leolin:ShortcutBadger:1.1.22@aar"
       jars="/Users/dishasharma/.gradle/caches/transforms-3/747a2701437a7435feba521975abab02/transformed/jetified-ShortcutBadger-1.1.22/jars/classes.jar"

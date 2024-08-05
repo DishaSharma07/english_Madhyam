@@ -12,10 +12,12 @@ import '../../../../resrc/utils/routes/my_constant.dart';
 import '../../../custom/toolbarTitle.dart';
 import '../../../skeletonView/agendaSkeletonList.dart';
 
-class PraticeCategorListPage extends GetView<PraticeController> {
+class MaterialSubCategoriesPage
+ extends GetView<PraticeController> {
 
   String parentcateId="";
-  PraticeCategorListPage({Key? key,required this.parentcateId}) : super(key: key);
+  MaterialSubCategoriesPage
+({Key? key,required this.parentcateId}) : super(key: key);
 
 
   final PraticeController _controller = Get.find();
@@ -24,7 +26,7 @@ class PraticeCategorListPage extends GetView<PraticeController> {
 
   void loadData() async {
     // monitor network fetch
-    _controller.getPracticeCategories(parentcateId);
+    _controller.getSubCategories(parentcateId);
     await Future.delayed(const Duration(milliseconds: 1000));
     // if failed,use refreshFailed()
   }
@@ -105,7 +107,8 @@ class PraticeCategorListPage extends GetView<PraticeController> {
     return InkWell(
       onTap: () async {
         _controller.getPracticeChildListData(subCategoryId: practiceQuizData.id.toString(),isRefresh: false);
-        Get.to(PraticeListPage(subCategoryId: practiceQuizData.id.toString(),));
+        Get.to(MaterialChildCategoriesPage
+(subCategoryId: practiceQuizData.id.toString(),));
       },
       child: Container(
         decoration: BoxDecoration(

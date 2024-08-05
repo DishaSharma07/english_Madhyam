@@ -1,6 +1,8 @@
 import 'package:english_madhyam/resrc/models/model/all_category.dart';
 import 'package:english_madhyam/resrc/utils/app_colors.dart';
 import 'package:english_madhyam/resrc/widgets/showLoadingPage.dart';
+import 'package:english_madhyam/src/screen/favorite/controller/favoriteController.dart';
+import 'package:english_madhyam/src/screen/favorite/page/saveQuestionList.dart';
 import 'package:english_madhyam/src/screen/practice/controller/praticeController.dart';
 import 'package:english_madhyam/src/screen/practice/page/practiceExamListlPage.dart';
 import 'package:english_madhyam/src/utils/colors/colors.dart';
@@ -14,26 +16,32 @@ import '../../../custom/toolbarTitle.dart';
 import '../../../skeletonView/agendaSkeletonList.dart';
 import '../controller/praticeExamListController.dart';
 
-class PraticeListPage extends StatefulWidget {
-  var subCategoryId="";
-   PraticeListPage({Key? key,required this.subCategoryId}) : super(key: key);
+class MaterialChildCategoriesPage extends StatefulWidget {
+  var subCategoryId = "";
+
+  MaterialChildCategoriesPage({Key? key, required this.subCategoryId})
+      : super(key: key);
 
   @override
-  State<PraticeListPage> createState() => _PraticeListPageState();
+  State<MaterialChildCategoriesPage> createState() =>
+      _MaterialChildCategoriesPageState();
 }
-class _PraticeListPageState extends State<PraticeListPage>
-    with TickerProviderStateMixin {
+
+class _MaterialChildCategoriesPageState
+    extends State<MaterialChildCategoriesPage> with TickerProviderStateMixin {
   late TabController tabController;
   final _controller = Get.put(PraticeController(), permanent: true);
 
   final PraticeExamListController _praticeExamListController =
-  Get.put(PraticeExamListController());
+      Get.put(PraticeExamListController());
 
   final GlobalKey<RefreshIndicatorState> _refreshKey =
       GlobalKey<RefreshIndicatorState>();
 
   final GlobalKey<RefreshIndicatorState> _refreshKey1 =
-  GlobalKey<RefreshIndicatorState>();
+      GlobalKey<RefreshIndicatorState>();
+  final FavoriteController _favoriteController = Get.find();
+
 
   List<String> color = [
     "#EDF6FF",
@@ -41,6 +49,7 @@ class _PraticeListPageState extends State<PraticeListPage>
     "#F6F4FF",
     "#EBFFE5",
   ];
+
   @override
   void initState() {
     super.initState();
@@ -48,9 +57,11 @@ class _PraticeListPageState extends State<PraticeListPage>
   }
 
   void loadData() async {
-    _controller.getPracticeChildListData(subCategoryId: widget.subCategoryId??"",isRefresh: true);
+    _controller.getPracticeChildListData(
+        subCategoryId: widget.subCategoryId ?? "", isRefresh: true);
     await Future.delayed(const Duration(milliseconds: 1000));
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,9 +71,7 @@ class _PraticeListPageState extends State<PraticeListPage>
         backgroundColor: Colors.transparent,
         centerTitle: true,
         automaticallyImplyLeading: true,
-        shape: const Border(
-            bottom:
-            BorderSide(color: indicatorColor)),
+        shape: const Border(bottom: BorderSide(color: indicatorColor)),
         title: const ToolbarTitle(
           title: 'Practice List',
         ),
@@ -73,12 +82,17 @@ class _PraticeListPageState extends State<PraticeListPage>
           builder: (controller) {
             return Column(
               children: [
-                _controller.previousExamList.isNotEmpty?buildTabWidget():const SizedBox(),
+                _controller.previousExamList.isNotEmpty
+                    ? buildTabWidget()
+                    : const SizedBox(),
                 Expanded(
                   child: TabBarView(
-                    physics: const NeverScrollableScrollPhysics(),
+                      physics: const NeverScrollableScrollPhysics(),
                       controller: tabController,
-                      children: [getMockTestCategories(), getMockPreviousCategories()]),
+                      children: [
+                        getMockTestCategories(),
+                        getMockPreviousCategories()
+                      ]),
                 )
               ],
             );
@@ -97,7 +111,7 @@ class _PraticeListPageState extends State<PraticeListPage>
           indicatorSize: TabBarIndicatorSize.label,
           controller: tabController,
           dividerColor: Colors.transparent,
-          onTap: (index){
+          onTap: (index) {
             _controller.tabIndex(index);
             loadData();
           },
@@ -123,7 +137,8 @@ class _PraticeListPageState extends State<PraticeListPage>
                 ),
                 child: Align(
                   alignment: Alignment.center,
-                  child: Text("Previous Years", style: GoogleFonts.roboto(fontSize: 18)),
+                  child: Text("Previous Years",
+                      style: GoogleFonts.roboto(fontSize: 18)),
                 ),
               ),
             ),
@@ -137,18 +152,18 @@ class _PraticeListPageState extends State<PraticeListPage>
       child: Stack(
         children: [
           RefreshIndicator(
-            key: _refreshKey,
-            onRefresh: () async {
-              return Future.delayed(
-                const Duration(seconds: 1),
-                    () {
-                  loadData();
-                },
-              );
-            },
-            child: Skeleton(
-              themeMode: ThemeMode.light,
-              isLoading: _controller.isFirstLoadRunning.value,
+              key: _refreshKey,
+              onRefresh: () async {
+                return Future.delayed(
+                  const Duration(seconds: 1),
+                  () {
+                    loadData();
+                  },
+                );
+              },
+              child: Skeleton(
+                themeMode: ThemeMode.light,
+                isLoading: _controller.isFirstLoadRunning.value,
                 skeleton: const ListAgendaSkeleton(),
                 child: ListView.builder(
                     physics: const AlwaysScrollableScrollPhysics(),
@@ -156,8 +171,8 @@ class _PraticeListPageState extends State<PraticeListPage>
                     itemBuilder: (BuildContext ctx, int index) {
                       var praticeQuizData = _controller.practiceListList[index];
                       return buildCategoryItem(praticeQuizData, false, index);
-                    }),)
-          ),
+                    }),
+              )),
           _progressEmptyWidget(true, _controller.practiceListList)
         ],
       ),
@@ -174,12 +189,12 @@ class _PraticeListPageState extends State<PraticeListPage>
             onRefresh: () async {
               return Future.delayed(
                 const Duration(seconds: 1),
-                    () {
-                      loadData();
+                () {
+                  loadData();
                 },
               );
             },
-            child:  Skeleton(
+            child: Skeleton(
               themeMode: ThemeMode.light,
               isLoading: _controller.isFirstLoadRunning.value,
               skeleton: const ListAgendaSkeleton(),
@@ -189,7 +204,8 @@ class _PraticeListPageState extends State<PraticeListPage>
                   itemBuilder: (BuildContext ctx, int index) {
                     var praticeQuizData = _controller.previousExamList[index];
                     return buildCategoryItem(praticeQuizData, true, index);
-                  }),),
+                  }),
+            ),
           ),
           _progressEmptyWidget(false, _controller.previousExamList)
         ],
@@ -197,21 +213,46 @@ class _PraticeListPageState extends State<PraticeListPage>
     );
   }
 
-
   Widget buildCategoryItem(PracticeQuizData practiceQuizData, isPaid, index) {
     return InkWell(
       onTap: () async {
-        _praticeExamListController.getQuizListByCategory(cat: practiceQuizData.id!.toString(),isRefresh: false);
-        Get.to(() => PracticeExamListDetailPage(
-            title: practiceQuizData.name ?? "",
-            id: practiceQuizData.id!.toString(),
-          ),
-        );
+        if(_favoriteController.isSavedQuestionNavigation.isFalse){
+          _praticeExamListController.getQuizListByCategory(
+              cat: practiceQuizData.id!.toString(), isRefresh: false);
+          Get.to(
+                () => PracticeExamListDetailPage(
+              title: practiceQuizData.name ?? "",
+              id: practiceQuizData.id!.toString(),
+            ),
+          );
+        }else{
+          _favoriteController.getSaveQuestionList(
+              practiceQuizData.id!.toString());
+          Get.to(
+                () => SaveQuestionList(
+             categoryId: practiceQuizData.id!.toString(),
+
+            ),
+          );
+        }
+
       },
       child: ListTile(
-        leading: Image.network(practiceQuizData.image.toString(),width: 45,height: 45,),
-        title: RegularTextView(text: practiceQuizData.name??"",color: labelColor,maxLine: 4,textSize: 14,),
-        trailing: const Icon(Icons.arrow_forward_ios,size: 15,),
+        leading: Image.network(
+          practiceQuizData.image.toString(),
+          width: 45,
+          height: 45,
+        ),
+        title: RegularTextView(
+          text: practiceQuizData.name ?? "",
+          color: labelColor,
+          maxLine: 4,
+          textSize: 14,
+        ),
+        trailing: const Icon(
+          Icons.arrow_forward_ios,
+          size: 15,
+        ),
       ),
     );
   }
@@ -220,11 +261,10 @@ class _PraticeListPageState extends State<PraticeListPage>
     return Center(
       child: _controller.isLoading.value
           ? const Loading()
-          : list.isEmpty &&
-          !_controller.isFirstLoadRunning.value
-          ? ShowLoadingPage(refreshIndicatorKey: isMock? _refreshKey:_refreshKey1)
-          : const SizedBox(),
+          : list.isEmpty && !_controller.isFirstLoadRunning.value
+              ? ShowLoadingPage(
+                  refreshIndicatorKey: isMock ? _refreshKey : _refreshKey1)
+              : const SizedBox(),
     );
-
   }
 }

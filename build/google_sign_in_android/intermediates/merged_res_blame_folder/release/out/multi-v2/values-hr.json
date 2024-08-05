@@ -4,6 +4,23 @@
             "outputFile": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/google_sign_in_android/intermediates/merged_res/release/values-hr/values-hr.xml",
             "map": [
                 {
+                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/ed0edbcea1c7e835f31754eacd6d922d/transformed/core-1.8.0/res/values-hr/values-hr.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "2242",
+                        "endColumns": "100",
+                        "endOffsets": "2338"
+                    }
+                },
+                {
                     "source": "/Users/dishasharma/.gradle/caches/transforms-3/36e969af9829429efd2cb03fedc969f5/transformed/jetified-play-services-basement-18.2.0/res/values-hr/values.xml",
                     "from": {
                         "startLines": "4",
@@ -18,23 +35,6 @@
                         "startOffsets": "1067",
                         "endColumns": "131",
                         "endOffsets": "1194"
-                    }
-                },
-                {
-                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/a62712980377a57144aa85dd635f2e3f/transformed/core-1.6.0/res/values-hr/values-hr.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2242",
-                        "endColumns": "100",
-                        "endOffsets": "2338"
                     }
                 },
                 {
@@ -60,6 +60,23 @@
             "outputFile": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/google_sign_in_android/intermediates/incremental/mergeReleaseResources/merged.dir/values-hr/values-hr.xml",
             "map": [
                 {
+                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/ed0edbcea1c7e835f31754eacd6d922d/transformed/core-1.8.0/res/values-hr/values-hr.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "2242",
+                        "endColumns": "100",
+                        "endOffsets": "2338"
+                    }
+                },
+                {
                     "source": "/Users/dishasharma/.gradle/caches/transforms-3/36e969af9829429efd2cb03fedc969f5/transformed/jetified-play-services-basement-18.2.0/res/values-hr/values.xml",
                     "from": {
                         "startLines": "4",
@@ -74,23 +91,6 @@
                         "startOffsets": "1067",
                         "endColumns": "131",
                         "endOffsets": "1194"
-                    }
-                },
-                {
-                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/a62712980377a57144aa85dd635f2e3f/transformed/core-1.6.0/res/values-hr/values-hr.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2242",
-                        "endColumns": "100",
-                        "endOffsets": "2338"
                     }
                 },
                 {

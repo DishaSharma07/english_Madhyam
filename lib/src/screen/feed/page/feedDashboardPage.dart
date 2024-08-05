@@ -40,19 +40,26 @@ class _FeedDashboardState extends State<FeedDashboard>
   @override
   void initState() {
     super.initState();
-     _feedController.feedApiFetch(type: "word", date: "2");
-    //_feedController.getFeedListApi(isRefresh: false);
+    /// initially send current date in payload
+   String currentDate=dateFormatter(DateTime.now());
+     _feedController.feedApiFetch(type: "word", date: currentDate,currentPage: 1);
     tabController = TabController(length: 2, vsync: this)
       ..addListener(() {
-        setState(() {
+
           if (tabController.index == 0) {
-            _feedController.feedApiFetch(type: "word", date: "2");
-           //_feedController.getFeedListApi(isRefresh: true);
+            _feedController.feedApiFetch(type: "word", date: currentDate,currentPage: 1);
           } else if (tabController.index == 1) {
-            _feedController.feedApiFetch(type: "phrase", date: "2");
+            _feedController.feedApiFetch(type: "phrase", date: currentDate,currentPage: 1);
           } else {}
         });
-      });
+
+  }
+
+  String dateFormatter(DateTime date){
+    formattedDate = DateFormat("MMM -d-y").format(date);
+    chooseDate =
+    " ${date.year}-${date.month}-${date.day}";
+    return chooseDate;
   }
   @override
   Widget build(BuildContext context) {
@@ -84,16 +91,18 @@ class _FeedDashboardState extends State<FeedDashboard>
                 if (newDateTime != null) {
                   setState(() {
                     dateTime = newDateTime;
+                    dateFormatter(newDateTime);
 
-                    formattedDate = DateFormat("MMM -d-y").format(dateTime!);
-                    chooseDate =
-                        " ${dateTime!.year}-${dateTime!.month}-${dateTime!.day}";
                     if (tabController.index == 0) {
+                      _feedController.wordOfDayList.clear();
                       _feedController.feedApiFetch(
-                          type: "word", date: chooseDate);
+                          type: "word", date: chooseDate,currentPage: 1
+                      );
                     } else {
+                      _feedController.phraseList.clear();
                       _feedController.feedApiFetch(
-                          type: "phrase", date: chooseDate);
+                          type: "phrase", date: chooseDate,currentPage: 1
+                      );
                     }
                   });
                 }
@@ -115,9 +124,23 @@ class _FeedDashboardState extends State<FeedDashboard>
             Expanded(
               child: TabBarView(
                   controller: tabController,
-                  children: const [
-                    WordDayPage(),
-                    PhraseDayPge(),
+                  children:  [
+                    WordDayPage(
+                      paginationCallback: (page){
+                        _feedController.pageCounter.value
+                        =page;
+                      _feedController.feedApiFetch(
+                          type: "word", date: chooseDate,currentPage: _feedController.pageCounter.value
+                      );
+                    },),
+                    PhraseDayPge(
+
+                      paginationCallback: (page){
+                        _feedController.pageCounter.value=page;
+                        _feedController.feedApiFetch(
+                            type: "phrase", date: chooseDate,currentPage:  _feedController.pageCounter.value);
+                      },
+                    ),
                   ]),
             ),
           ],

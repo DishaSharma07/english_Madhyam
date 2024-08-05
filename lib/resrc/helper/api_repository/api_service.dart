@@ -145,11 +145,13 @@ class ApiService extends GetxService {
       rethrow;
     }
   }
-  Future<SignUpModel>reportQuestion(dynamic map)async{
+  Future<bool>reportQuestion(dynamic map)async{
+    map['token']=_authManager.getToken();
+
     try {
       var response = await _restClient.postData(
           url: AppUrl.reportQuestion, payload: jsonEncode(map), headers: headers);
-      return SignUpModel.fromJson(response);
+      return response['result'];
     } catch (exception) {
       checkException(exception);
       rethrow;
@@ -523,17 +525,19 @@ class ApiService extends GetxService {
     }
   }
 
-  Future<FeedModel?> getFeed({String? type, required String date}) async {
+  Future<FeedModel?> getFeed({String? type, required String date,required int currentPage}) async {
     Map requestBody = {
       "token": _authManager.getToken(),
       "type": type,
-      "date": date
+      "date": date,
+      "page":currentPage
+
     };
     final response = await _restClient.postData(
-        url: "${AppUrl.baseUrl}/daily_learnings", payload: requestBody);
+        url: "${AppUrl.baseUrl}/daily_learnings_v2", payload: requestBody);
 
     try {
-      return FeedModel.fromJson(response);
+      return  FeedModel.fromJson(response);
     } catch (e) {
       checkException(e);
       return null;
@@ -793,21 +797,21 @@ class ApiService extends GetxService {
     }
   }
 
-  Future<QuestionDataModel?> getSaveQuestionListApi() async {
-    Map requestBody = {
-      "token": _authManager.getToken(),
-    };
-//TODO SAVED question match the words
-    final response = await _restClient.postData(
-        url: "${AppUrl.baseUrl}/saved_questions_list", payload: requestBody);
-    print(response);
-    try {
-      return QuestionDataModel.fromJson(response);
-    } catch (e) {
-      checkException(e);
-      return null;
-    }
-  }
+//   Future<QuestionDataModel?> getSaveQuestionListApi() async {
+//     Map requestBody = {
+//       "token": _authManager.getToken(),
+//     };
+// //TODO SAVED question match the words
+//     final response = await _restClient.postData(
+//         url: "${AppUrl.baseUrl}/saved_questions_list", payload: requestBody);
+//     print(response);
+//     try {
+//       return QuestionDataModel.fromJson(response);
+//     } catch (e) {
+//       checkException(e);
+//       return null;
+//     }
+//   }
 
   Future<SaveDataModel?> removeQuestionFromListApi({questionId}) async {
     Map requestBody = {
@@ -880,7 +884,7 @@ class ApiService extends GetxService {
     }
   }
 
-  Future<ParentCategoryModel> getParentCategory({required String page}) async {
+  Future<ParentCategoryModel> getParentCategory({ String ?page}) async {
     Map requestBody = {"token": _authManager.getToken(), "page": page};
     final response = await _restClient.postData(
         url: AppUrl.getParentCategories, payload: requestBody);
@@ -925,6 +929,9 @@ class ApiService extends GetxService {
     }
   }
 
+
+
+
   Future<GetAllQuizCategory?> getPreviousChildCategories(
       {required String page, required String subCategoryId}) async {
     Map requestBody = {
@@ -936,6 +943,21 @@ class ApiService extends GetxService {
         url: AppUrl.getPreviousChildCategory, payload: requestBody);
     try {
       return GetAllQuizCategory.fromJson(response);
+    } catch (e) {
+      checkException(e);
+      return null;
+    }
+  }
+  Future<QuestionDataModel?> getSavedQuestionList(
+      { required String categoryId}) async {
+    Map requestBody = {
+      "token": _authManager.getToken(),
+      "category_id": categoryId ?? ""
+    };
+    final response = await _restClient.postData(
+        url: AppUrl.saveQuestionList, payload: requestBody);
+    try {
+      return QuestionDataModel.fromJson(response);
     } catch (e) {
       checkException(e);
       return null;
@@ -1038,6 +1060,7 @@ class ApiService extends GetxService {
         url: "${AppUrl.baseUrl}/clear_notification", payload: requestBody);
     return ReadedNotification.fromJson(response);
   }
+
 }
 
 void checkException(Object exception) {

@@ -7,7 +7,7 @@ import 'package:get/get.dart';
 import '../../../commonController/authenticationController.dart';
 
 class MaterialController extends GetxController {
-  Rx<bool> isLoading=false.obs;
+  Rx<bool> isLoading= false.obs;
   Rx<int> groupValue = 0.obs;
 
   Rx<ChoosePlanModel>choosePlan=ChoosePlanModel().obs;
@@ -26,6 +26,7 @@ class MaterialController extends GetxController {
   var planIdOneMonth="";
   var planIdThreeMonth="";
   var planIdOneYear="";
+  var planIdSixMonth="";
   String subCateId="";
 
   @override
@@ -93,7 +94,7 @@ class MaterialController extends GetxController {
   }
   void onClickRadioButton(value) {
     groupValue.value = value;
-    update();
+    // update();
   }
   void getPlanDetails() async {
     isLoading(true);
@@ -103,15 +104,15 @@ class MaterialController extends GetxController {
       isLoading(false);
 
       if(planDetails.value.list!=null && planDetails.value.list!.isNotEmpty){
-        if(planDetails.value.list?[0].duration.toString()=="1"){
-          planIdOneMonth=planDetails.value.list?[0].id.toString()??"1";
-        }if(planDetails.value.list?[1].duration.toString()=="3"){
-          planIdThreeMonth=planDetails.value.list?[1].id.toString()??"3";
-        }if(planDetails.value.list?[2].duration.toString()=="12"){
-          planIdOneYear=planDetails.value.list?[2].id.toString()??"4";
-        }
+        planIdOneMonth=planDetails.value.list!.firstWhere((plan)=>plan.duration==1).id.toString();
+        planIdThreeMonth=planDetails.value.list!.firstWhere((plan)=>plan.duration==3).id.toString();
+        planIdSixMonth=planDetails.value.list!.firstWhere((plan)=>plan.duration==6).id.toString();
+        planIdOneYear=planDetails.value.list!.firstWhere((plan)=>plan.duration==12).id.toString();
+
       }
     } else {
+      isLoading(false);
+
       return null;
     }
 

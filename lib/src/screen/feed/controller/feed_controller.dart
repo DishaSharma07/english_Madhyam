@@ -9,6 +9,7 @@ class FeedController extends GetxController
   var loading = true.obs;
   var wordOfDayList =<Dataum>[].obs;
   var phraseList =<Dataum>[].obs;
+  Rx<int>pageCounter=1.obs;
 
  // Rx<FeedModel> feeds = FeedModel().obs;
   late AnimationController _feedAnimation;
@@ -40,18 +41,20 @@ class FeedController extends GetxController
 
   //
   Future<void> feedApiFetch(
-      {required String type, required String date}) async {
+      {required String type, required String date,required int currentPage}) async {
     try {
       loading(true);
-      FeedModel? response = await apiService.getFeed(type: type, date: date);
+      FeedModel? response = await apiService.getFeed(type: type, date: date,currentPage: currentPage);
       loading(false);
       if (response != null) {
         if(type=="word" && response.data?.wordOfDay!=null){
-          wordOfDayList.clear();
+
           wordOfDayList.addAll(response.data!.wordOfDay!.data!);
+
         }else{
-          phraseList.clear();
-          phraseList.addAll(response.data?.phrase??[]);
+          phraseList.addAll(response.data?.phrase!.data??[]);
+
+
         }
       }
     } catch (e) {
@@ -66,7 +69,6 @@ class FeedController extends GetxController
   //start
   Future<void> getFeedListApi(
       {required bool isRefresh}) async {
-    pageNumber=1;
     if (!isRefresh) {
       loading(true);
     }

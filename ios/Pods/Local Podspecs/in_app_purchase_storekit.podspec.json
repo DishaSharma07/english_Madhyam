@@ -15,7 +15,8 @@
     "http": "https://github.com/flutter/packages/tree/main/packages/in_app_purchase/in_app_purchase_storekit"
   },
   "documentation_url": "https://pub.dev/packages/in_app_purchase",
-  "source_files": "Classes/**/*",
+  "swift_versions": "5.0",
+  "source_files": "Classes/**/*.{h,m,swift}",
   "public_header_files": "Classes/**/*.h",
   "ios": {
     "dependencies": {
@@ -42,5 +43,10 @@
     "in_app_purchase_storekit_privacy": [
       "Resources/PrivacyInfo.xcprivacy"
     ]
-  }
+  },
+  "xcconfig": {
+    "LIBRARY_SEARCH_PATHS": "$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)/ $(SDKROOT)/usr/lib/swift",
+    "LD_RUNPATH_SEARCH_PATHS": "/usr/lib/swift"
+  },
+  "swift_version": "5.0"
 }

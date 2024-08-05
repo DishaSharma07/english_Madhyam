@@ -4,6 +4,23 @@
             "outputFile": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-km/values-km.xml",
             "map": [
                 {
+                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/221626504d99aa7dc7525ae51aad4f51/transformed/core-1.13.1/res/values-km/values-km.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,150,253,351,451,552,664,776",
+                        "endColumns": "94,102,97,99,100,111,111,100",
+                        "endOffsets": "145,248,346,446,547,659,771,872"
+                    },
+                    "to": {
+                        "startLines": "38,39,40,41,42,43,44,145",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3399,3494,3597,3695,3795,3896,4008,13165",
+                        "endColumns": "94,102,97,99,100,111,111,100",
+                        "endOffsets": "3489,3592,3690,3790,3891,4003,4115,13261"
+                    }
+                },
+                {
                     "source": "/Users/dishasharma/.gradle/caches/transforms-3/f503e8844c59c42dfc11139664546715/transformed/jetified-play-services-base-18.3.0/res/values-km/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
@@ -18,23 +35,6 @@
                         "startOffsets": "4412,4514,4669,4790,4895,5057,5181,5302,5560,5718,5835,6006,6131,6276,6434,6498,6556",
                         "endColumns": "101,154,120,104,161,123,120,108,157,116,170,124,144,157,63,57,76",
                         "endOffsets": "4509,4664,4785,4890,5052,5176,5297,5406,5713,5830,6001,6126,6271,6429,6493,6551,6628"
-                    }
-                },
-                {
-                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/d88caaa22406966a164be15a8d5c0322/transformed/core-1.10.1/res/values-km/values-km.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,150,253,351,451,552,664,776",
-                        "endColumns": "94,102,97,99,100,111,111,100",
-                        "endOffsets": "145,248,346,446,547,659,771,872"
-                    },
-                    "to": {
-                        "startLines": "38,39,40,41,42,43,44,145",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3399,3494,3597,3695,3795,3896,4008,13165",
-                        "endColumns": "94,102,97,99,100,111,111,100",
-                        "endOffsets": "3489,3592,3690,3790,3891,4003,4115,13261"
                     }
                 },
                 {

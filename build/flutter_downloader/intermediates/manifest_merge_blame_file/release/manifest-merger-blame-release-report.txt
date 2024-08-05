@@ -4,23 +4,23 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="19"
-6-->/Users/dishasharma/.pub-cache/hosted/pub.dev/flutter_downloader-1.11.6/android/src/main/AndroidManifest.xml
+6-->/Users/dishasharma/.pub-cache/hosted/pub.dev/flutter_downloader-1.11.7/android/src/main/AndroidManifest.xml
 7        android:targetSdkVersion="33" />
-7-->/Users/dishasharma/.pub-cache/hosted/pub.dev/flutter_downloader-1.11.6/android/src/main/AndroidManifest.xml
+7-->/Users/dishasharma/.pub-cache/hosted/pub.dev/flutter_downloader-1.11.7/android/src/main/AndroidManifest.xml
 8
 9    <!-- See https://developer.android.com/training/package-visibility -->
 10    <queries>
-10-->/Users/dishasharma/.pub-cache/hosted/pub.dev/flutter_downloader-1.11.6/android/src/main/AndroidManifest.xml:5:5-9:15
+10-->/Users/dishasharma/.pub-cache/hosted/pub.dev/flutter_downloader-1.11.7/android/src/main/AndroidManifest.xml:5:5-9:15
 11        <intent>
-11-->/Users/dishasharma/.pub-cache/hosted/pub.dev/flutter_downloader-1.11.6/android/src/main/AndroidManifest.xml:6:9-8:18
+11-->/Users/dishasharma/.pub-cache/hosted/pub.dev/flutter_downloader-1.11.7/android/src/main/AndroidManifest.xml:6:9-8:18
 12            <action android:name="android.intent.action.VIEW" />
-12-->/Users/dishasharma/.pub-cache/hosted/pub.dev/flutter_downloader-1.11.6/android/src/main/AndroidManifest.xml:7:13-65
-12-->/Users/dishasharma/.pub-cache/hosted/pub.dev/flutter_downloader-1.11.6/android/src/main/AndroidManifest.xml:7:21-62
+12-->/Users/dishasharma/.pub-cache/hosted/pub.dev/flutter_downloader-1.11.7/android/src/main/AndroidManifest.xml:7:13-65
+12-->/Users/dishasharma/.pub-cache/hosted/pub.dev/flutter_downloader-1.11.7/android/src/main/AndroidManifest.xml:7:21-62
 13        </intent>
 14    </queries>
 15
 16    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-16-->/Users/dishasharma/.pub-cache/hosted/pub.dev/flutter_downloader-1.11.6/android/src/main/AndroidManifest.xml:10:5-77
-16-->/Users/dishasharma/.pub-cache/hosted/pub.dev/flutter_downloader-1.11.6/android/src/main/AndroidManifest.xml:10:22-74
+16-->/Users/dishasharma/.pub-cache/hosted/pub.dev/flutter_downloader-1.11.7/android/src/main/AndroidManifest.xml:10:5-77
+16-->/Users/dishasharma/.pub-cache/hosted/pub.dev/flutter_downloader-1.11.7/android/src/main/AndroidManifest.xml:10:22-74
 17
 18</manifest>

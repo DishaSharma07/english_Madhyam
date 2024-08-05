@@ -4,12 +4,12 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="19"
-6-->/Users/dishasharma/.pub-cache/hosted/pub.dev/vibration-1.8.4/android/src/main/AndroidManifest.xml
+6-->/Users/dishasharma/.pub-cache/hosted/pub.dev/vibration-1.9.0/android/src/main/AndroidManifest.xml
 7        android:targetSdkVersion="19" />
-7-->/Users/dishasharma/.pub-cache/hosted/pub.dev/vibration-1.8.4/android/src/main/AndroidManifest.xml
+7-->/Users/dishasharma/.pub-cache/hosted/pub.dev/vibration-1.9.0/android/src/main/AndroidManifest.xml
 8
 9    <uses-permission android:name="android.permission.VIBRATE" />
-9-->/Users/dishasharma/.pub-cache/hosted/pub.dev/vibration-1.8.4/android/src/main/AndroidManifest.xml:4:5-65
-9-->/Users/dishasharma/.pub-cache/hosted/pub.dev/vibration-1.8.4/android/src/main/AndroidManifest.xml:4:22-63
+9-->/Users/dishasharma/.pub-cache/hosted/pub.dev/vibration-1.9.0/android/src/main/AndroidManifest.xml:4:5-65
+9-->/Users/dishasharma/.pub-cache/hosted/pub.dev/vibration-1.9.0/android/src/main/AndroidManifest.xml:4:22-63
 10
 11</manifest>

@@ -1,6 +1,6 @@
 {
   "name": "awesome_notifications",
-  "version": "0.9.0",
+  "version": "0.9.3",
   "summary": "A complete solution to create Local and Push Notifications, through Firebase or another services, using Flutter.",
   "description": "A complete solution to create Local Notifications and Push Notifications, through Firebase or another services, using Flutter.",
   "homepage": "https://github.com/rafaelsetragni/awesome_notifications",
@@ -20,7 +20,7 @@
 
     ],
     "IosAwnCore": [
-      "~> 0.9.1"
+      "~> 0.9.3"
     ]
   },
   "platforms": {

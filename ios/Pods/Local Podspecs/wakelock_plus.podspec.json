@@ -26,5 +26,10 @@
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES",
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "i386"
+  },
+  "resource_bundles": {
+    "thermal": [
+      "Resources/PrivacyInfo.xcprivacy"
+    ]
   }
 }

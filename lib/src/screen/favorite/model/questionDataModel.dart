@@ -30,35 +30,28 @@ class QuestionData {
   int? id;
   String? examId;
   String? eQuestion;
-  int? chapter;
-  int? topic;
-  int? marks;
-  String? createdAt;
-  String? updatedAt;
+  int? isParagraph;
+  String? paragraphQuestion;
   int? savedQId;
   List<Options>? options;
-  Solutions? solutions;
+  Solution? solution;
 
   QuestionData(
       {this.id,
         this.examId,
         this.eQuestion,
-        this.chapter,
-        this.topic,
-        this.marks,
-        this.createdAt,
-        this.updatedAt,
-        this.savedQId});
+        this.isParagraph,
+        this.paragraphQuestion,
+        this.savedQId,
+        this.options,
+        this.solution});
 
   QuestionData.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     examId = json['exam_id'];
     eQuestion = json['e_question'];
-    chapter = json['chapter'];
-    topic = json['topic'];
-    marks = json['marks'];
-    createdAt = json['created_at'];
-    updatedAt = json['updated_at'];
+    isParagraph = json['is_paragraph'];
+    paragraphQuestion = json['paragraph_question'];
     savedQId = json['saved_q_id'];
     if (json['options'] != null) {
       options = <Options>[];
@@ -66,8 +59,8 @@ class QuestionData {
         options!.add(new Options.fromJson(v));
       });
     }
-    solutions = json['solution'] != null
-        ? new Solutions.fromJson(json['solution'])
+    solution = json['solution'] != null
+        ? new Solution.fromJson(json['solution'])
         : null;
   }
 
@@ -76,109 +69,50 @@ class QuestionData {
     data['id'] = this.id;
     data['exam_id'] = this.examId;
     data['e_question'] = this.eQuestion;
-    data['chapter'] = this.chapter;
-    data['topic'] = this.topic;
-    data['marks'] = this.marks;
-    data['created_at'] = this.createdAt;
-    data['updated_at'] = this.updatedAt;
+    data['is_paragraph'] = this.isParagraph;
+    data['paragraph_question'] = this.paragraphQuestion;
     data['saved_q_id'] = this.savedQId;
     if (this.options != null) {
       data['options'] = this.options!.map((v) => v.toJson()).toList();
     }
-    if (this.solutions != null) {
-      data['solution'] = this.solutions!.toJson();
+    if (this.solution != null) {
+      data['solution'] = this.solution!.toJson();
     }
-
     return data;
   }
 }
 
 class Options {
-  int? id;
-  int? qId;
-  dynamic optionH;
   String? optionE;
   int? correct;
-  dynamic image;
-  int? del;
-  String? createdAt;
-  String? updatedAt;
-  int? checked;
 
-  Options(
-      {this.id,
-        this.qId,
-        this.optionH,
-        this.optionE,
-        this.correct,
-        this.image,
-        this.del,
-        this.createdAt,
-        this.updatedAt,
-        this.checked});
+  Options({this.optionE, this.correct});
 
   Options.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
-    qId = json['q_id'];
-    optionH = json['option_h'];
     optionE = json['option_e'];
     correct = json['correct'];
-    image = json['image'];
-    del = json['del'];
-    createdAt = json['created_at'];
-    updatedAt = json['updated_at'];
-    checked = json['checked'];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['q_id'] = this.qId;
-    data['option_h'] = this.optionH;
     data['option_e'] = this.optionE;
     data['correct'] = this.correct;
-    data['image'] = this.image;
-    data['del'] = this.del;
-    data['created_at'] = this.createdAt;
-    data['updated_at'] = this.updatedAt;
-    data['checked'] = this.checked;
     return data;
   }
 }
 
-class Solutions {
-  int? id;
-  int? qId;
+class Solution {
   String? eSolutions;
-  int? del;
-  String? createdAt;
-  String? updatedAt;
 
-  Solutions(
-      {this.id,
-        this.qId,
-        this.eSolutions,
-        this.del,
-        this.createdAt,
-        this.updatedAt});
+  Solution({this.eSolutions});
 
-  Solutions.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
-    qId = json['q_id'];
+  Solution.fromJson(Map<String, dynamic> json) {
     eSolutions = json['e_solutions'];
-    del = json['del'];
-    createdAt = json['created_at'];
-    updatedAt = json['updated_at'];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['q_id'] = this.qId;
     data['e_solutions'] = this.eSolutions;
-    data['del'] = this.del;
-    data['created_at'] = this.createdAt;
-    data['updated_at'] = this.updatedAt;
     return data;
   }
 }

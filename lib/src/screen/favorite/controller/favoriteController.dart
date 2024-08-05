@@ -9,6 +9,7 @@ import '../model/wardDataModel.dart';
 class FavoriteController extends GetxController {
   var saveQuestionList = <QuestionData>[].obs;
   var saveWordsList = <WordData>[].obs;
+  Rx<bool> isSavedQuestionNavigation = false.obs;
 
   var loading = false.obs;
 
@@ -17,10 +18,10 @@ class FavoriteController extends GetxController {
     super.onInit();
   }
 
-  void getSaveQuestionList() {
+  void getSaveQuestionList(String categoryId) {
     try {
       loading(true);
-      apiService.getSaveQuestionListApi().then((resp) {
+      apiService.getSavedQuestionList(categoryId: categoryId).then((resp) {
         loading(false);
         if (resp!.result ?? false) {
           saveQuestionList.clear();

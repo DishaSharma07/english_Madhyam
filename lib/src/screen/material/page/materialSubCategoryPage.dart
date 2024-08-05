@@ -57,7 +57,6 @@ class _MaterialSubCategoryPageState extends State<MaterialSubCategoryPage>
   late String _localPath;
   final GlobalKey<SfPdfViewerState> _allContentsKey = GlobalKey();
   int? downloadStarted;
-  final AuthenticationManager authController = Get.find();
   final ProfileControllers _subcontroller = Get.put(ProfileControllers());
 
   bool? _permissionReady;
@@ -429,7 +428,6 @@ class _MaterialSubCategoryPageState extends State<MaterialSubCategoryPage>
   }
 
   Widget buildTabWidget() {
-    print("gffgf${authController.darkTheme == true}");
     return SizedBox(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height * 0.05,

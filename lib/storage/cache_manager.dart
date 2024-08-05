@@ -42,9 +42,14 @@ mixin CacheManager {
   //   final box = GetStorage();
   //   await box.write(editorialId.toString(), "${startingIndex}_$endingIndex");
   // }
-  Future<void> setReadingData(editorialId,String editorialDescription) async {
+  Future<void> setReadingData(editorialId,String ?editorialDescription) async {
     final box = GetStorage();
-    await box.write(editorialId.toString(), editorialDescription);
+   if(editorialDescription==null||editorialDescription==""){
+     await box.erase();
+   }else{
+     await box.write(editorialId.toString(), editorialDescription);
+
+   }
   }
   String getReadingData(editorialId)  {
     final box = GetStorage();

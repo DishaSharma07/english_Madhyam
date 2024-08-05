@@ -4,23 +4,6 @@
             "outputFile": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/google_sign_in_android/intermediates/merged_res/release/values-as/values-as.xml",
             "map": [
                 {
-                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/a62712980377a57144aa85dd635f2e3f/transformed/core-1.6.0/res/values-as/values-as.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2177",
-                        "endColumns": "100",
-                        "endOffsets": "2273"
-                    }
-                },
-                {
                     "source": "/Users/dishasharma/.gradle/caches/transforms-3/36e969af9829429efd2cb03fedc969f5/transformed/jetified-play-services-basement-18.2.0/res/values-as/values.xml",
                     "from": {
                         "startLines": "4",
@@ -52,6 +35,23 @@
                         "startOffsets": "55,163,316,439,549,679,801,914,1152,1295,1404,1554,1679,1812,1965,2025,2091",
                         "endColumns": "107,152,122,109,129,121,112,111,142,108,149,124,132,152,59,65,85",
                         "endOffsets": "158,311,434,544,674,796,909,1021,1290,1399,1549,1674,1807,1960,2020,2086,2172"
+                    }
+                },
+                {
+                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/ed0edbcea1c7e835f31754eacd6d922d/transformed/core-1.8.0/res/values-as/values-as.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "2177",
+                        "endColumns": "100",
+                        "endOffsets": "2273"
                     }
                 }
             ]
@@ -60,23 +60,6 @@
             "outputFile": "/Users/dishasharma/Downloads/EM-FinalCodeFlutter/build/google_sign_in_android/intermediates/incremental/mergeReleaseResources/merged.dir/values-as/values-as.xml",
             "map": [
                 {
-                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/a62712980377a57144aa85dd635f2e3f/transformed/core-1.6.0/res/values-as/values-as.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2177",
-                        "endColumns": "100",
-                        "endOffsets": "2273"
-                    }
-                },
-                {
                     "source": "/Users/dishasharma/.gradle/caches/transforms-3/36e969af9829429efd2cb03fedc969f5/transformed/jetified-play-services-basement-18.2.0/res/values-as/values.xml",
                     "from": {
                         "startLines": "4",
@@ -108,6 +91,23 @@
                         "startOffsets": "55,163,316,439,549,679,801,914,1152,1295,1404,1554,1679,1812,1965,2025,2091",
                         "endColumns": "107,152,122,109,129,121,112,111,142,108,149,124,132,152,59,65,85",
                         "endOffsets": "158,311,434,544,674,796,909,1021,1290,1399,1549,1674,1807,1960,2020,2086,2172"
+                    }
+                },
+                {
+                    "source": "/Users/dishasharma/.gradle/caches/transforms-3/ed0edbcea1c7e835f31754eacd6d922d/transformed/core-1.8.0/res/values-as/values-as.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "2177",
+                        "endColumns": "100",
+                        "endOffsets": "2273"
                     }
                 }
             ]
